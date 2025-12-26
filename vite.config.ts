@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: "/YOUR_REPO_NAME/",   // 👈 ADD THIS LINE
+  base: "/rrb-nursing-dualite/",   // 👈 ADD THIS LINE
 
   plugins: [react()],
 
@@ -10,3 +10,4 @@ export default defineConfig({
     exclude: ['lucide-react'],
   },
 });
+
