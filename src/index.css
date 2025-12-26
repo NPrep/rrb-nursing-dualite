@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 350 40% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 350 40% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 350 40% 10%;
+
+    /* Primary is now Railway Red */
+    --primary: 354 78% 45%; 
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 354 20% 96%;
+    --secondary-foreground: 354 78% 45%;
+
+    --muted: 354 10% 96%;
+    --muted-foreground: 354 10% 45%;
+
+    /* Accent is now a darker Navy/Black for contrast */
+    --accent: 222.2 47.4% 11.2%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 354 20% 90%;
+    --input: 354 20% 90%;
+    --ring: 354 78% 45%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 350 40% 10%;
+    --foreground: 354 20% 96%;
+ 
+    --card: 350 40% 10%;
+    --card-foreground: 354 20% 96%;
+ 
+    --popover: 350 40% 10%;
+    --popover-foreground: 354 20% 96%;
+ 
+    --primary: 354 78% 55%;
+    --primary-foreground: 0 0% 100%;
+ 
+    --secondary: 354 20% 20%;
+    --secondary-foreground: 354 20% 96%;
+ 
+    --muted: 354 20% 20%;
+    --muted-foreground: 354 20% 65%;
+ 
+    --accent: 210 40% 98%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --border: 354 20% 20%;
+    --input: 354 20% 20%;
+    --ring: 354 78% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
