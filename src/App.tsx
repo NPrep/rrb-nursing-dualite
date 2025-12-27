@@ -25,7 +25,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
       { path: "notifications", element: <NotificationsPage /> },
-      { path: "apply", element: <ApplyPage /> }, 
+      { path: "apply", element: <ApplyPage /> },
       { path: "admit-card", element: <AdmitCardPage /> },
       { path: "results", element: <PlaceholderPage title="Results" /> },
       { path: "zones", element: <ZonesPage /> },
@@ -35,7 +35,7 @@ const router = createBrowserRouter([
       { path: "helpdesk", element: <PlaceholderPage title="Helpdesk" /> },
     ],
   },
-]);
+], { basename: "/rrb-nursing-dualite" });
 
 function App() {
   return <RouterProvider router={router} />;
