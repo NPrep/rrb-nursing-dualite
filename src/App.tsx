@@ -35,7 +35,7 @@ const router = createBrowserRouter([
       { path: "helpdesk", element: <PlaceholderPage title="Helpdesk" /> },
     ],
   },
-], { basename: "/rrb-nursing-dualite" });
+]);
 
 function App() {
   return <RouterProvider router={router} />;
