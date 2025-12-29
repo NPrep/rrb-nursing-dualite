@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cp dist/index.html dist/404.html",
     "lint": "eslint .",
     "lint:dualite": "eslint --config eslint.dualite.config.js .",
     "tsc:dualite": "yarn tsc -p tsconfig.dualite.json",

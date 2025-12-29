@@ -9,6 +9,7 @@ import ZonesPage from './pages/ZonesPage';
 import SyllabusPage from './pages/SyllabusPage';
 import BlogsPage from './pages/BlogsPage';
 import BlogPostPage from './pages/BlogPostPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 // Placeholder components for routes not fully implemented in this artifact
 const PlaceholderPage = ({ title }: { title: string }) => (
@@ -22,10 +23,11 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
+    errorElement: <Layout><NotFoundPage /></Layout>, // Handle root errors
     children: [
       { index: true, element: <HomePage /> },
       { path: "notifications", element: <NotificationsPage /> },
-      { path: "apply", element: <ApplyPage /> },
+      { path: "apply", element: <ApplyPage /> }, 
       { path: "admit-card", element: <AdmitCardPage /> },
       { path: "results", element: <PlaceholderPage title="Results" /> },
       { path: "zones", element: <ZonesPage /> },
@@ -33,6 +35,7 @@ const router = createBrowserRouter([
       { path: "blogs", element: <BlogsPage /> },
       { path: "blogs/:id", element: <BlogPostPage /> },
       { path: "helpdesk", element: <PlaceholderPage title="Helpdesk" /> },
+      { path: "*", element: <NotFoundPage /> }, // Catch-all for 404s inside layout
     ],
   },
 ]);

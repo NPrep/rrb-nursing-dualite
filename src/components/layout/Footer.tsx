@@ -18,11 +18,8 @@ export default function Footer() {
               <span className="text-lg font-bold text-white">RRB Nursing</span>
             </div>
             <p className="text-sm text-slate-400">
-              Official recruitment portal for Indian Railways Nursing Staff. Facilitating transparent and efficient hiring processes across all zones.
+              Your trusted platform for the latest updates on Railway Nursing Superintendent vacancies, syllabus, and exam preparation resources.
             </p>
-            <div className="text-xs text-slate-500 border-t border-slate-800 pt-4 mt-4">
-              Disclaimer: This is a demo portal UI for educational purposes. Not affiliated with Government of India.
-            </div>
           </div>
 
           <div>
@@ -39,7 +36,6 @@ export default function Footer() {
             <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Preparation</h3>
             <ul className="space-y-2 text-sm">
               <li><a href={NPREP_URL} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors text-slate-300 font-medium flex items-center gap-1">Free Study Material <ArrowRight className="h-3 w-3" /></a></li>
-              {/* Changed to Internal Blog Link */}
               <li><Link to="/blogs" className="hover:text-primary transition-colors flex items-center gap-1">Exam Strategy Blog <ArrowRight className="h-3 w-3" /></Link></li>
               <li><a href={NPREP_URL} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">Nursing Mock Tests <ArrowRight className="h-3 w-3" /></a></li>
               <li><a href={NPREP_URL} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">Previous Year Papers <ArrowRight className="h-3 w-3" /></a></li>
@@ -57,8 +53,18 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
-          <p>© 2025 Railway Recruitment Board. All rights reserved.</p>
+        {/* Disclaimer Section */}
+        <div className="border-t border-slate-800 mt-12 pt-8 pb-4">
+          <div className="bg-slate-950/50 rounded-lg p-6 border border-slate-800/50">
+            <p className="text-xs text-slate-400 leading-relaxed text-center md:text-left">
+              <span className="font-bold text-slate-300 block mb-2 md:inline md:mb-0 md:mr-1">Disclaimer:</span> 
+              rrbnursing.com is neither associated with Indian Railways nor with Railway Recruitment Board (RRB). The Official website of RRB Application is <a href="https://rrbapply.gov.in" target="_blank" rel="nofollow noreferrer" className="text-blue-400 hover:underline">rrbapply.gov.in</a>. rrbapply.com is a job portal sharing the Latest Vacancy Notification, Eligibility, Application Process, Exam Date of RRB Nursing Superintendent Exam Syllabus, Exam Date & Admit Cards & Results.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 mt-6">
+          <p>© 2025 RRB Nursing. All rights reserved.</p>
           <p className="mt-2 md:mt-0 flex items-center">
             Last Updated: {new Date().toLocaleDateString()}
           </p>
