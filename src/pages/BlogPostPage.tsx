@@ -3,6 +3,7 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import { Calendar, User, ArrowLeft, Share2 } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Badge } from '../components/ui/badge';
+import { BlogCover } from '../components/ui/BlogCover';
 import { blogs } from '../data/mockData';
 
 export default function BlogPostPage() {
@@ -46,11 +47,12 @@ export default function BlogPostPage() {
           </div>
         </div>
 
-        <div className="aspect-video w-full rounded-xl overflow-hidden mb-10 shadow-md">
-          <img 
-            src={blog.image} 
-            alt={blog.title} 
-            className="w-full h-full object-cover"
+        {/* Dynamic Cover Image */}
+        <div className="rounded-xl overflow-hidden mb-10 shadow-lg">
+          <BlogCover 
+             title={blog.title} 
+             category={blog.category}
+             // image={blog.image} // Uncomment to use real images
           />
         </div>
 
@@ -60,7 +62,7 @@ export default function BlogPostPage() {
         />
       </article>
 
-      {/* Related/More Posts could go here */}
+      {/* Related/More Posts */}
       <div className="max-w-3xl mx-auto mt-16 pt-8 border-t border-slate-200">
         <div className="flex justify-between items-center">
           <h3 className="text-xl font-bold">More Articles</h3>

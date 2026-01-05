@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, User, ArrowRight } from 'lucide-react';
+import { Calendar, ArrowRight } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
+import { BlogCover } from '../components/ui/BlogCover';
 import { blogs } from '../data/mockData';
 
 export default function BlogsPage() {
@@ -18,15 +19,20 @@ export default function BlogsPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {blogs.map((blog) => (
           <Link key={blog.id} to={`/blogs/${blog.id}`} className="group">
-            <Card className="h-full overflow-hidden hover:shadow-lg transition-all duration-300 border-slate-200">
-              <div className="aspect-video w-full overflow-hidden">
-                <img 
-                  src={blog.image} 
-                  alt={blog.title} 
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            <Card className="h-full overflow-hidden hover:shadow-xl transition-all duration-300 border-slate-200 flex flex-col">
+              <div className="w-full overflow-hidden rounded-t-lg">
+                {/* Now passing the image prop. If blog.image exists, it shows that. If not, it auto-generates. */}
+                <BlogCover 
+                  title={blog.title} 
+                  category={blog.category} 
+                  // image={blog.image} // Uncomment this line to use the Unsplash images from mockData
+                  // For now, I kept it commented so you can see the Auto-Design. 
+                  // To use real images, just uncomment the line above!
+                  className="transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <CardHeader className="space-y-2">
+              
+              <CardHeader className="space-y-2 pb-2">
                 <div className="flex items-center justify-between">
                   <Badge variant="secondary" className="bg-slate-100 text-slate-700 hover:bg-slate-200">
                     {blog.category}
@@ -40,13 +46,15 @@ export default function BlogsPage() {
                   {blog.title}
                 </CardTitle>
               </CardHeader>
+              
               <CardContent>
                 <p className="text-slate-600 text-sm line-clamp-3">
                   {blog.excerpt}
                 </p>
               </CardContent>
+              
               <CardFooter className="pt-0 mt-auto">
-                <div className="flex items-center text-sm font-medium text-primary">
+                <div className="flex items-center text-sm font-medium text-primary group-hover:underline underline-offset-4">
                   Read Article <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </div>
               </CardFooter>
