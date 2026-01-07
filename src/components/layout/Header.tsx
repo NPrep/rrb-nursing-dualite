@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Cross, ExternalLink, Home, BookOpen, FileText, Bell, Info, ShieldCheck, User, Layers } from 'lucide-react';
+import { Menu, X, Home, BookOpen, FileText, Bell, Info, ShieldCheck, User, Layers, Stethoscope, ExternalLink } from 'lucide-react';
 import { Button } from '../ui/button';
 import { cn } from '../../lib/utils';
 
@@ -8,38 +8,35 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
-  const NPREP_URL = "https://nprep.in";
-  // NPREP_BLOG_URL removed, using internal /blogs
-
   const navItems = [
     { name: 'Home', path: '/', isExternal: false, icon: Home },
-    { name: 'Courses', path: NPREP_URL, isExternal: true, icon: BookOpen },
-    { name: 'Resources', path: NPREP_URL, isExternal: true, icon: Layers },
-    { name: 'Blogs', path: '/blogs', isExternal: false, icon: FileText }, // Changed to internal
+    { name: 'Courses', path: '/courses', isExternal: false, icon: BookOpen }, // Changed to internal route
+    { name: 'Resources', path: '/resources', isExternal: false, icon: Layers },
+    { name: 'Blogs', path: '/blogs', isExternal: false, icon: FileText },
     { name: 'Notifications', path: '/notifications', isExternal: false, icon: Bell },
-    { name: 'About Us', path: NPREP_URL, isExternal: true, icon: Info },
+    { name: 'About Us', path: '/about', isExternal: false, icon: Info },
   ];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex h-20 items-center justify-between">
-          {/* Logo Section - Styled like "RRB Portal Pro" */}
+          {/* Logo Section - Nursing Focused */}
           <Link to="/" className="flex items-center space-x-3 group shrink-0">
             <div className="bg-primary p-2 rounded-lg shadow-sm group-hover:bg-primary/90 transition-colors">
-              <Cross className="h-6 w-6 text-white" />
+              <Stethoscope className="h-6 w-6 text-white" />
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold tracking-tight text-slate-900 leading-none">
                 RRB <span className="text-primary">Nursing</span>
               </span>
               <span className="text-[10px] font-medium text-slate-500 uppercase tracking-wider mt-1">
-                Railway Recruitment Board
+                Nursing Prep Portal
               </span>
             </div>
           </Link>
 
-          {/* Desktop/Tablet Nav - Visible on md (768px) and up */}
+          {/* Desktop/Tablet Nav */}
           <nav className="hidden md:flex items-center space-x-1 lg:space-x-4 mx-4">
             {navItems.map((item) => (
               item.isExternal ? (
@@ -71,7 +68,7 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Right Side - "Official Portal" Section - Visible only on LG (1024px) and up to save space */}
+          {/* Right Side - "Official Portal" Section - Visible only on LG */}
           <div className="hidden lg:flex items-center shrink-0">
             <div className="flex items-center gap-4 pl-6 border-l border-slate-200 h-10">
               <div className="flex items-center gap-2">
@@ -79,7 +76,7 @@ export default function Header() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
                 </span>
-                <span className="text-sm font-bold text-slate-800">Official Portal</span>
+                <span className="text-sm font-bold text-slate-800">Exam Prep</span>
               </div>
               
               <div className="h-6 w-[1px] bg-slate-200 mx-1"></div>
@@ -95,7 +92,7 @@ export default function Header() {
             </div>
           </div>
 
-          {/* Mobile Menu Toggle - Visible only on small screens (< md) */}
+          {/* Mobile Menu Toggle */}
           <div className="flex items-center md:hidden">
              <Button 
               variant="ghost" 
@@ -143,18 +140,6 @@ export default function Header() {
                 </Link>
               )
             ))}
-            
-            {/* Mobile "Official Portal" Indicator */}
-            <div className="pt-4 mt-2 border-t flex items-center justify-between px-4">
-               <div className="flex items-center gap-2">
-                <span className="relative flex h-2.5 w-2.5">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
-                </span>
-                <span className="text-sm font-bold text-slate-800">Official Portal</span>
-              </div>
-              <ShieldCheck className="h-5 w-5 text-slate-600" />
-            </div>
           </nav>
         </div>
       )}

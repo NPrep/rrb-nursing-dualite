@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Cross, ExternalLink, ArrowRight } from 'lucide-react';
+import { Stethoscope, ExternalLink, ArrowRight } from 'lucide-react';
+import { NPREP_LINKS } from '../../data/links';
 
 export default function Footer() {
   const RRB_OFFICIAL_URL = "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,7,1281";
-  const NPREP_URL = "https://nprep.in";
   
   return (
     <footer className="bg-slate-900 text-slate-200 border-t border-slate-800">
@@ -13,12 +13,12 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="bg-white/10 p-1.5 rounded-md">
-                <Cross className="h-6 w-6 text-white" />
+                <Stethoscope className="h-6 w-6 text-white" />
               </div>
               <span className="text-lg font-bold text-white">RRB Nursing</span>
             </div>
             <p className="text-sm text-slate-400">
-              Your trusted platform for the latest updates on Railway Nursing Superintendent vacancies, syllabus, and exam preparation resources.
+              India's leading preparation portal for Railway Nursing Superintendent exams. Get the best courses, test series, and study material.
             </p>
           </div>
 
@@ -35,19 +35,19 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Preparation</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href={NPREP_URL} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors text-slate-300 font-medium flex items-center gap-1">Free Study Material <ArrowRight className="h-3 w-3" /></a></li>
-              <li><Link to="/blogs" className="hover:text-primary transition-colors flex items-center gap-1">Exam Strategy Blog <ArrowRight className="h-3 w-3" /></Link></li>
-              <li><a href={NPREP_URL} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">Nursing Mock Tests <ArrowRight className="h-3 w-3" /></a></li>
-              <li><a href={NPREP_URL} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">Previous Year Papers <ArrowRight className="h-3 w-3" /></a></li>
+              <li><a href={NPREP_LINKS.GOLD_COURSE} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors text-slate-300 font-medium flex items-center gap-1">Gold Course <ArrowRight className="h-3 w-3" /></a></li>
+              <li><a href={NPREP_LINKS.RAPID_REVISION} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">Rapid Revision <ArrowRight className="h-3 w-3" /></a></li>
+              <li><a href={NPREP_LINKS.TEST_SERIES} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">Nursing Test Series <ArrowRight className="h-3 w-3" /></a></li>
+              <li><a href={NPREP_LINKS.PYQ} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">Previous Year Papers <ArrowRight className="h-3 w-3" /></a></li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Important</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link to="#" className="hover:text-white transition-colors">Terms of Use</Link></li>
-              <li><Link to="#" className="hover:text-white transition-colors">Privacy Policy</Link></li>
-              <li><Link to="#" className="hover:text-white transition-colors">Hyperlinking Policy</Link></li>
+              <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
+              <li><Link to="/resources" className="hover:text-white transition-colors">Free Resources</Link></li>
+              <li><Link to="/blogs" className="hover:text-white transition-colors">Exam Strategy Blog</Link></li>
               <li><Link to="/helpdesk" className="hover:text-white transition-colors">Helpdesk</Link></li>
             </ul>
           </div>

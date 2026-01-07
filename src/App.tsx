@@ -9,6 +9,9 @@ import ZonesPage from './pages/ZonesPage';
 import SyllabusPage from './pages/SyllabusPage';
 import BlogsPage from './pages/BlogsPage';
 import BlogPostPage from './pages/BlogPostPage';
+import AboutPage from './pages/AboutPage';
+import ResourcesPage from './pages/ResourcesPage';
+import CoursesPage from './pages/CoursesPage'; // Import CoursesPage
 import NotFoundPage from './pages/NotFoundPage';
 
 // Placeholder components for routes not fully implemented in this artifact
@@ -34,6 +37,9 @@ const router = createBrowserRouter([
       { path: "syllabus", element: <SyllabusPage /> },
       { path: "blogs", element: <BlogsPage /> },
       { path: "blogs/:id", element: <BlogPostPage /> },
+      { path: "about", element: <AboutPage /> },
+      { path: "resources", element: <ResourcesPage /> },
+      { path: "courses", element: <CoursesPage /> }, // Add courses route
       { path: "helpdesk", element: <PlaceholderPage title="Helpdesk" /> },
       { path: "*", element: <NotFoundPage /> }, // Catch-all for 404s inside layout
     ],
