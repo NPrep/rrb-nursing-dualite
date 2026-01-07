@@ -193,7 +193,8 @@ export default function HomePage() {
                     </Button>
                   </a>
                   <a href={NPREP_LINKS.PYQ} target="_blank" rel="noopener noreferrer">
-                    <Button variant="outline" className="text-white border-white hover:bg-white/10">
+                    {/* Added bg-transparent to fix the invisible text issue */}
+                    <Button variant="outline" className="bg-transparent text-white border-white hover:bg-white/10 hover:text-white">
                       <Download className="mr-2 h-4 w-4" /> Download PYQs
                     </Button>
                   </a>
