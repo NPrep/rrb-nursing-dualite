@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, BookOpen, FileText, Bell, Info, ShieldCheck, User, Layers, Stethoscope, ExternalLink } from 'lucide-react';
+import { Menu, X, Home, BookOpen, FileText, Bell, Info, ShieldCheck, User, Layers, ExternalLink } from 'lucide-react';
 import { Button } from '../ui/button';
 import { cn } from '../../lib/utils';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const LOGO_URL = "https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Indian_Railways_logo.svg/300px-Indian_Railways_logo.svg.png";
 
   const navItems = [
     { name: 'Home', path: '/', isExternal: false, icon: Home },
-    { name: 'Courses', path: '/courses', isExternal: false, icon: BookOpen }, // Changed to internal route
+    { name: 'Courses', path: '/courses', isExternal: false, icon: BookOpen },
     { name: 'Resources', path: '/resources', isExternal: false, icon: Layers },
     { name: 'Blogs', path: '/blogs', isExternal: false, icon: FileText },
     { name: 'Notifications', path: '/notifications', isExternal: false, icon: Bell },
@@ -21,11 +22,13 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex h-20 items-center justify-between">
-          {/* Logo Section - Nursing Focused */}
+          {/* Logo Section - Indian Railways Logo */}
           <Link to="/" className="flex items-center space-x-3 group shrink-0">
-            <div className="bg-primary p-2 rounded-lg shadow-sm group-hover:bg-primary/90 transition-colors">
-              <Stethoscope className="h-6 w-6 text-white" />
-            </div>
+            <img 
+              src={LOGO_URL} 
+              alt="Indian Railways Logo" 
+              className="h-12 w-12 object-contain drop-shadow-sm group-hover:scale-105 transition-transform duration-300"
+            />
             <div className="flex flex-col">
               <span className="text-xl font-bold tracking-tight text-slate-900 leading-none">
                 RRB <span className="text-primary">Nursing</span>

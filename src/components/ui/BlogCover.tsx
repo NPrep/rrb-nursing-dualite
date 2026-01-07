@@ -1,6 +1,6 @@
 import React from 'react';
 import { cn } from '../../lib/utils';
-import { Cross, Shield, TrendingUp, BookOpen, Users, AlertCircle, FileText, CheckCircle2 } from 'lucide-react';
+import { Cross, TrendingUp, BookOpen, Users, AlertCircle, FileText, CheckCircle2 } from 'lucide-react';
 
 interface BlogCoverProps {
   title: string;
@@ -10,6 +10,8 @@ interface BlogCoverProps {
 }
 
 export function BlogCover({ title, category, image, className }: BlogCoverProps) {
+  const LOGO_URL = "https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Indian_Railways_logo.svg/300px-Indian_Railways_logo.svg.png";
+
   // If a specific image URL is provided, use it.
   if (image) {
     return (
@@ -85,7 +87,11 @@ export function BlogCover({ title, category, image, className }: BlogCoverProps)
       <div className="absolute -right-12 top-1/2 -translate-y-1/2 opacity-90 hidden md:block scale-90 lg:scale-100">
          <div className="w-56 h-56 rounded-full border-[8px] border-white/10 flex items-center justify-center bg-white/5 backdrop-blur-sm shadow-2xl relative">
             <div className="absolute inset-0 rounded-full border-2 border-white/20 border-dashed animate-spin-slow" style={{ animationDuration: '20s' }}></div>
-            <Shield className="w-28 h-28 text-white drop-shadow-2xl" />
+            <img 
+              src={LOGO_URL} 
+              alt="Indian Railways Logo" 
+              className="w-28 h-28 object-contain drop-shadow-2xl"
+            />
          </div>
       </div>
 
