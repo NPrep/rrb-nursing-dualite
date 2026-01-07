@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, BookOpen, FileText, Bell, Info, ShieldCheck, User, Layers, ExternalLink } from 'lucide-react';
+import { Menu, X, Home, BookOpen, FileText, Bell, Info, Layers, ExternalLink } from 'lucide-react';
 import { Button } from '../ui/button';
 import { cn } from '../../lib/utils';
 
@@ -40,7 +40,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop/Tablet Nav */}
-          <nav className="hidden md:flex items-center space-x-1 lg:space-x-4 mx-4">
+          <nav className="hidden md:flex items-center space-x-1 lg:space-x-4 mx-4 ml-auto">
             {navItems.map((item) => (
               item.isExternal ? (
                 <a
@@ -71,32 +71,8 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Right Side - "Official Portal" Section - Visible only on LG */}
-          <div className="hidden lg:flex items-center shrink-0">
-            <div className="flex items-center gap-4 pl-6 border-l border-slate-200 h-10">
-              <div className="flex items-center gap-2">
-                <span className="relative flex h-2.5 w-2.5">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
-                </span>
-                <span className="text-sm font-bold text-slate-800">Exam Prep</span>
-              </div>
-              
-              <div className="h-6 w-[1px] bg-slate-200 mx-1"></div>
-              
-              <div className="flex items-center gap-3">
-                <div className="bg-slate-100 p-1.5 rounded-full text-slate-700">
-                   <ShieldCheck className="h-5 w-5" />
-                </div>
-                <div className="h-9 w-9 bg-slate-100 rounded-full flex items-center justify-center overflow-hidden border border-slate-200 shadow-sm cursor-pointer hover:ring-2 hover:ring-primary/20 transition-all">
-                   <User className="h-5 w-5 text-slate-400" />
-                </div>
-              </div>
-            </div>
-          </div>
-
           {/* Mobile Menu Toggle */}
-          <div className="flex items-center md:hidden">
+          <div className="flex items-center md:hidden ml-auto">
              <Button 
               variant="ghost" 
               size="icon" 
