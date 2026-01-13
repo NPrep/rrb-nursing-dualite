@@ -3,10 +3,44 @@ import { GraduationCap, Zap, FileCheck, CheckCircle2, ArrowRight, Star, Clock, B
 import { Button } from '../components/ui/button';
 import { Badge } from '../components/ui/badge';
 import { NPREP_LINKS } from '../data/links';
+import SEO from '../components/SEO';
 
 export default function CoursesPage() {
+  // Product Schema for Courses
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "Product",
+        "name": "NPrep GOLD Batch",
+        "description": "Complete Preparation Course for RRB Nursing Superintendent Exam 2026.",
+        "brand": { "@type": "Brand", "name": "NPrep" },
+        "offers": { "@type": "Offer", "price": "4999", "priceCurrency": "INR", "availability": "https://schema.org/InStock" }
+      },
+      {
+        "@type": "Product",
+        "name": "RRB Rapid Revision",
+        "description": "30-Day Crash Course for Railway Staff Nurse Exam.",
+        "brand": { "@type": "Brand", "name": "NPrep" },
+        "offers": { "@type": "Offer", "price": "1999", "priceCurrency": "INR", "availability": "https://schema.org/InStock" }
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen bg-slate-50 pb-20">
+      <SEO 
+        title="Best RRB Nursing Coaching 2026 - Online Courses & Test Series | NPrep"
+        description="Join India's #1 Online Coaching for RRB Nursing Superintendent. Get GOLD Batch, Rapid Revision, and Test Series with expert faculty."
+        keywords={['RRB Nursing Coaching', 'Online Nursing Classes', 'RRB Staff Nurse Test Series', 'NPrep GOLD Batch']}
+        schema={courseSchema}
+        breadcrumbs={[
+          { name: 'Home', item: '/' },
+          { name: 'Courses', item: '/courses' }
+        ]}
+      />
+
       {/* Hero Section */}
       <section className="bg-slate-900 text-white py-20 px-4">
         <div className="container mx-auto max-w-6xl text-center space-y-6">
@@ -26,7 +60,7 @@ export default function CoursesPage() {
       <div className="container mx-auto max-w-7xl px-4 -mt-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           
-          {/* Gold Course - The Flagship */}
+          {/* GOLD Batch - The Flagship */}
           <div className="bg-white rounded-2xl overflow-hidden shadow-xl border border-slate-200 flex flex-col relative group hover:-translate-y-2 transition-transform duration-300">
             <div className="absolute top-4 right-4 z-10">
               <Badge className="bg-yellow-500 text-black font-bold">BEST SELLER</Badge>
@@ -36,7 +70,7 @@ export default function CoursesPage() {
               <div className="w-20 h-20 bg-yellow-500/20 rounded-full flex items-center justify-center mb-4 backdrop-blur-sm">
                 <GraduationCap className="h-10 w-10 text-yellow-400" />
               </div>
-              <h3 className="text-3xl font-bold text-white">Gold Course</h3>
+              <h3 className="text-3xl font-bold text-white">GOLD Batch</h3>
               <p className="text-yellow-200/80 font-medium tracking-wide mt-1">COMPLETE PREPARATION</p>
             </div>
             
@@ -62,7 +96,7 @@ export default function CoursesPage() {
               
               <a href={NPREP_LINKS.GOLD_COURSE} target="_blank" rel="noopener noreferrer">
                 <Button className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold h-12 text-lg shadow-lg shadow-yellow-500/20">
-                  Join Gold Course <ArrowRight className="ml-2 h-5 w-5" />
+                  Join GOLD Batch <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
             </div>

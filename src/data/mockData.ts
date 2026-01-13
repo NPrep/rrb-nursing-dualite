@@ -89,7 +89,7 @@ export const blogs = [
     date: "March 24, 2026",
     author: "NPrep Team",
     category: "Eligibility",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=2070",
+    image: "https://i.imgur.com/dK1c8JQ.jpeg",
     content: `
       <p class="lead text-xl text-slate-700 mb-8 leading-relaxed">The <strong>RRB Nursing Superintendent</strong> post is one of the most sought-after government jobs for nursing professionals in India. With the 2026 recruitment cycle around the corner, thousands of aspirants are asking the same question: <em>"Am I eligible?"</em>. In this comprehensive 10-minute guide, we break down every single aspect of the eligibility criteria—from age relaxations and educational qualifications to the strict medical standards required by Indian Railways.</p>
 
@@ -174,7 +174,7 @@ export const blogs = [
         <p class="text-slate-300 mb-6 text-lg">Don't let eligibility worries stop you. Start your preparation with the most trusted course in India. 50,000+ students trust NPrep.</p>
         <div class="flex flex-col sm:flex-row gap-4">
           <a href="${NPREP_LINKS.GOLD_COURSE}" target="_blank" class="flex-1 text-center bg-yellow-500 hover:bg-yellow-400 text-black px-6 py-3 rounded-lg font-bold text-lg transition-colors">
-            Join Gold Course
+            Join GOLD Batch
           </a>
           <a href="${NPREP_LINKS.DAILY_TEST}" target="_blank" class="flex-1 text-center bg-white/10 hover:bg-white/20 text-white border border-white/30 px-6 py-3 rounded-lg font-bold text-lg transition-colors">
             Attempt Free Daily Test
@@ -212,7 +212,7 @@ export const blogs = [
     date: "March 22, 2026",
     author: "NPrep Team",
     category: "Salary & Job Profile",
-    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=2070",
+    image: "https://i.imgur.com/9C8EsR0.jpeg",
     content: `
       <p class="lead text-xl text-slate-700 mb-8 leading-relaxed">One of the biggest motivations for cracking the <strong>RRB Nursing Superintendent</strong> exam is the attractive salary package and job security offered by Indian Railways. As a Level-7 Central Government employee, a Railway Nurse earns significantly more than their counterparts in state governments or private hospitals. In this detailed guide, we decode the <strong>7th Pay Commission Salary Structure</strong>, including the mysterious allowances that make this job a goldmine.</p>
 
@@ -273,7 +273,7 @@ export const blogs = [
       <div class="my-8 p-8 bg-slate-900 rounded-xl text-center shadow-2xl relative overflow-hidden">
         <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
         <h3 class="text-2xl font-bold text-white mb-4 relative z-10">Want this Salary Slip?</h3>
-        <p class="text-slate-300 mb-6 text-lg relative z-10">The competition is high, but so is the reward. Secure your future with the NPrep Gold Course.</p>
+        <p class="text-slate-300 mb-6 text-lg relative z-10">The competition is high, but so is the reward. Secure your future with the NPrep GOLD Batch.</p>
         <a href="${NPREP_LINKS.GOLD_COURSE}" target="_blank" class="inline-block bg-yellow-500 hover:bg-yellow-400 text-black px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105 shadow-lg relative z-10">
           Start Your Journey Today
         </a>
@@ -344,7 +344,7 @@ export const blogs = [
     date: "March 20, 2026",
     author: "NPrep Team",
     category: "Syllabus",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2070",
+    image: "https://i.imgur.com/hTtExvA.jpeg",
     content: `
       <p class="lead text-xl text-slate-700 mb-8 leading-relaxed">The <strong>RRB Nursing Superintendent exam</strong> is not just another nursing recruitment test—it is a senior supervisory-level exam that evaluates your clinical depth, leadership understanding, and decision-making ability. Unlike Staff Nurse or Nursing Officer exams, this role demands clarity in advanced nursing concepts, hospital administration exposure, and evidence-based practice.</p>
 
@@ -482,7 +482,7 @@ export const blogs = [
     date: "March 18, 2026",
     author: "NPrep Team",
     category: "Strategy",
-    image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=2070",
+    image: "https://i.imgur.com/e5EJPwR.jpeg",
     content: `
       <p class="lead text-xl text-slate-700 mb-8 leading-relaxed">The RRB Nursing Superintendent exam is a game of <strong>accuracy and consistency</strong>. Unlike other exams where you can cram in the last week, the vast syllabus of Nursing + General Awareness requires a structured approach. If you have 6 months before the exam, you are in the <strong>Gold Zone</strong>. This is the perfect amount of time to build concepts, practice questions, and refine your strategy.</p>
 
@@ -493,7 +493,7 @@ export const blogs = [
       <ul class="list-disc pl-6 space-y-3 mb-6 text-lg text-slate-700">
         <li><strong>Nursing:</strong> Start with high-weightage subjects: Anatomy, Physiology, and Medical-Surgical Nursing. Don't just read; make concise notes.</li>
         <li><strong>Math/Reasoning:</strong> Dedicate 1 hour daily to basics. Learn tables, squares, cubes, and BODMAS rules.</li>
-        <li><strong>Resource:</strong> Use standard textbooks or the NPrep Gold Course video lectures for conceptual clarity.</li>
+        <li><strong>Resource:</strong> Use standard textbooks or the NPrep GOLD Batch video lectures for conceptual clarity.</li>
       </ul>
 
       <div class="my-8 p-6 bg-yellow-50 border-l-4 border-yellow-500 rounded-r-lg shadow-sm">
@@ -588,7 +588,7 @@ export const blogs = [
     date: "March 15, 2026",
     author: "NPrep Team",
     category: "Resources",
-    image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=2073",
+    image: "https://i.imgur.com/eWG81hK.jpeg",
     content: `
       <p class="lead text-lg text-slate-700 mb-6">Choosing the right study material is 50% of the battle won. With thousands of books available in the market, aspirants often get confused. In this blog, we provide a curated list of the <strong>Best Books for RRB Nursing Superintendent 2026</strong> that cover the entire syllabus effectively.</p>
 
@@ -604,9 +604,9 @@ export const blogs = [
 
       <div class="my-8 p-6 bg-yellow-50 border border-yellow-200 rounded-lg text-center shadow-sm">
         <p class="font-bold text-yellow-800 text-lg mb-3">** Supplement Books with Video Lectures **</p>
-        <p class="text-sm text-yellow-700 mb-4">Books can be heavy. Learn complex topics easily with our Gold Course video lectures.</p>
+        <p class="text-sm text-yellow-700 mb-4">Books can be heavy. Learn complex topics easily with our GOLD Batch video lectures.</p>
         <a href="${NPREP_LINKS.GOLD_COURSE}" target="_blank" class="inline-flex items-center text-white bg-yellow-600 hover:bg-yellow-700 px-6 py-3 rounded-md font-bold transition-colors">
-          Explore Gold Course
+          Explore GOLD Batch
         </a>
       </div>
 
@@ -643,7 +643,7 @@ export const blogs = [
     date: "March 10, 2026",
     author: "NPrep Team",
     category: "Analysis",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2070",
+    image: "https://i.imgur.com/Swq03zX.jpeg",
     content: `
       <p class="lead text-lg text-slate-700 mb-6">"How many marks do I need to score to get selected?" This is the most common question in every aspirant's mind. Understanding the <strong>RRB Nursing Superintendent Cut-off</strong> trends is crucial for setting a realistic target. In this blog, we analyze the previous years' data (2015 & 2019) to predict the <strong>Safe Score for 2026</strong>.</p>
 

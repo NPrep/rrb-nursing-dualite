@@ -34,7 +34,7 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Preparation</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href={NPREP_LINKS.GOLD_COURSE} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors text-slate-300 font-medium flex items-center gap-1">Gold Course <ArrowRight className="h-3 w-3" /></a></li>
+              <li><a href={NPREP_LINKS.GOLD_COURSE} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors text-slate-300 font-medium flex items-center gap-1">GOLD Batch <ArrowRight className="h-3 w-3" /></a></li>
               <li><a href={NPREP_LINKS.RAPID_REVISION} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">Rapid Revision <ArrowRight className="h-3 w-3" /></a></li>
               <li><a href={NPREP_LINKS.TEST_SERIES} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">Nursing Test Series <ArrowRight className="h-3 w-3" /></a></li>
               <li><a href={NPREP_LINKS.PYQ} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">Previous Year Papers <ArrowRight className="h-3 w-3" /></a></li>

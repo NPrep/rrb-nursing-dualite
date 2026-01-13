@@ -207,7 +207,8 @@ export default function HomePage() {
                { 
                  title: "Exam Pattern", 
                  icon: FileText, 
-                 link: "/blogs/rrb-nursing-superintendent-exam-pattern-syllabus-2026-complete-subject-wise-guide", 
+                 // FIXED: Updated link to match the correct blog ID in mockData.ts
+                 link: "/blogs/rrb-nursing-superintendent-exam-pattern-syllabus-2026", 
                  desc: "Subject-wise Weightage" 
                },
                { 
