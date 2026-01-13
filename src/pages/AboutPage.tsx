@@ -1,10 +1,36 @@
 import React from 'react';
 import { Info, ShieldAlert, CheckCircle } from 'lucide-react';
 import { Card, CardContent } from '../components/ui/card';
+import SEO from '../components/SEO';
 
 export default function AboutPage() {
+  // Updated to use the local generated SVG
+  const LOGO_URL = "/rrb-train-logo.svg";
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "NPrep",
+    "url": "https://rrbnursing.com",
+    "logo": "https://rrbnursing.com/rrb-train-logo.svg", // Absolute path for Schema
+    "description": "Leading preparation portal for RRB Nursing Superintendent Exam.",
+    "sameAs": [
+      "https://facebook.com/nprep",
+      "https://twitter.com/nprep",
+      "https://instagram.com/nprep"
+    ]
+  };
+
   return (
     <div className="container mx-auto px-4 py-12">
+      <SEO 
+        title="About Us - RRB Nursing Prep"
+        description="Learn about NPrep's mission to help nurses crack the RRB Nursing Superintendent exam. We provide study material, mock tests, and expert guidance."
+        keywords={['About NPrep', 'RRB Nursing Coaching', 'Nursing Exam Guidance']}
+        canonical="/about"
+        schema={organizationSchema}
+      />
+
       <div className="max-w-4xl mx-auto space-y-12">
         {/* Header */}
         <div className="text-center space-y-4">

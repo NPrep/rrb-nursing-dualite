@@ -1,6 +1,7 @@
 import React from 'react';
 import { cn } from '../../lib/utils';
 import { Cross, TrendingUp, BookOpen, Users, AlertCircle, FileText, CheckCircle2 } from 'lucide-react';
+import { Logo } from './Logo';
 
 interface BlogCoverProps {
   title: string;
@@ -10,8 +11,6 @@ interface BlogCoverProps {
 }
 
 export function BlogCover({ title, category, image, className }: BlogCoverProps) {
-  const LOGO_URL = "https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Indian_Railways_logo.svg/300px-Indian_Railways_logo.svg.png";
-
   // If a specific image URL is provided, use it.
   if (image) {
     return (
@@ -53,7 +52,7 @@ export function BlogCover({ title, category, image, className }: BlogCoverProps)
       {/* Dot Pattern Overlay */}
       <div className="absolute inset-0 opacity-[0.15] bg-[radial-gradient(#ffffff_1.5px,transparent_1.5px)] [background-size:24px_24px]" />
 
-      {/* Decorative Lines (Top & Bottom) - Inspired by Image 1 */}
+      {/* Decorative Lines */}
       <div className="absolute top-8 left-0 w-full h-[1px] bg-white/20" />
       <div className="absolute top-[34px] left-0 w-1/3 h-[2px] bg-white/40" />
       <div className="absolute bottom-8 right-0 w-full h-[1px] bg-white/20" />
@@ -61,12 +60,12 @@ export function BlogCover({ title, category, image, className }: BlogCoverProps)
       {/* Main Content Container */}
       <div className="absolute inset-0 p-6 md:p-10 flex flex-col justify-center z-10">
         
-        {/* Big Brand Header - Mimicking "NORCET 8" */}
+        {/* Big Brand Header */}
         <h1 className="text-4xl md:text-6xl font-black text-white tracking-tighter drop-shadow-2xl mb-5 uppercase leading-none">
           RRB NURSING
         </h1>
 
-        {/* Highlight Box - Mimicking "Answer Key" Yellow Box */}
+        {/* Highlight Box */}
         <div className={cn(
           "inline-flex items-center gap-2 px-5 py-2 md:px-8 md:py-3 rounded-xl shadow-[4px_4px_0px_rgba(0,0,0,0.3)] transform -skew-x-6 self-start mb-5 border border-white/20",
           config.color
@@ -83,19 +82,16 @@ export function BlogCover({ title, category, image, className }: BlogCoverProps)
         </h2>
       </div>
 
-      {/* Right Side Graphic (Emblem) - Mimicking the Logo on Right */}
+      {/* Right Side Graphic (Emblem) */}
       <div className="absolute -right-12 top-1/2 -translate-y-1/2 opacity-90 hidden md:block scale-90 lg:scale-100">
          <div className="w-56 h-56 rounded-full border-[8px] border-white/10 flex items-center justify-center bg-white/5 backdrop-blur-sm shadow-2xl relative">
             <div className="absolute inset-0 rounded-full border-2 border-white/20 border-dashed animate-spin-slow" style={{ animationDuration: '20s' }}></div>
-            <img 
-              src={LOGO_URL} 
-              alt="Indian Railways Logo" 
-              className="w-28 h-28 object-contain drop-shadow-2xl"
-            />
+            {/* Replaced img with Logo Component */}
+            <Logo className="w-28 h-28 drop-shadow-2xl" />
          </div>
       </div>
 
-      {/* NPrep Logo Bottom Right - Mimicking "NPrep" branding */}
+      {/* NPrep Logo Bottom Right */}
       <div className="absolute bottom-4 right-6 flex items-center gap-2 z-20">
          <div className="bg-white p-1.5 rounded-md shadow-lg">
             <Cross className="w-4 h-4 text-[#0F172A]" />

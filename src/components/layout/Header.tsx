@@ -3,11 +3,11 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Home, BookOpen, FileText, Bell, Info, Layers, ExternalLink } from 'lucide-react';
 import { Button } from '../ui/button';
 import { cn } from '../../lib/utils';
+import { Logo } from '../ui/Logo';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
-  const LOGO_URL = "https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Indian_Railways_logo.svg/300px-Indian_Railways_logo.svg.png";
 
   const navItems = [
     { name: 'Home', path: '/', isExternal: false, icon: Home },
@@ -22,13 +22,9 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex h-20 items-center justify-between">
-          {/* Logo Section - Indian Railways Logo */}
+          {/* Logo Section */}
           <Link to="/" className="flex items-center space-x-3 group shrink-0">
-            <img 
-              src={LOGO_URL} 
-              alt="Indian Railways Logo" 
-              className="h-12 w-12 object-contain drop-shadow-sm group-hover:scale-105 transition-transform duration-300"
-            />
+            <Logo className="h-12 w-12 drop-shadow-sm group-hover:scale-105 transition-transform duration-300" />
             <div className="flex flex-col">
               <span className="text-xl font-bold tracking-tight text-slate-900 leading-none">
                 RRB <span className="text-primary">Nursing</span>

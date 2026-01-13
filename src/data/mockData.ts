@@ -83,299 +83,502 @@ export const faqs = [
 
 export const blogs = [
   {
-    id: "rrb-nursing-superintendent-recruitment-2026-vacancies-eligibility",
-    title: "RRB Nursing Superintendent Recruitment 2026: New vacancies, Eligibility & Exam Details",
-    excerpt: "Get the latest updates on RRB Nursing Superintendent (Staff Nurse) Recruitment 2026. Learn about expected vacancies and how to prepare for railway nursing jobs.",
+    id: "rrb-nursing-superintendent-eligibility-criteria-2026",
+    title: "RRB Nursing Superintendent Eligibility Criteria 2026: Age, Qualification & Medical Standard",
+    excerpt: "Confused about RRB Nursing eligibility? Read this detailed guide on Age Limit, Educational Qualification (GNM vs BSc), Experience requirements, and Medical Standards for 2026.",
     date: "March 24, 2026",
     author: "NPrep Team",
-    category: "Recruitment News",
+    category: "Eligibility",
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=2070",
     content: `
-      <p class="lead text-lg text-slate-700 mb-6">The Indian Railways is gearing up for one of its most anticipated recruitment drives in the healthcare sector. The <strong>RRB Nursing Superintendent Recruitment 2026</strong> is expected to be a massive opportunity for nursing professionals across India. With reports suggesting over <strong>246 new vacancies</strong> across various Railway Recruitment Boards (RRBs), this is the perfect time for aspirants to gear up for a stable and prestigious <strong>staff nurse govt job in railway central railway</strong> and other zones.</p>
+      <p class="lead text-xl text-slate-700 mb-8 leading-relaxed">The <strong>RRB Nursing Superintendent</strong> post is one of the most sought-after government jobs for nursing professionals in India. With the 2026 recruitment cycle around the corner, thousands of aspirants are asking the same question: <em>"Am I eligible?"</em>. In this comprehensive 10-minute guide, we break down every single aspect of the eligibility criteria—from age relaxations and educational qualifications to the strict medical standards required by Indian Railways.</p>
 
-      <p class="text-slate-700 mb-6">In this comprehensive guide, we will break down everything you need to know about the <strong>railway nurse vacancy 2026</strong>, including the application process, zone-wise vacancy distribution, eligibility criteria, and the selection process. Whether you are a fresh graduate or an experienced nurse, understanding the nuances of the <strong>rrb staff nurse recruitment 2026</strong> is crucial for your success.</p>
-
-      <div class="my-8 p-6 bg-yellow-50 border border-yellow-200 rounded-lg text-center shadow-sm">
-        <p class="font-bold text-yellow-800 text-lg mb-3">** Don't Wait for the Notification! **</p>
-        <p class="text-sm text-yellow-700 mb-4">Competition will be fierce. Start your structured preparation today with India's Best Nursing Course.</p>
-        <a href="${NPREP_LINKS.GOLD_COURSE}" target="_blank" class="inline-flex items-center text-white bg-yellow-600 hover:bg-yellow-700 px-6 py-3 rounded-md font-bold transition-colors">
-          Join NPrep Gold Course Now
-        </a>
+      <div class="my-8 p-6 bg-blue-50 border-l-4 border-blue-600 rounded-r-lg shadow-sm">
+        <h4 class="font-bold text-blue-900 text-lg mb-2">🚀 Quick Summary for Busy Nurses</h4>
+        <ul class="list-disc pl-5 space-y-1 text-blue-800">
+          <li><strong>Post Name:</strong> Nursing Superintendent (Level-7)</li>
+          <li><strong>Age Limit:</strong> 20 to 40 Years (General)</li>
+          <li><strong>Qualification:</strong> GNM (3 Years) OR B.Sc. Nursing</li>
+          <li><strong>Experience:</strong> NOT required for freshers (Direct Recruitment)</li>
+        </ul>
       </div>
 
-      <h2 class="text-2xl font-bold text-slate-900 mb-4">RRB Nursing Superintendent New Vacancy 2026: Overview</h2>
-      <p class="mb-4 text-slate-700">The <strong>RRB Nursing Superintendent New Vacancy</strong> is part of the larger Paramedical Categories recruitment (CEN 04/2026). The role of a Nursing Superintendent (formerly Staff Nurse) in Indian Railways is a Level-7 post, offering a lucrative salary and excellent perks. The <strong>rrb nurse recruitment</strong> process is transparent and merit-based, conducted via a Computer Based Test (CBT).</p>
-
-      <p class="mb-4 text-slate-700">Aspirants often search for <strong>nursing jobs in rrb</strong> because of the job security and the opportunity to serve in the vast railway hospital network. The <strong>railway recruitment for staff nurse</strong> is highly sought after, and the 2026 cycle is expected to see a record number of applicants.</p>
-
-      <h3 class="text-xl font-semibold text-slate-800 mb-3">Expected Vacancy Breakdown</h3>
-      <p class="mb-4 text-slate-700">While the official notification is awaited, internal circulars suggest a significant number of seats for the <strong>rrb staff nurse</strong> post. Major zones like Northern Railway, Western Railway, and Southern Railway are expected to have the highest share of the <strong>railway nurse vacancy 2026</strong>.</p>
-      <ul class="list-disc pl-5 space-y-2 mb-6 text-slate-700 marker:text-primary">
-          <li><strong>RRB Mumbai:</strong> Expected 45+ Seats</li>
-          <li><strong>RRB Chennai:</strong> Expected 30+ Seats</li>
-          <li><strong>RRB Kolkata:</strong> Expected 25+ Seats</li>
-          <li><strong>RRB Chandigarh:</strong> Expected 20+ Seats</li>
-      </ul>
-
-      <h2 class="text-2xl font-bold text-slate-900 mb-4">Eligibility Criteria for RRB Exam for Nurses</h2>
-      <p class="mb-4 text-slate-700">To apply for the <strong>rrb exam for nurses</strong>, candidates must meet specific age and educational requirements. The <strong>railway recruitment for nurses</strong> is strict about these criteria, so ensure you have all documents in place.</p>
+      <h2 class="text-3xl font-bold text-slate-900 mb-6 mt-12">1. Educational Qualification: GNM vs B.Sc. Nursing</h2>
+      <p class="mb-4 text-slate-700 text-lg leading-relaxed">The Railway Recruitment Board (RRB) is quite flexible regarding educational qualifications, allowing both diploma holders and graduates to apply. However, there are specific conditions you must meet.</p>
       
-      <h4 class="font-bold text-slate-900 mt-4">Educational Qualification</h4>
-      <p class="text-slate-700 mb-2">Candidates must possess:</p>
-      <ul class="list-disc pl-5 space-y-2 mb-4 text-slate-700">
-        <li>Certificate as Registered Nurse and Midwife having passed 3 years course in General Nursing and Midwifery (GNM) from a school of Nursing or other institution recognized by the Indian Nursing Council.</li>
-        <li><strong>OR</strong> B.Sc. (Nursing).</li>
-      </ul>
-      <p class="text-slate-700 mb-4">Note: Experience is generally not required for the direct recruitment of Staff Nurse/Nursing Superintendent, making it a great opportunity for freshers looking for <strong>rrb recruitment for staff nurse</strong>.</p>
+      <h3 class="text-2xl font-semibold text-slate-800 mb-4">A. For GNM Candidates</h3>
+      <p class="mb-4 text-slate-700 text-lg">Candidates who have completed a <strong>3-year Diploma in General Nursing and Midwifery (GNM)</strong> from a school of nursing or other institution recognized by the Indian Nursing Council are eligible. 
+      <br/><br/>
+      <strong>Crucial Note on Experience:</strong> Unlike AIIMS NORCET, which mandates 2 years of experience for GNM candidates, RRB historically <strong>does not require experience</strong> for the Nursing Superintendent post in direct recruitment drives. This makes RRB the best opportunity for fresh GNM pass-outs.</p>
 
-      <h2 class="text-2xl font-bold text-slate-900 mb-4">Selection Process & Exam Pattern</h2>
-      <p class="mb-4 text-slate-700">The <strong>rrb staff nurse exam</strong> is a single-stage Computer Based Test (CBT) followed by Document Verification. There is no interview.</p>
-      
-      <div class="my-8 p-6 bg-blue-50 border border-blue-200 rounded-lg text-center shadow-sm">
-        <p class="font-bold text-blue-800 text-lg mb-3">** Crack the CBT with Real Practice **</p>
-        <p class="text-sm text-blue-700 mb-4">Solve previous year papers to understand the difficulty level of the RRB Staff Nurse Exam.</p>
-        <a href="${NPREP_LINKS.PYQ}" target="_blank" class="inline-flex items-center text-white bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-md font-bold transition-colors">
-          Download RRB PYQs PDF
+      <h3 class="text-2xl font-semibold text-slate-800 mb-4">B. For B.Sc. Nursing Candidates</h3>
+      <p class="mb-4 text-slate-700 text-lg">Candidates with a <strong>B.Sc. Nursing</strong> (Basic or Post Basic) from a recognized university are eligible. B.Sc. candidates often have a slight edge in the promotion hierarchy later in their careers, but for the initial selection, they are treated on par with GNM holders.</p>
+
+      <div class="my-8 p-8 bg-yellow-50 border border-yellow-200 rounded-xl text-center shadow-md">
+        <p class="font-bold text-yellow-900 text-2xl mb-4">⚠️ Registration is Mandatory!</p>
+        <p class="text-lg text-yellow-800 mb-6">You MUST be registered as a Nurse & Midwife with the Indian Nursing Council or State Nursing Council on the date of application. Provisional certificates might be accepted, but final registration is safer.</p>
+        <a href="${NPREP_LINKS.FREE_RESOURCES}" target="_blank" class="inline-flex items-center text-white bg-yellow-600 hover:bg-yellow-700 px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:-translate-y-1 shadow-lg">
+          Check Eligibility Documents List (Free PDF)
         </a>
       </div>
 
-      <p class="text-slate-700 mb-4">The exam consists of 100 questions covering Professional Ability (Nursing), General Awareness, Arithmetic, General Intelligence, and Science. To secure a <strong>staff nurse govt job in railway central railway</strong>, you need to score high in the Professional Ability section, which carries 70% weightage.</p>
+      <h2 class="text-3xl font-bold text-slate-900 mb-6 mt-12">2. Age Limit & Relaxations (As of 2026)</h2>
+      <p class="mb-4 text-slate-700 text-lg">The standard age limit for RRB Nursing Superintendent is <strong>20 to 40 years</strong>. However, Indian Railways provides generous age relaxations for various categories.</p>
 
-      <h2 class="text-2xl font-bold text-slate-900 mb-4">How to Apply for RRB Nursing Superintendent New Recruitment?</h2>
-      <ol class="list-decimal pl-5 space-y-2 mb-6 text-slate-700 marker:text-primary font-medium">
-        <li>Visit the official website of your respective RRB zone.</li>
-        <li>Look for the link "CEN 04/2026 Online Application".</li>
-        <li>Register using your mobile number and email ID.</li>
-        <li>Fill in the detailed application form for <strong>rrb nurse recruitment</strong>.</li>
-        <li>Upload scanned photograph and signature.</li>
-        <li>Pay the application fee (₹500 for General/OBC, ₹250 for SC/ST/Ex-SM/Female).</li>
-      </ol>
-
-      <p class="text-slate-700">Stay tuned to our portal for the latest updates on <strong>railway recruitment for staff nurse</strong>. We will update the direct application links as soon as they are active.</p>
-    `
-  },
-  {
-    id: "rrb-nursing-superintendent-2026-eligibility-syllabus-exam-pattern",
-    title: "RRB Nursing Superintendent 2026: Eligibility, Syllabus, Exam Pattern & More",
-    excerpt: "Prepare for RRB Nursing Superintendent 2026 with NPrep. Get details on eligibility, age limit, syllabus, exam pattern, salary, vacancies & how to prepare effectively.",
-    date: "March 22, 2026",
-    author: "NPrep Team",
-    category: "Exam Guide",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2070",
-    content: `
-      <p class="lead text-lg text-slate-700 mb-6">The <strong>RRB Nursing Superintendent</strong> exam is one of the most prestigious examinations for nursing graduates in India. With the 2026 cycle approaching, aspirants must have a crystal-clear understanding of the <strong>RRB Staff Nurse Exam</strong> pattern, syllabus, and eligibility criteria. This blog serves as your ultimate guide to cracking the <strong>RRB Exam for Nurses</strong>.</p>
-
-      <p class="text-slate-700 mb-6">Whether you are searching for "<strong>RRB for Nurses</strong>" or "<strong>Railway Staff Nurse</strong>" details, you are in the right place. We cover everything from the age limit to the minute details of the syllabus that often get overlooked.</p>
-
-      <h2 class="text-2xl font-bold text-slate-900 mb-4">RRB Nursing Superintendent Eligibility 2026</h2>
-      <p class="mb-4 text-slate-700">Before starting your preparation for the <strong>Railway Exam for Nurses</strong>, ensure you meet the eligibility standards set by the Railway Recruitment Board.</p>
-
-      <h3 class="text-xl font-semibold text-slate-800 mb-2">1. Educational Qualification</h3>
-      <p class="mb-4 text-slate-700">Candidates must hold a <strong>B.Sc. Nursing</strong> degree or a <strong>General Nursing and Midwifery (GNM)</strong> diploma from a recognized institute. Registration with the Indian Nursing Council or State Nursing Council is mandatory at the time of document verification.</p>
-
-      <h3 class="text-xl font-semibold text-slate-800 mb-2">2. Age Limit</h3>
-      <p class="mb-4 text-slate-700">For the <strong>RRB Staff Nurse</strong> post, the age limit is generally <strong>20 to 40 years</strong>. However, age relaxations apply:</p>
-      <ul class="list-disc pl-5 space-y-2 mb-6 text-slate-700">
-        <li><strong>OBC (Non-Creamy Layer):</strong> 3 Years Relaxation</li>
-        <li><strong>SC/ST:</strong> 5 Years Relaxation</li>
-        <li><strong>Ex-Servicemen:</strong> As per govt rules</li>
-      </ul>
-
-      <div class="my-8 p-6 bg-purple-50 border border-purple-200 rounded-lg text-center shadow-sm">
-        <p class="font-bold text-purple-800 text-lg mb-3">** Test Your Eligibility Knowledge **</p>
-        <p class="text-sm text-purple-700 mb-4">Are you ready for the exam? Take a free mock test to check your standing.</p>
-        <a href="${NPREP_LINKS.TEST_SERIES}" target="_blank" class="inline-flex items-center text-white bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-md font-bold transition-colors">
-          Attempt RRB Test Series
-        </a>
-      </div>
-
-      <h2 class="text-2xl font-bold text-slate-900 mb-4">Detailed RRB Exam Nursing Syllabus</h2>
-      <p class="mb-4 text-slate-700">The <strong>RRB Exam Nursing</strong> syllabus is vast. It is divided into three main sections. A strategic approach to these sections determines your selection as a <strong>Railway Nurse</strong>.</p>
-
-      <h3 class="text-xl font-semibold text-slate-800 mb-2">Section A: Professional Ability (70 Marks)</h3>
-      <p class="mb-4 text-slate-700">This is the core of the <strong>RRB Staff Nurse Exam</strong>. Topics include:</p>
-      <ul class="list-disc pl-5 space-y-1 mb-4 text-slate-700">
-        <li>Anatomy & Physiology</li>
-        <li>Nutrition & Biochemistry</li>
-        <li>Nursing Foundations (Fundamentals)</li>
-        <li>Psychology & Sociology</li>
-        <li>Microbiology & Pathology</li>
-        <li>Medical-Surgical Nursing (Adult Health Nursing)</li>
-        <li>Child Health Nursing (Pediatrics)</li>
-        <li>Midwifery & Obstetrical Nursing</li>
-        <li>Mental Health Nursing (Psychiatry)</li>
-        <li>Community Health Nursing</li>
-        <li>Nursing Research & Statistics</li>
-        <li>Management of Nursing Services and Education</li>
-      </ul>
-
-      <h3 class="text-xl font-semibold text-slate-800 mb-2">Section B: General Awareness & Arithmetic (20 Marks)</h3>
-      <p class="mb-4 text-slate-700">Don't ignore this section! It covers Current Affairs, Indian Geography, History, Polity, Economy, and basic Arithmetic (Number systems, Percentages, Ratio & Proportion, Interest, Profit & Loss).</p>
-
-      <h3 class="text-xl font-semibold text-slate-800 mb-2">Section C: General Science (10 Marks)</h3>
-      <p class="mb-4 text-slate-700">Physics, Chemistry, and Life Sciences up to 10th Standard CBSE syllabus.</p>
-
-      <h2 class="text-2xl font-bold text-slate-900 mb-4">RRB Nursing Exam Pattern 2026</h2>
-      <div class="overflow-x-auto mb-6">
-        <table class="w-full text-sm text-left border border-slate-200">
-          <thead class="bg-slate-100 text-slate-700 uppercase">
+      <div class="overflow-x-auto mb-8">
+        <table class="w-full text-left border-collapse shadow-lg rounded-lg overflow-hidden">
+          <thead class="bg-slate-900 text-white">
             <tr>
-              <th class="px-4 py-2 border">Subject</th>
-              <th class="px-4 py-2 border">Questions</th>
-              <th class="px-4 py-2 border">Marks</th>
-              <th class="px-4 py-2 border">Duration</th>
+              <th class="px-6 py-4 text-lg font-semibold">Category</th>
+              <th class="px-6 py-4 text-lg font-semibold">Age Relaxation</th>
+              <th class="px-6 py-4 text-lg font-semibold">Max Age Limit</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td class="px-4 py-2 border">Professional Ability</td>
-              <td class="px-4 py-2 border">70</td>
-              <td class="px-4 py-2 border">70</td>
-              <td class="px-4 py-2 border row-span-4 align-middle bg-slate-50">90 Minutes</td>
+          <tbody class="bg-white divide-y divide-slate-200">
+            <tr class="hover:bg-slate-50">
+              <td class="px-6 py-4 font-medium text-slate-900">General / EWS</td>
+              <td class="px-6 py-4">Nil</td>
+              <td class="px-6 py-4">40 Years</td>
             </tr>
-            <tr>
-              <td class="px-4 py-2 border">General Awareness & Arithmetic</td>
-              <td class="px-4 py-2 border">20</td>
-              <td class="px-4 py-2 border">20</td>
+            <tr class="hover:bg-slate-50">
+              <td class="px-6 py-4 font-medium text-slate-900">OBC (Non-Creamy Layer)</td>
+              <td class="px-6 py-4">3 Years</td>
+              <td class="px-6 py-4">43 Years</td>
             </tr>
-            <tr>
-              <td class="px-4 py-2 border">General Science</td>
-              <td class="px-4 py-2 border">10</td>
-              <td class="px-4 py-2 border">10</td>
+            <tr class="hover:bg-slate-50">
+              <td class="px-6 py-4 font-medium text-slate-900">SC / ST</td>
+              <td class="px-6 py-4">5 Years</td>
+              <td class="px-6 py-4">45 Years</td>
             </tr>
-            <tr class="font-bold bg-slate-50">
-              <td class="px-4 py-2 border">Total</td>
-              <td class="px-4 py-2 border">100</td>
-              <td class="px-4 py-2 border">100</td>
+            <tr class="hover:bg-slate-50">
+              <td class="px-6 py-4 font-medium text-slate-900">Ex-Servicemen (UR)</td>
+              <td class="px-6 py-4">3 Years after deduction of service</td>
+              <td class="px-6 py-4">Varies</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <p class="text-slate-700 mb-4"><strong>Negative Marking:</strong> There will be a deduction of 1/3rd mark for every wrong answer. Accuracy is key in the <strong>RRB Exam for Nurses</strong>.</p>
 
-      <div class="my-8 p-6 bg-red-50 border border-red-200 rounded-lg text-center shadow-sm">
-        <p class="font-bold text-red-800 text-lg mb-3">** Need a Quick Revision? **</p>
-        <p class="text-sm text-red-700 mb-4">Cover the entire syllabus in record time with our Rapid Revision Course.</p>
-        <a href="${NPREP_LINKS.RAPID_REVISION}" target="_blank" class="inline-flex items-center text-white bg-red-600 hover:bg-red-700 px-6 py-3 rounded-md font-bold transition-colors">
+      <h2 class="text-3xl font-bold text-slate-900 mb-6 mt-12">3. Medical Standards (C1 Category)</h2>
+      <p class="mb-4 text-slate-700 text-lg">Railway medical tests are strict. For Nursing Superintendent, you must clear the <strong>C1 Medical Standard</strong>. This is less stringent than the A1 category (for pilots) but still important.</p>
+      
+      <ul class="list-disc pl-6 space-y-3 mb-6 text-lg text-slate-700">
+        <li><strong>Visual Acuity:</strong> Distant vision 6/12, 6/18 with or without glasses.</li>
+        <li><strong>Near Vision:</strong> Sn. 0.6 with or without glasses.</li>
+        <li><strong>General Health:</strong> Must be physically fit in all respects. Tests include Chest X-ray, Urine analysis, and general physical checkup.</li>
+        <li><strong>Color Blindness:</strong> Generally, C1 category allows candidates with color blindness, but specific zone rules must be checked in the official notification.</li>
+      </ul>
+
+      <div class="my-12 p-8 bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl text-white shadow-xl">
+        <h3 class="text-2xl font-bold mb-4">Are you preparing for the 2026 Exam?</h3>
+        <p class="text-slate-300 mb-6 text-lg">Don't let eligibility worries stop you. Start your preparation with the most trusted course in India. 50,000+ students trust NPrep.</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="${NPREP_LINKS.GOLD_COURSE}" target="_blank" class="flex-1 text-center bg-yellow-500 hover:bg-yellow-400 text-black px-6 py-3 rounded-lg font-bold text-lg transition-colors">
+            Join Gold Course
+          </a>
+          <a href="${NPREP_LINKS.DAILY_TEST}" target="_blank" class="flex-1 text-center bg-white/10 hover:bg-white/20 text-white border border-white/30 px-6 py-3 rounded-lg font-bold text-lg transition-colors">
+            Attempt Free Daily Test
+          </a>
+        </div>
+      </div>
+
+      <hr class="my-12 border-slate-200" />
+
+      <h2 class="text-3xl font-bold text-slate-900 mb-8">Frequently Asked Questions (FAQs)</h2>
+      <div class="space-y-6">
+        <div class="bg-slate-50 p-6 rounded-lg">
+          <h4 class="font-bold text-lg text-slate-900 mb-2">Q1. Can final year nursing students apply?</h4>
+          <p class="text-slate-700">No. You must have your final degree/diploma and registration certificate in hand on the closing date of the online application.</p>
+        </div>
+        <div class="bg-slate-50 p-6 rounded-lg">
+          <h4 class="font-bold text-lg text-slate-900 mb-2">Q2. Is experience required for GNM candidates?</h4>
+          <p class="text-slate-700">For direct recruitment of Nursing Superintendent (Level-7), experience is usually NOT required. This is a major advantage over AIIMS exams.</p>
+        </div>
+        <div class="bg-slate-50 p-6 rounded-lg">
+          <h4 class="font-bold text-lg text-slate-900 mb-2">Q3. Can candidates with LASIK surgery apply?</h4>
+          <p class="text-slate-700">Yes, for the C1 medical category, LASIK is generally permitted as long as your corrected vision meets the 6/12, 6/18 standard.</p>
+        </div>
+        <div class="bg-slate-50 p-6 rounded-lg">
+          <h4 class="font-bold text-lg text-slate-900 mb-2">Q4. What is the upper age limit for SC candidates?</h4>
+          <p class="text-slate-700">The base limit is 40 years. With a 5-year relaxation, SC candidates can apply up to 45 years of age.</p>
+        </div>
+      </div>
+    `
+  },
+  {
+    id: "rrb-nursing-superintendent-salary-job-profile-2026",
+    title: "RRB Nursing Superintendent Salary 2026: In-Hand Pay, Perks & Career Growth",
+    excerpt: "Discover the lucrative salary structure of a Railway Nursing Superintendent (Level-7). Detailed breakdown of Basic Pay, DA, HRA, Allowances, and promotion hierarchy.",
+    date: "March 22, 2026",
+    author: "NPrep Team",
+    category: "Salary & Job Profile",
+    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=2070",
+    content: `
+      <p class="lead text-xl text-slate-700 mb-8 leading-relaxed">One of the biggest motivations for cracking the <strong>RRB Nursing Superintendent</strong> exam is the attractive salary package and job security offered by Indian Railways. As a Level-7 Central Government employee, a Railway Nurse earns significantly more than their counterparts in state governments or private hospitals. In this detailed guide, we decode the <strong>7th Pay Commission Salary Structure</strong>, including the mysterious allowances that make this job a goldmine.</p>
+
+      <h2 class="text-3xl font-bold text-slate-900 mb-6 mt-12">1. The Salary Structure (Level-7 Pay Matrix)</h2>
+      <p class="mb-4 text-slate-700 text-lg">The post of Nursing Superintendent falls under <strong>Level-7</strong> of the 7th CPC Pay Matrix. This is the same pay level as a Senior Section Engineer or a Chief Loco Inspector.</p>
+
+      <div class="overflow-x-auto mb-8">
+        <table class="w-full text-left border-collapse shadow-lg rounded-lg overflow-hidden">
+          <thead class="bg-green-700 text-white">
+            <tr>
+              <th class="px-6 py-4 text-lg font-semibold">Component</th>
+              <th class="px-6 py-4 text-lg font-semibold">Amount (Approx)</th>
+              <th class="px-6 py-4 text-lg font-semibold">Remarks</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white divide-y divide-slate-200">
+            <tr class="hover:bg-green-50">
+              <td class="px-6 py-4 font-medium text-slate-900">Basic Pay</td>
+              <td class="px-6 py-4 font-bold text-green-700">₹ 44,900</td>
+              <td class="px-6 py-4">Starting basic pay (Cell 1)</td>
+            </tr>
+            <tr class="hover:bg-green-50">
+              <td class="px-6 py-4 font-medium text-slate-900">Dearness Allowance (DA)</td>
+              <td class="px-6 py-4 font-bold text-green-700">₹ 22,450+</td>
+              <td class="px-6 py-4">Currently 50% of Basic (Variable)</td>
+            </tr>
+            <tr class="hover:bg-green-50">
+              <td class="px-6 py-4 font-medium text-slate-900">House Rent Allowance (HRA)</td>
+              <td class="px-6 py-4 font-bold text-green-700">₹ 4,000 - ₹ 12,100</td>
+              <td class="px-6 py-4">Depends on City (X, Y, Z Class)</td>
+            </tr>
+            <tr class="hover:bg-green-50">
+              <td class="px-6 py-4 font-medium text-slate-900">Transport Allowance</td>
+              <td class="px-6 py-4 font-bold text-green-700">₹ 4,000+</td>
+              <td class="px-6 py-4">Fixed + DA on TA</td>
+            </tr>
+            <tr class="hover:bg-green-50">
+              <td class="px-6 py-4 font-medium text-slate-900">Nursing Allowance</td>
+              <td class="px-6 py-4 font-bold text-green-700">₹ 7,200</td>
+              <td class="px-6 py-4">Special allowance for nurses</td>
+            </tr>
+            <tr class="hover:bg-green-50">
+              <td class="px-6 py-4 font-medium text-slate-900">Dress Allowance</td>
+              <td class="px-6 py-4 font-bold text-green-700">₹ 1,800</td>
+              <td class="px-6 py-4">Paid monthly (or annually ₹21,600)</td>
+            </tr>
+            <tr class="bg-green-100 font-bold text-lg">
+              <td class="px-6 py-4">Gross Salary</td>
+              <td class="px-6 py-4 text-green-900">₹ 80,000 - ₹ 90,000</td>
+              <td class="px-6 py-4">Per Month (Approx)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-slate-600 italic mb-8">*Note: Deductions like NPS (10%), Income Tax, and Professional Tax will apply. The <strong>In-Hand Salary</strong> usually ranges between <strong>₹70,000 to ₹78,000</strong> depending on the city.*</p>
+
+      <div class="my-8 p-8 bg-slate-900 rounded-xl text-center shadow-2xl relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <h3 class="text-2xl font-bold text-white mb-4 relative z-10">Want this Salary Slip?</h3>
+        <p class="text-slate-300 mb-6 text-lg relative z-10">The competition is high, but so is the reward. Secure your future with the NPrep Gold Course.</p>
+        <a href="${NPREP_LINKS.GOLD_COURSE}" target="_blank" class="inline-block bg-yellow-500 hover:bg-yellow-400 text-black px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105 shadow-lg relative z-10">
+          Start Your Journey Today
+        </a>
+      </div>
+
+      <h2 class="text-3xl font-bold text-slate-900 mb-6 mt-12">2. Exclusive Perks for Railway Nurses</h2>
+      <p class="mb-4 text-slate-700 text-lg">Apart from the salary, Indian Railways offers perks that no other organization can match:</p>
+      <ul class="list-disc pl-6 space-y-4 mb-8 text-lg text-slate-700">
+        <li><strong>Railway Pass:</strong> Free travel for you and your family in AC coaches anywhere in India (3 sets per year + 4 PTOs).</li>
+        <li><strong>Medical Facilities:</strong> Unlimited free medical care for self and dependents in Railway Hospitals.</li>
+        <li><strong>Railway Quarters:</strong> Secure housing in railway colonies.</li>
+        <li><strong>Job Security:</strong> It is a permanent central government job with pension benefits (NPS).</li>
+      </ul>
+
+      <h2 class="text-3xl font-bold text-slate-900 mb-6 mt-12">3. Career Growth & Promotion</h2>
+      <p class="mb-4 text-slate-700 text-lg">You don't just retire as a Nursing Superintendent. The career ladder is promising:</p>
+      <div class="space-y-4">
+        <div class="flex items-center p-4 bg-slate-50 rounded-lg border border-slate-200">
+          <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl mr-4">1</div>
+          <div>
+            <h4 class="font-bold text-slate-900">Nursing Superintendent</h4>
+            <p class="text-slate-600">Entry Level (Level-7)</p>
+          </div>
+        </div>
+        <div class="flex items-center p-4 bg-slate-50 rounded-lg border border-slate-200">
+          <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl mr-4">2</div>
+          <div>
+            <h4 class="font-bold text-slate-900">Chief Nursing Superintendent (CNS)</h4>
+            <p class="text-slate-600">First Promotion (Level-8). Usually after 5-8 years.</p>
+          </div>
+        </div>
+        <div class="flex items-center p-4 bg-slate-50 rounded-lg border border-slate-200">
+          <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl mr-4">3</div>
+          <div>
+            <h4 class="font-bold text-slate-900">Assistant Nursing Officer (ANO)</h4>
+            <p class="text-slate-600">Gazetted Rank (Level-10). Administrative role.</p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12 border-slate-200" />
+
+      <h2 class="text-3xl font-bold text-slate-900 mb-8">Frequently Asked Questions (FAQs)</h2>
+      <div class="space-y-6">
+        <div class="bg-slate-50 p-6 rounded-lg">
+          <h4 class="font-bold text-lg text-slate-900 mb-2">Q1. What is the in-hand salary of a Railway Nurse?</h4>
+          <p class="text-slate-700">After all deductions, a newly joined Nursing Superintendent gets approximately ₹72,000 to ₹75,000 in hand in a Class X city.</p>
+        </div>
+        <div class="bg-slate-50 p-6 rounded-lg">
+          <h4 class="font-bold text-lg text-slate-900 mb-2">Q2. Is Nursing Superintendent a Gazetted post?</h4>
+          <p class="text-slate-700">No, Nursing Superintendent (Level-7) is a Group 'C' Non-Gazetted post. However, the promotion to Assistant Nursing Officer (ANO) is a Group 'B' Gazetted post.</p>
+        </div>
+        <div class="bg-slate-50 p-6 rounded-lg">
+          <h4 class="font-bold text-lg text-slate-900 mb-2">Q3. Is there a bond period?</h4>
+          <p class="text-slate-700">Generally, there is no service bond for direct recruitment candidates, but you must check the specific notification for your zone.</p>
+        </div>
+        <div class="bg-slate-50 p-6 rounded-lg">
+          <h4 class="font-bold text-lg text-slate-900 mb-2">Q4. Do we get overtime pay?</h4>
+          <p class="text-slate-700">Yes, nursing staff are entitled to National Holiday Allowance (NHA) and Patient Care Allowance (PCA) if applicable, but standard overtime is less common compared to running staff.</p>
+        </div>
+      </div>
+    `
+  },
+  {
+    id: "rrb-nursing-superintendent-exam-pattern-syllabus-2026",
+    title: "RRB Nursing Superintendent Exam Pattern & Syllabus 2026: Complete Subject-Wise Guide",
+    excerpt: "Don't study blindly. Master the RRB Nursing Syllabus 2026 with our detailed breakdown of Professional Ability, General Awareness, and Science sections.",
+    date: "March 20, 2026",
+    author: "NPrep Team",
+    category: "Syllabus",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2070",
+    content: `
+      <p class="lead text-xl text-slate-700 mb-8 leading-relaxed">The <strong>RRB Nursing Superintendent exam</strong> is not just another nursing recruitment test—it is a senior supervisory-level exam that evaluates your clinical depth, leadership understanding, and decision-making ability. Unlike Staff Nurse or Nursing Officer exams, this role demands clarity in advanced nursing concepts, hospital administration exposure, and evidence-based practice.</p>
+
+      <p class="text-slate-700 mb-6 text-lg">For aspirants targeting a Level-7 Group ‘C’ post under Indian Railways, understanding the exact exam pattern and syllabus is critical. Many candidates prepare well clinically but fail to align their strategy with how RRB actually frames questions.</p>
+
+      <div class="my-8 p-6 bg-purple-50 border-l-4 border-purple-600 rounded-r-lg shadow-sm">
+        <h4 class="font-bold text-purple-900 text-lg mb-2">📊 Exam Snapshot</h4>
+        <ul class="list-disc pl-5 space-y-1 text-purple-800">
+          <li><strong>Mode:</strong> Computer Based Test (CBT)</li>
+          <li><strong>Duration:</strong> 90 Minutes</li>
+          <li><strong>Questions:</strong> 100 MCQs</li>
+          <li><strong>Negative Marking:</strong> 1/3rd mark deducted for wrong answers</li>
+        </ul>
+      </div>
+
+      <h2 class="text-3xl font-bold text-slate-900 mb-6 mt-12">1. Detailed Exam Pattern 2026</h2>
+      <p class="mb-4 text-slate-700 text-lg">The exam is a single-stage CBT. There is no interview. Your selection depends entirely on your performance in these 90 minutes. The paper is divided into three distinct sections:</p>
+
+      <div class="overflow-x-auto mb-8">
+        <table class="w-full text-left border-collapse shadow-lg rounded-lg overflow-hidden">
+          <thead class="bg-slate-800 text-white">
+            <tr>
+              <th class="px-6 py-4 text-lg font-semibold">Subject Section</th>
+              <th class="px-6 py-4 text-lg font-semibold">Questions</th>
+              <th class="px-6 py-4 text-lg font-semibold">Marks</th>
+              <th class="px-6 py-4 text-lg font-semibold">Weightage</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white divide-y divide-slate-200">
+            <tr class="hover:bg-slate-50">
+              <td class="px-6 py-4 font-medium text-slate-900">Professional Ability (Nursing)</td>
+              <td class="px-6 py-4 font-bold">70</td>
+              <td class="px-6 py-4 font-bold">70</td>
+              <td class="px-6 py-4 text-green-600 font-bold">70% (Critical)</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-6 py-4 font-medium text-slate-900">General Awareness & Arithmetic</td>
+              <td class="px-6 py-4 font-bold">20</td>
+              <td class="px-6 py-4 font-bold">20</td>
+              <td class="px-6 py-4">20%</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-6 py-4 font-medium text-slate-900">General Science</td>
+              <td class="px-6 py-4 font-bold">10</td>
+              <td class="px-6 py-4 font-bold">10</td>
+              <td class="px-6 py-4">10%</td>
+            </tr>
+            <tr class="bg-slate-100 font-bold text-lg">
+              <td class="px-6 py-4">Total</td>
+              <td class="px-6 py-4">100</td>
+              <td class="px-6 py-4">100</td>
+              <td class="px-6 py-4">100%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="my-8 p-8 bg-red-50 border border-red-200 rounded-xl text-center shadow-md">
+        <p class="font-bold text-red-900 text-2xl mb-4">Are you practicing with Negative Marking?</p>
+        <p class="text-lg text-red-800 mb-6">RRB has a high penalty (1/3rd). Random guessing will destroy your rank. Practice precision with our Test Series.</p>
+        <a href="${NPREP_LINKS.TEST_SERIES}" target="_blank" class="inline-flex items-center text-white bg-red-600 hover:bg-red-700 px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:-translate-y-1 shadow-lg">
+          Attempt Full-Length Mock Test
+        </a>
+      </div>
+
+      <h2 class="text-3xl font-bold text-slate-900 mb-6 mt-12">2. Subject-Wise Detailed Syllabus</h2>
+      
+      <h3 class="text-2xl font-semibold text-slate-800 mb-4 border-l-4 border-primary pl-4">A. Nursing Subjects (70 Marks)</h3>
+      <p class="mb-6 text-slate-700 text-lg">This section tests your base clinical understanding and patient care principles. Questions often link theory + practice.</p>
+      
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+          <h4 class="font-bold text-lg text-primary mb-3">1. Medical-Surgical Nursing</h4>
+          <p class="text-slate-600 text-sm">Cardiovascular, Respiratory, Renal, Endocrine, Neurological disorders, Oncology, Emergency & Trauma. <strong>(High Weightage: 35-40%)</strong></p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+          <h4 class="font-bold text-lg text-primary mb-3">2. Nursing Foundations</h4>
+          <p class="text-slate-600 text-sm">Vital signs, Nursing process, First Aid, CPR, Injection techniques, Biomedical waste management, Ethics.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+          <h4 class="font-bold text-lg text-primary mb-3">3. Community Health Nursing</h4>
+          <p class="text-slate-600 text-sm">National Health Programs, Epidemiology, Immunization schedule, Family planning, Communicable diseases.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+          <h4 class="font-bold text-lg text-primary mb-3">4. Nursing Administration</h4>
+          <p class="text-slate-600 text-sm">Ward management, Inventory control, Leadership styles, Staffing patterns. <strong>(Critical for Superintendent role)</strong></p>
+        </div>
+      </div>
+
+      <h3 class="text-2xl font-semibold text-slate-800 mb-4 border-l-4 border-green-600 pl-4">B. General Awareness & Arithmetic (20 Marks)</h3>
+      <ul class="list-disc pl-6 space-y-2 mb-8 text-lg text-slate-700">
+        <li><strong>Arithmetic:</strong> Number System, BODMAS, Decimals, Fractions, LCM/HCF, Ratio, Percentages, Time & Work, Profit & Loss, Simple/Compound Interest.</li>
+        <li><strong>General Intelligence:</strong> Analogies, Coding-Decoding, Blood Relations, Venn Diagrams, Data Interpretation.</li>
+        <li><strong>General Awareness:</strong> Current Affairs (Health sector focus), Indian Geography, History, Polity, Economy.</li>
+      </ul>
+
+      <h3 class="text-2xl font-semibold text-slate-800 mb-4 border-l-4 border-yellow-500 pl-4">C. General Science (10 Marks)</h3>
+      <p class="mb-4 text-slate-700 text-lg">Physics, Chemistry, and Life Sciences up to 10th Standard CBSE syllabus. Focus on Human Body, Diseases, Nutrition, Environment, and basic chemical reactions.</p>
+
+      <div class="my-8 p-8 bg-slate-100 rounded-xl text-center">
+        <h3 class="text-2xl font-bold text-slate-900 mb-4">Download Previous Year Papers</h3>
+        <p class="text-slate-600 mb-6">The best way to understand the syllabus is to see what was asked in 2015 and 2019.</p>
+        <a href="${NPREP_LINKS.PYQ}" target="_blank" class="inline-flex items-center text-white bg-slate-800 hover:bg-slate-900 px-8 py-4 rounded-lg font-bold text-lg transition-all">
+          Download RRB PYQs PDF
+        </a>
+      </div>
+
+      <hr class="my-12 border-slate-200" />
+
+      <h2 class="text-3xl font-bold text-slate-900 mb-8">Frequently Asked Questions (FAQs)</h2>
+      <div class="space-y-6">
+        <div class="bg-slate-50 p-6 rounded-lg">
+          <h4 class="font-bold text-lg text-slate-900 mb-2">Q1. Is there an interview for RRB Nursing Superintendent?</h4>
+          <p class="text-slate-700">No, the selection is based 100% on the marks obtained in the CBT. There is no interview stage.</p>
+        </div>
+        <div class="bg-slate-50 p-6 rounded-lg">
+          <h4 class="font-bold text-lg text-slate-900 mb-2">Q2. Can I use a calculator in the exam?</h4>
+          <p class="text-slate-700">No, electronic gadgets including calculators and mobile phones are strictly prohibited in the examination hall.</p>
+        </div>
+        <div class="bg-slate-50 p-6 rounded-lg">
+          <h4 class="font-bold text-lg text-slate-900 mb-2">Q3. In which language will the exam be conducted?</h4>
+          <p class="text-slate-700">The exam is conducted in English, Hindi, and regional languages (like Tamil, Telugu, Bengali, etc.) based on the zone you apply for.</p>
+        </div>
+        <div class="bg-slate-50 p-6 rounded-lg">
+          <h4 class="font-bold text-lg text-slate-900 mb-2">Q4. Which section should I attempt first?</h4>
+          <p class="text-slate-700">We recommend starting with Professional Ability (Nursing) as it carries the most marks and you are most familiar with it. Attempt Math/Reasoning at the end to manage time better.</p>
+        </div>
+      </div>
+    `
+  },
+  {
+    id: "6-months-preparation-strategy-rrb-nursing-superintendent",
+    title: "6 Months Preparation Strategy for RRB Nursing Superintendent: The Topper's Plan",
+    excerpt: "Cracking RRB Nursing requires a marathon mindset. Here is a month-by-month study plan to cover the syllabus, revise effectively, and master the mock tests.",
+    date: "March 18, 2026",
+    author: "NPrep Team",
+    category: "Strategy",
+    image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=2070",
+    content: `
+      <p class="lead text-xl text-slate-700 mb-8 leading-relaxed">The RRB Nursing Superintendent exam is a game of <strong>accuracy and consistency</strong>. Unlike other exams where you can cram in the last week, the vast syllabus of Nursing + General Awareness requires a structured approach. If you have 6 months before the exam, you are in the <strong>Gold Zone</strong>. This is the perfect amount of time to build concepts, practice questions, and refine your strategy.</p>
+
+      <p class="text-slate-700 mb-6 text-lg">In this blog, we present the <strong>"NPrep 6-Month Master Plan"</strong>—a strategy used by previous toppers to secure a single-digit rank.</p>
+
+      <h2 class="text-3xl font-bold text-slate-900 mb-6 mt-12">Phase 1: Foundation (Month 1 & 2)</h2>
+      <p class="mb-4 text-slate-700 text-lg"><strong>Focus:</strong> Concept Clarity & Note Making.</p>
+      <ul class="list-disc pl-6 space-y-3 mb-6 text-lg text-slate-700">
+        <li><strong>Nursing:</strong> Start with high-weightage subjects: Anatomy, Physiology, and Medical-Surgical Nursing. Don't just read; make concise notes.</li>
+        <li><strong>Math/Reasoning:</strong> Dedicate 1 hour daily to basics. Learn tables, squares, cubes, and BODMAS rules.</li>
+        <li><strong>Resource:</strong> Use standard textbooks or the NPrep Gold Course video lectures for conceptual clarity.</li>
+      </ul>
+
+      <div class="my-8 p-6 bg-yellow-50 border-l-4 border-yellow-500 rounded-r-lg shadow-sm">
+        <h4 class="font-bold text-yellow-900 text-lg mb-2">💡 Pro Tip: The 80/20 Rule</h4>
+        <p class="text-yellow-800">80% of the questions come from 20% of the topics. Focus heavily on Med-Surg, OBG, and Community Health Nursing in this phase.</p>
+      </div>
+
+      <h2 class="text-3xl font-bold text-slate-900 mb-6 mt-12">Phase 2: Core Strengthening (Month 3 & 4)</h2>
+      <p class="mb-4 text-slate-700 text-lg"><strong>Focus:</strong> Application & Minor Subjects.</p>
+      <ul class="list-disc pl-6 space-y-3 mb-6 text-lg text-slate-700">
+        <li><strong>Nursing:</strong> Move to minor subjects: Microbiology, Nutrition, Psychology, and Nursing Administration.</li>
+        <li><strong>Practice:</strong> Start solving 50 MCQs daily. Don't worry about timing yet; focus on accuracy.</li>
+        <li><strong>General Awareness:</strong> Start reading monthly current affairs capsules (last 6 months).</li>
+      </ul>
+
+      <h2 class="text-3xl font-bold text-slate-900 mb-6 mt-12">Phase 3: The Sprint (Month 5)</h2>
+      <p class="mb-4 text-slate-700 text-lg"><strong>Focus:</strong> Revision & Speed.</p>
+      <ul class="list-disc pl-6 space-y-3 mb-6 text-lg text-slate-700">
+        <li><strong>Revision:</strong> Stop reading new books. Revise your notes. Use the "Rapid Revision" technique.</li>
+        <li><strong>Mock Tests:</strong> Attempt 2 full-length mock tests per week. Analyze them thoroughly. Identify your weak areas.</li>
+        <li><strong>Negative Marking Control:</strong> Learn to skip questions you are unsure about.</li>
+      </ul>
+
+      <div class="my-12 p-8 bg-gradient-to-r from-purple-900 to-purple-800 rounded-2xl text-white shadow-xl">
+        <h3 class="text-2xl font-bold mb-4">Need a Structured Revision Plan?</h3>
+        <p class="text-purple-200 mb-6 text-lg">Our Rapid Revision Course covers the entire syllabus in just 30 days with high-yield notes and charts.</p>
+        <a href="${NPREP_LINKS.RAPID_REVISION}" target="_blank" class="inline-block bg-white text-purple-900 px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105 shadow-lg">
           Start Rapid Revision
         </a>
       </div>
-    `
-  },
-  {
-    id: "rrb-nursing-superintendent-eligibility-experience-strategy",
-    title: "RRB Nursing Superintendent: Eligibility, Experience, and Preparation Strategy",
-    excerpt: "Learn about the required qualifications, experience, and age limit for RRB Nursing Superintendent recruitment. Strengthen your preparation with NPrep.",
-    date: "March 20, 2026",
-    author: "NPrep Team",
-    category: "Eligibility",
-    image: "https://images.unsplash.com/photo-1579684385136-137af7546135?auto=format&fit=crop&q=80&w=2070",
-    content: `
-      <p class="lead text-lg text-slate-700 mb-6">When it comes to railway jobs, confusion regarding eligibility is common. One of the most frequently asked questions is: <em>"What qualifications are required for RRB nursing superintendent recruitment?"</em> In this detailed blog, we will clarify every aspect of <strong>rrb nursing superintendent qualification</strong>, <strong>rrb nurse eligibility</strong>, and the experience required for the 2026 cycle.</p>
 
-      <p class="text-slate-700 mb-6">The position of Nursing Superintendent is a Level-7 post, which is higher than the entry-level Staff Nurse posts in many state governments. Hence, understanding the <strong>rrb nurse qualifications</strong> is the first step towards your dream job.</p>
-
-      <h2 class="text-2xl font-bold text-slate-900 mb-4">Detailed RRB Nursing Superintendent Qualification</h2>
-      <p class="mb-4 text-slate-700">To be eligible for the <strong>rrb nursing superintendent eligibility</strong> criteria, a candidate must possess one of the following:</p>
-      
-      <div class="bg-slate-50 p-6 rounded-lg border-l-4 border-primary mb-6">
-        <h4 class="font-bold text-slate-900 mb-2">Option A: B.Sc. Nursing</h4>
-        <p class="text-slate-700">B.Sc. Nursing from a recognized University or Institute. This is the most direct route and is highly preferred for future promotions.</p>
-      </div>
-
-      <div class="bg-slate-50 p-6 rounded-lg border-l-4 border-primary mb-6">
-        <h4 class="font-bold text-slate-900 mb-2">Option B: GNM (General Nursing and Midwifery)</h4>
-        <p class="text-slate-700">Certificate as Registered Nurse and Midwife having passed 3 years course in General Nursing and Midwifery from a school of Nursing or other institution recognized by the Indian Nursing Council.</p>
-      </div>
-
-      <p class="text-slate-700 mb-4">For candidates relying on <strong>rrb gnm eligibility</strong>, it is crucial to ensure that your registration with the Nursing Council is active and valid on the date of application.</p>
-
-      <h2 class="text-2xl font-bold text-slate-900 mb-4">Is Experience Mandatory for RRB Nursing Superintendent?</h2>
-      <p class="mb-4 text-slate-700">This is a major point of confusion. Unlike the AIIMS NORCET exam which requires 2 years of experience for GNM candidates, the <strong>RRB Nursing Superintendent recruitment</strong> has traditionally been open to freshers as well.</p>
-      <p class="mb-4 text-slate-700"><strong>Direct Recruitment:</strong> generally does NOT mandate prior experience for fresh B.Sc/GNM graduates. However, candidates with experience in ICU/OT or critical care may find it easier to handle the professional ability questions in the exam.</p>
-      <p class="text-slate-700 mb-6"><em>Note: Always refer to the specific CEN notification (e.g., CEN 03/2026) as rules can be updated.</em></p>
-
-      <div class="my-8 p-6 bg-green-50 border border-green-200 rounded-lg text-center shadow-sm">
-        <p class="font-bold text-green-800 text-lg mb-3">** Build Your Foundation **</p>
-        <p class="text-sm text-green-700 mb-4">Whether you are a fresher or experienced, daily practice is key. Join our Daily Test series for free.</p>
-        <a href="${NPREP_LINKS.DAILY_TEST}" target="_blank" class="inline-flex items-center text-white bg-green-600 hover:bg-green-700 px-6 py-3 rounded-md font-bold transition-colors">
-          Take Today's Free Test
-        </a>
-      </div>
-
-      <h2 class="text-2xl font-bold text-slate-900 mb-4">Career Pathway: Staff Nurse vs Nursing Superintendent</h2>
-      <p class="mb-4 text-slate-700">Previously, RRB recruited for "Staff Nurse". Now, the entry-level designation has been upgraded to "Nursing Superintendent" in many notifications, directly placing you in Level-7 (4600 Grade Pay). This makes the <strong>rrb nurse eligibility</strong> even more attractive.</p>
-      
-      <h3 class="text-xl font-semibold text-slate-800 mb-2">Promotion Hierarchy</h3>
-      <ol class="list-decimal pl-5 space-y-2 mb-6 text-slate-700">
-        <li><strong>Nursing Superintendent</strong> (Entry Level via RRB)</li>
-        <li><strong>Chief Nursing Superintendent</strong> (Promotion)</li>
-        <li><strong>Assistant Nursing Officer</strong> (Gazetted Rank)</li>
-      </ol>
-
-      <p class="text-slate-700">Now that you know the <strong>rrb nurse qualifications</strong>, it's time to start preparing. The competition is tough, but with the right strategy, you can secure your seat.</p>
-    `
-  },
-  {
-    id: "roles-responsibilities-railway-nursing-superintendent",
-    title: "The Roles and Responsibilities of a Railway Nursing Superintendent",
-    excerpt: "Understand the full scope of duties, responsibilities, and career pathway for Railway Nursing Superintendents. Prepare for your RRB exam with NPrep.",
-    date: "March 18, 2026",
-    author: "NPrep Team",
-    category: "Job Profile",
-    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=2070",
-    content: `
-      <p class="lead text-lg text-slate-700 mb-6">The <strong>railway nursing superintendent</strong> is the backbone of the medical department in Indian Railways. Far beyond just bedside care, the <strong>nursing superintendent duties</strong> involve a mix of clinical expertise, administrative leadership, and crisis management. If you are aspiring for this role, understanding the <strong>job responsibilities</strong> will give you a clear picture of your future career.</p>
-
-      <p class="text-slate-700 mb-6">In this comprehensive guide, we break down the 5 core areas of <strong>nursing superintendent roles</strong> and what a typical day looks like for a <strong>superintendent nurse</strong> in a Railway Hospital.</p>
-
-      <h2 class="text-2xl font-bold text-slate-900 mb-4">1. Staff Supervision & Management</h2>
-      <p class="mb-4 text-slate-700">One of the primary <strong>nursing superintendent duties</strong> is to manage the nursing staff under them. This includes:</p>
-      <ul class="list-disc pl-5 space-y-2 mb-6 text-slate-700">
-        <li>Preparing duty rosters and ensuring 24/7 coverage in wards and ICUs.</li>
-        <li>Allocating specific duties to Staff Nurses based on their skills and patient load.</li>
-        <li>Handling leave applications and resolving grievances among the nursing staff.</li>
-        <li>Ensuring discipline and punctuality in the ward.</li>
+      <h2 class="text-3xl font-bold text-slate-900 mb-6 mt-12">Phase 4: Final Polish (Month 6)</h2>
+      <p class="mb-4 text-slate-700 text-lg"><strong>Focus:</strong> Exam Simulation.</p>
+      <ul class="list-disc pl-6 space-y-3 mb-6 text-lg text-slate-700">
+        <li><strong>Daily Mocks:</strong> Take a test every day at the same time as your actual exam shift (e.g., 10 AM).</li>
+        <li><strong>Previous Year Papers:</strong> Solve 2015 and 2019 papers again to align your mindset with RRB's question pattern.</li>
+        <li><strong>Health:</strong> Sleep well and stay hydrated. A calm mind scores better.</li>
       </ul>
 
-      <h2 class="text-2xl font-bold text-slate-900 mb-4">2. Clinical Quality Control</h2>
-      <p class="mb-4 text-slate-700">A <strong>railway nursing superintendent</strong> is responsible for maintaining the highest standards of patient care. You will be the guardian of hospital hygiene and infection control.</p>
-      <ul class="list-disc pl-5 space-y-2 mb-6 text-slate-700">
-        <li>Conducting daily rounds with doctors to monitor patient progress.</li>
-        <li>Ensuring strict adherence to biomedical waste management rules.</li>
-        <li>Checking the proper functioning of medical equipment (ventilators, monitors) and reporting faults.</li>
-        <li>Supervising the administration of high-risk medications.</li>
-      </ul>
-
-      <div class="my-8 p-6 bg-red-50 border border-red-200 rounded-lg text-center shadow-sm">
-        <p class="font-bold text-red-800 text-lg mb-3">** Master Clinical Topics **</p>
-        <p class="text-sm text-red-700 mb-4">Clinical questions form a huge part of the exam. Revise them quickly with our specialized course.</p>
-        <a href="${NPREP_LINKS.RAPID_REVISION}" target="_blank" class="inline-flex items-center text-white bg-red-600 hover:bg-red-700 px-6 py-3 rounded-md font-bold transition-colors">
-          Join Rapid Revision Course
-        </a>
+      <h2 class="text-3xl font-bold text-slate-900 mb-6 mt-12">Daily Schedule for Working Nurses</h2>
+      <p class="mb-4 text-slate-700 text-lg">We know many of you are working. Here is a realistic schedule:</p>
+      <div class="bg-white border border-slate-200 rounded-lg overflow-hidden mb-8">
+        <div class="p-4 border-b border-slate-100 flex justify-between bg-slate-50">
+          <span class="font-bold text-slate-700">Time Slot</span>
+          <span class="font-bold text-slate-700">Activity</span>
+        </div>
+        <div class="p-4 border-b border-slate-100 flex justify-between">
+          <span class="text-slate-600">6:00 AM - 8:00 AM</span>
+          <span class="text-slate-800">Study New Topic (Fresh Mind)</span>
+        </div>
+        <div class="p-4 border-b border-slate-100 flex justify-between bg-slate-50">
+          <span class="text-slate-600">During Commute</span>
+          <span class="text-slate-800">Watch Video Lectures / Current Affairs</span>
+        </div>
+        <div class="p-4 border-b border-slate-100 flex justify-between">
+          <span class="text-slate-600">Lunch Break</span>
+          <span class="text-slate-800">Solve 20 MCQs on App</span>
+        </div>
+        <div class="p-4 border-b border-slate-100 flex justify-between bg-slate-50">
+          <span class="text-slate-600">8:00 PM - 10:00 PM</span>
+          <span class="text-slate-800">Revision & Practice</span>
+        </div>
       </div>
 
-      <h2 class="text-2xl font-bold text-slate-900 mb-4">3. Administrative Management</h2>
-      <p class="mb-4 text-slate-700">This sets the <strong>nursing superintendent roles</strong> apart from regular staff nurse duties. You will be involved in:</p>
-      <ul class="list-disc pl-5 space-y-2 mb-6 text-slate-700">
-        <li>maintaining inventory of drugs, linen, and consumables.</li>
-        <li>Indenting supplies from the medical stores to prevent stock-outs.</li>
-        <li>Preparing daily census reports (admission/discharge/death).</li>
-        <li>Assisting in medical audits and inquiries.</li>
-      </ul>
+      <hr class="my-12 border-slate-200" />
 
-      <h2 class="text-2xl font-bold text-slate-900 mb-4">4. Training & Development</h2>
-      <p class="mb-4 text-slate-700">As a senior leader, you are a mentor. The <strong>job responsibilities</strong> include:</p>
-      <ul class="list-disc pl-5 space-y-2 mb-6 text-slate-700">
-        <li>Conducting in-service education programs for junior nurses.</li>
-        <li>Orienting new staff to the hospital policies and safety protocols.</li>
-        <li>Demonstrating complex nursing procedures to students or interns.</li>
-      </ul>
-
-      <h2 class="text-2xl font-bold text-slate-900 mb-4">5. Interdepartmental Coordination</h2>
-      <p class="mb-4 text-slate-700">The <strong>superintendent nurse</strong> acts as a bridge between the nursing staff, the medical administration, and other departments like sanitation, engineering, and security. Effective communication is key to ensuring smooth hospital operations.</p>
-
-      <p class="text-slate-700">The role of a Railway Nursing Superintendent is challenging but deeply rewarding. It offers a perfect blend of clinical touch and administrative power. If you are ready to take on this responsibility, start your preparation with NPrep today.</p>
+      <h2 class="text-3xl font-bold text-slate-900 mb-8">Frequently Asked Questions (FAQs)</h2>
+      <div class="space-y-6">
+        <div class="bg-slate-50 p-6 rounded-lg">
+          <h4 class="font-bold text-lg text-slate-900 mb-2">Q1. Can I crack the exam in 3 months?</h4>
+          <p class="text-slate-700">Yes, but it requires intense dedication (8-10 hours/day) and a smart strategy focusing only on high-yield topics.</p>
+        </div>
+        <div class="bg-slate-50 p-6 rounded-lg">
+          <h4 class="font-bold text-lg text-slate-900 mb-2">Q2. Which is better: Online Coaching or Self Study?</h4>
+          <p class="text-slate-700">Self-study is good, but Online Coaching (like NPrep) saves time by providing structured content, which is crucial for working professionals.</p>
+        </div>
+        <div class="bg-slate-50 p-6 rounded-lg">
+          <h4 class="font-bold text-lg text-slate-900 mb-2">Q3. How many hours should I study daily?</h4>
+          <p class="text-slate-700">Quality matters more than quantity. 4-6 hours of focused study is sufficient if you are consistent for 6 months.</p>
+        </div>
+        <div class="bg-slate-50 p-6 rounded-lg">
+          <h4 class="font-bold text-lg text-slate-900 mb-2">Q4. Is General Awareness important?</h4>
+          <p class="text-slate-700">Absolutely. In a competitive exam, the 20 marks from Non-Tech sections often decide the rank difference between selection and rejection.</p>
+        </div>
+      </div>
     `
   },
   {

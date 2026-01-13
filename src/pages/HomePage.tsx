@@ -1,15 +1,46 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Search, FileText, Briefcase, Users, MapPin, FileCheck, ExternalLink, ArrowRight, BookOpen, AlertCircle, IndianRupee, PlayCircle, Download } from 'lucide-react';
+import { Search, FileText, Briefcase, Users, MapPin, FileCheck, ExternalLink, ArrowRight, BookOpen, AlertCircle, IndianRupee, PlayCircle, Download, ChevronDown, HelpCircle } from 'lucide-react';
 import { Button } from '../components/ui/button';
-import { Card, CardContent } from '../components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
-import { notifications, importantDates } from '../data/mockData';
+import { notifications, importantDates, faqs } from '../data/mockData';
 import { NPREP_LINKS } from '../data/links';
 import { cn } from '../lib/utils';
+import SEO from '../components/SEO';
 
 export default function HomePage() {
   const RRB_OFFICIAL_URL = "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,7,1281";
+
+  // 1. Construct FAQ Schema for Google "Answer Box" Ranking
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
+  // 2. Construct WebSite Schema (Search Box)
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "RRB Nursing Prep",
+    "url": "https://rrbnursing.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://rrbnursing.com/notifications?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
+  // Combine Schemas
+  const combinedSchema = [websiteSchema, faqSchema];
 
   const featureCards = [
     { 
@@ -55,6 +86,14 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
+      <SEO 
+        title="RRB Nursing Superintendent 2026 - Official Preparation Portal"
+        description="India's #1 Portal for RRB Nursing Superintendent Exam 2026. Get latest notification, syllabus, eligibility, salary details, and online coaching."
+        keywords={['RRB Nursing', 'Nursing Superintendent', 'Railway Staff Nurse', 'RRB Notification 2026']}
+        canonical="/"
+        schema={combinedSchema} // Injecting both Website and FAQ Schema
+      />
+
       {/* Hero Section */}
       <section className="pt-20 pb-12 px-4 bg-gradient-to-b from-red-50 to-white">
         <div className="container mx-auto max-w-6xl text-center space-y-6">
@@ -153,10 +192,30 @@ export default function HomePage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
              {[
-               { title: "Eligibility Criteria", icon: AlertCircle, link: "/blogs/rrb-nursing-superintendent-eligibility-criteria-2026", desc: "Age limit & Qualifications" },
-               { title: "Salary & Perks", icon: IndianRupee, link: "/blogs/rrb-nursing-superintendent-salary-job-profile-2026", desc: "Pay Level-7 Structure" },
-               { title: "Exam Pattern", icon: FileText, link: "/blogs/rrb-nursing-superintendent-exam-pattern-syllabus-2026-complete-subject-wise-guide", desc: "Subject-wise Weightage" },
-               { title: "Preparation Strategy", icon: Briefcase, link: "/blogs/6-months-preparation-strategy-rrb-nursing-superintendent", desc: "6-Month Study Plan" },
+               { 
+                 title: "Eligibility Criteria", 
+                 icon: AlertCircle, 
+                 link: "/blogs/rrb-nursing-superintendent-eligibility-criteria-2026", 
+                 desc: "Age limit & Qualifications" 
+               },
+               { 
+                 title: "Salary & Perks", 
+                 icon: IndianRupee, 
+                 link: "/blogs/rrb-nursing-superintendent-salary-job-profile-2026", 
+                 desc: "Pay Level-7 Structure" 
+               },
+               { 
+                 title: "Exam Pattern", 
+                 icon: FileText, 
+                 link: "/blogs/rrb-nursing-superintendent-exam-pattern-syllabus-2026-complete-subject-wise-guide", 
+                 desc: "Subject-wise Weightage" 
+               },
+               { 
+                 title: "Preparation Strategy", 
+                 icon: Briefcase, 
+                 link: "/blogs/6-months-preparation-strategy-rrb-nursing-superintendent", 
+                 desc: "6-Month Study Plan" 
+               },
              ].map((item, i) => (
                <Link key={i} to={item.link} className="group">
                  <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-all h-full flex flex-col items-center text-center">
@@ -193,7 +252,6 @@ export default function HomePage() {
                     </Button>
                   </a>
                   <a href={NPREP_LINKS.PYQ} target="_blank" rel="noopener noreferrer">
-                    {/* Added bg-transparent to fix the invisible text issue */}
                     <Button variant="outline" className="bg-transparent text-white border-white hover:bg-white/10 hover:text-white">
                       <Download className="mr-2 h-4 w-4" /> Download PYQs
                     </Button>
@@ -300,6 +358,34 @@ export default function HomePage() {
                 </div>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section (Added for SEO Phase 5) */}
+      <section className="py-16 px-4 bg-slate-50">
+        <div className="container mx-auto max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-slate-900">Frequently Asked Questions</h2>
+            <p className="text-slate-600 mt-2">Common queries about RRB Nursing Superintendent Recruitment 2026.</p>
+          </div>
+
+          <div className="space-y-4">
+            {faqs.map((faq, idx) => (
+              <Card key={idx} className="border-slate-200 hover:shadow-md transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex gap-4">
+                    <div className="shrink-0 mt-1">
+                      <HelpCircle className="h-6 w-6 text-primary" />
+                    </div>
+                    <div className="space-y-2">
+                      <h3 className="font-bold text-lg text-slate-900">{faq.question}</h3>
+                      <p className="text-slate-600 leading-relaxed">{faq.answer}</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>

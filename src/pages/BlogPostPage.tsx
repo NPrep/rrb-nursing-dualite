@@ -5,6 +5,7 @@ import { Button } from '../components/ui/button';
 import { Badge } from '../components/ui/badge';
 import { BlogCover } from '../components/ui/BlogCover';
 import { blogs } from '../data/mockData';
+import SEO from '../components/SEO';
 
 export default function BlogPostPage() {
   const { id } = useParams();
@@ -14,8 +15,38 @@ export default function BlogPostPage() {
     return <Navigate to="/blogs" replace />;
   }
 
+  // Article Schema for Google
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": blog.title,
+    "image": [blog.image || "https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Indian_Railways_logo.svg/300px-Indian_Railways_logo.svg.png"],
+    "datePublished": new Date(blog.date).toISOString(),
+    "dateModified": new Date().toISOString(),
+    "author": [{
+      "@type": "Organization",
+      "name": "NPrep Team",
+      "url": "https://rrbnursing.com"
+    }]
+  };
+
   return (
     <div className="container mx-auto px-4 py-12">
+      <SEO 
+        title={`${blog.title} | RRB Nursing`}
+        description={blog.excerpt}
+        keywords={[blog.category, 'RRB Nursing', 'Railway Exam', 'Nursing Superintendent']}
+        canonical={`/blogs/${blog.id}`}
+        image={blog.image}
+        type="article"
+        schema={articleSchema}
+        breadcrumbs={[
+          { name: 'Home', item: '/' },
+          { name: 'Blogs', item: '/blogs' },
+          { name: blog.title.substring(0, 20) + '...', item: `/blogs/${blog.id}` }
+        ]}
+      />
+
       <Link to="/blogs">
         <Button variant="ghost" className="mb-8 pl-0 hover:pl-0 hover:bg-transparent hover:text-primary">
           <ArrowLeft className="mr-2 h-4 w-4" /> Back to Blogs
@@ -52,7 +83,7 @@ export default function BlogPostPage() {
           <BlogCover 
              title={blog.title} 
              category={blog.category}
-             // image={blog.image} // Uncomment to use real images
+             image={blog.image}
           />
         </div>
 

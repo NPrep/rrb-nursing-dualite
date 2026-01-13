@@ -2,26 +2,76 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://rrbnursing.com/</loc>
-    <lastmod>2025-03-20</lastmod>
+    <lastmod>2025-05-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://rrbnursing.com/blogs</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rrbnursing.com/courses</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rrbnursing.com/resources</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://rrbnursing.com/notifications</loc>
-    <lastmod>2025-03-20</lastmod>
+    <lastmod>2025-05-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rrbnursing.com/syllabus</loc>
-    <lastmod>2025-03-20</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://rrbnursing.com/about</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://rrbnursing.com/blogs/rrb-nursing-superintendent-recruitment-2026-vacancies-eligibility</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rrbnursing.com/blogs</loc>
-    <lastmod>2025-03-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://rrbnursing.com/blogs/rrb-nursing-superintendent-2026-eligibility-syllabus-exam-pattern</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rrbnursing.com/blogs/rrb-nursing-superintendent-eligibility-experience-strategy</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rrbnursing.com/blogs/roles-responsibilities-railway-nursing-superintendent</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rrbnursing.com/blogs/best-books-rrb-nursing-superintendent-preparation-2026</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rrbnursing.com/blogs/rrb-nursing-previous-year-cutoff-analysis-2026</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

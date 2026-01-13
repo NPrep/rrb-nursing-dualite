@@ -5,10 +5,22 @@ import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '../compone
 import { Badge } from '../components/ui/badge';
 import { BlogCover } from '../components/ui/BlogCover';
 import { blogs } from '../data/mockData';
+import SEO from '../components/SEO';
 
 export default function BlogsPage() {
   return (
     <div className="container mx-auto px-4 py-12">
+      <SEO 
+        title="RRB Nursing Blogs 2026 - Exam Strategy, Syllabus & Updates"
+        description="Read the latest expert articles on RRB Nursing Superintendent preparation. Get study plans, syllabus breakdowns, and exam tips from NPrep experts."
+        keywords={['RRB Nursing Blogs', 'Nursing Exam Strategy', 'Railway Nurse Preparation', 'RRB Syllabus Guide']}
+        canonical="/blogs"
+        breadcrumbs={[
+          { name: 'Home', item: '/' },
+          { name: 'Blogs', item: '/blogs' }
+        ]}
+      />
+
       <div className="text-center max-w-2xl mx-auto mb-12">
         <h1 className="text-4xl font-bold text-primary mb-4">Latest Updates & Articles</h1>
         <p className="text-lg text-slate-600">
@@ -21,13 +33,10 @@ export default function BlogsPage() {
           <Link key={blog.id} to={`/blogs/${blog.id}`} className="group">
             <Card className="h-full overflow-hidden hover:shadow-xl transition-all duration-300 border-slate-200 flex flex-col">
               <div className="w-full overflow-hidden rounded-t-lg">
-                {/* Now passing the image prop. If blog.image exists, it shows that. If not, it auto-generates. */}
                 <BlogCover 
                   title={blog.title} 
                   category={blog.category} 
-                  // image={blog.image} // Uncomment this line to use the Unsplash images from mockData
-                  // For now, I kept it commented so you can see the Auto-Design. 
-                  // To use real images, just uncomment the line above!
+                  image={blog.image}
                   className="transition-transform duration-500 group-hover:scale-105"
                 />
               </div>

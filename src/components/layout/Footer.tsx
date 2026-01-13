@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ExternalLink, ArrowRight } from 'lucide-react';
 import { NPREP_LINKS } from '../../data/links';
+import { Logo } from '../ui/Logo';
 
 export default function Footer() {
   const RRB_OFFICIAL_URL = "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,7,1281";
-  const LOGO_URL = "https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Indian_Railways_logo.svg/300px-Indian_Railways_logo.svg.png";
   
   return (
     <footer className="bg-slate-900 text-slate-200 border-t border-slate-800">
@@ -13,11 +13,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img 
-                src={LOGO_URL} 
-                alt="Indian Railways Logo" 
-                className="h-10 w-10 object-contain brightness-0 invert opacity-90"
-              />
+              <Logo className="h-10 w-10" />
               <span className="text-lg font-bold text-white">RRB Nursing</span>
             </div>
             <p className="text-sm text-slate-400">
