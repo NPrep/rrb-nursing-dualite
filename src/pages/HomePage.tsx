@@ -8,6 +8,7 @@ import { notifications, importantDates, faqs } from '../data/mockData';
 import { NPREP_LINKS } from '../data/links';
 import { cn } from '../lib/utils';
 import SEO from '../components/SEO';
+import SEOContent from '../components/home/SEOContent'; // Import the new component
 
 export default function HomePage() {
   const RRB_OFFICIAL_URL = "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,7,1281";
@@ -207,7 +208,6 @@ export default function HomePage() {
                { 
                  title: "Exam Pattern", 
                  icon: FileText, 
-                 // FIXED: Updated link to match the correct blog ID in mockData.ts
                  link: "/blogs/rrb-nursing-superintendent-exam-pattern-syllabus-2026", 
                  desc: "Subject-wise Weightage" 
                },
@@ -362,6 +362,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* SEO Content Silo (New Section) */}
+      <SEOContent />
 
       {/* FAQ Section (Added for SEO Phase 5) */}
       <section className="py-16 px-4 bg-slate-50">
