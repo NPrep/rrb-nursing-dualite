@@ -3,12 +3,24 @@ import { BookOpen, Download, ExternalLink } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { Badge } from '../components/ui/badge';
+import SEO from '../components/SEO';
 
 export default function SyllabusPage() {
   const NPREP_URL = "https://nprep.in";
 
   return (
     <div className="container mx-auto px-4 py-8">
+      <SEO 
+        title="RRB Nursing Superintendent Syllabus 2026 & Exam Pattern (PDF)"
+        description="Detailed subject-wise syllabus for RRB Nursing Superintendent 2026. Download PDF for Professional Ability, General Awareness, and Science topics."
+        keywords={['RRB Nursing Syllabus 2026', 'Railway Staff Nurse Exam Pattern', 'RRB Nursing Syllabus PDF']}
+        canonical="/syllabus"
+        breadcrumbs={[
+          { name: 'Home', item: '/' },
+          { name: 'Syllabus', item: '/syllabus' }
+        ]}
+      />
+
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
         <div>
           <h1 className="text-3xl font-bold text-primary">Syllabus & Exam Pattern</h1>

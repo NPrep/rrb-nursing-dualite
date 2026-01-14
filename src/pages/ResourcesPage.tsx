@@ -3,6 +3,7 @@ import { Download, PlayCircle, FileText, CheckSquare } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { NPREP_LINKS } from '../data/links';
+import SEO from '../components/SEO';
 
 export default function ResourcesPage() {
   const resources = [
@@ -42,6 +43,17 @@ export default function ResourcesPage() {
 
   return (
     <div className="container mx-auto px-4 py-12">
+      <SEO 
+        title="Free RRB Nursing Study Material - PYQs, PDFs & Video Lectures"
+        description="Download free Previous Year Question Papers (PYQ), watch video lectures, and attempt daily free tests for RRB Nursing Superintendent Exam 2026."
+        keywords={['RRB Nursing Free Material', 'Nursing PYQ PDF', 'Free Nursing Classes', 'RRB Mock Test Free']}
+        canonical="/resources"
+        breadcrumbs={[
+          { name: 'Home', item: '/' },
+          { name: 'Resources', item: '/resources' }
+        ]}
+      />
+
       <div className="text-center max-w-2xl mx-auto mb-12">
         <h1 className="text-4xl font-bold text-primary mb-4">Free Study Resources</h1>
         <p className="text-lg text-slate-600">

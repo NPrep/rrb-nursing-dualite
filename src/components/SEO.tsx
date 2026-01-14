@@ -17,7 +17,6 @@ export default function SEO({
   description, 
   keywords, 
   canonical, 
-  // Updated to use the local generated SVG
   image = "/rrb-train-logo.svg",
   type = 'website',
   schema,
@@ -40,6 +39,10 @@ export default function SEO({
 
   return (
     <Helmet>
+      {/* Global Indexing Directive - CRITICAL */}
+      <meta name="robots" content="index, follow" />
+      <meta name="googlebot" content="index, follow" />
+
       {/* Standard Metadata */}
       <title>{title}</title>
       <meta name="description" content={description} />

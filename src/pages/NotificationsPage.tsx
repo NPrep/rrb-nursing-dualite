@@ -5,20 +5,29 @@ import { Input } from '../components/ui/input';
 import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
 import { notifications } from '../data/mockData';
+import SEO from '../components/SEO';
 
 export default function NotificationsPage() {
   const [filter, setFilter] = useState('All');
   const RRB_OFFICIAL_URL = "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,7,1281";
   
-  // Note: Syllabus/Study PDFs go to NPrep, but Official Notification PDFs go to RRB
-  // As per instruction: "link all the latest notifications... to the official rrb website"
-
   const filteredNotifications = filter === 'All' 
     ? notifications 
     : notifications.filter(n => n.type === filter);
 
   return (
     <div className="container mx-auto px-4 py-8">
+      <SEO 
+        title="Latest RRB Nursing Notifications 2026 - Vacancy, Exam Date & Results"
+        description="Get real-time updates on RRB Nursing Superintendent and Staff Nurse recruitment 2026. Download official notifications, admit cards, and results."
+        keywords={['RRB Nursing Notification', 'Railway Nurse Vacancy', 'RRB Exam Date 2026', 'RRB Results']}
+        canonical="/notifications"
+        breadcrumbs={[
+          { name: 'Home', item: '/' },
+          { name: 'Notifications', item: '/notifications' }
+        ]}
+      />
+
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
         <div>
           <h1 className="text-3xl font-bold text-primary">Notifications</h1>

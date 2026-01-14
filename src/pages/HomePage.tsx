@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Search, FileText, Briefcase, Users, MapPin, FileCheck, ExternalLink, ArrowRight, BookOpen, AlertCircle, IndianRupee, PlayCircle, Download, ChevronDown, HelpCircle } from 'lucide-react';
+import { FileText, Briefcase, Users, MapPin, FileCheck, ExternalLink, ArrowRight, BookOpen, AlertCircle, IndianRupee, PlayCircle, Download, ChevronDown, HelpCircle } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
@@ -27,17 +27,12 @@ export default function HomePage() {
     }))
   };
 
-  // 2. Construct WebSite Schema (Search Box)
+  // 2. Construct WebSite Schema
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "RRB Nursing Prep",
-    "url": "https://rrbnursing.com",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://rrbnursing.com/notifications?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
+    "url": "https://rrbnursing.com"
   };
 
   // Combine Schemas
@@ -107,18 +102,6 @@ export default function HomePage() {
           <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
             The definitive hub for Railway Nursing Superintendent aspirants. Get official updates, expert guidance, and premium study material.
           </p>
-          
-          {/* Search Bar */}
-          <div className="max-w-2xl mx-auto mt-8 relative">
-            <div className="relative group">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-400 group-focus-within:text-primary transition-colors" />
-              <input 
-                type="text"
-                placeholder="Search syllabus, eligibility, previous papers..." 
-                className="w-full h-14 pl-12 pr-4 rounded-full border border-slate-200 shadow-sm text-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white"
-              />
-            </div>
-          </div>
         </div>
       </section>
 
