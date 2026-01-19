@@ -56,13 +56,9 @@ export default function BlogsPage() {
                 </CardTitle>
               </CardHeader>
               
-              <CardContent>
-                <p className="text-slate-600 text-sm line-clamp-3">
-                  {blog.excerpt}
-                </p>
-              </CardContent>
+              {/* Removed CardContent with Excerpt as requested */}
               
-              <CardFooter className="pt-0 mt-auto">
+              <CardFooter className="pt-4 mt-auto">
                 <div className="flex items-center text-sm font-medium text-primary group-hover:underline underline-offset-4">
                   Read Article <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </div>

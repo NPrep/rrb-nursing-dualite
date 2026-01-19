@@ -46,8 +46,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
               <li><Link to="/resources" className="hover:text-white transition-colors">Free Resources</Link></li>
-              <li><Link to="/blogs" className="hover:text-white transition-colors">Exam Strategy Blog</Link></li>
-              <li><Link to="/helpdesk" className="hover:text-white transition-colors">Helpdesk</Link></li>
+              {/* Removed Exam Strategy Blog & Helpdesk as requested */}
             </ul>
           </div>
         </div>

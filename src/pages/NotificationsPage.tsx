@@ -77,7 +77,8 @@ export default function NotificationsPage() {
                   <p className="text-muted-foreground">{note.description}</p>
                 </div>
                 <div className="flex items-center gap-2 shrink-0">
-                  <a href={RRB_OFFICIAL_URL} target="_blank" rel="noopener noreferrer">
+                  {/* Updated Download Button to use specific link if available */}
+                  <a href={note.downloadLink || RRB_OFFICIAL_URL} target="_blank" rel="noopener noreferrer">
                     <Button variant="outline">
                       <Download className="mr-2 h-4 w-4" /> Download PDF
                     </Button>
