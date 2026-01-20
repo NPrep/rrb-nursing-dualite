@@ -15,14 +15,14 @@ export default function CoursesPage() {
       {
         "@type": "Product",
         "name": "NPrep GOLD Batch",
-        "description": "Complete Preparation Course for NORCET 10 & 11, CHO, BTSC, KGMU, GMCH.",
+        "description": "Complete Preparation Course for RRB, NORCET 10 & 11, CHO, BTSC, KGMU.",
         "brand": { "@type": "Brand", "name": "NPrep" },
         "offers": { "@type": "Offer", "price": "4999", "priceCurrency": "INR", "availability": "https://schema.org/InStock" }
       },
       {
         "@type": "Product",
         "name": "Rapid Revision 2.0",
-        "description": "100 Hours Crash Course for Nursing Exams.",
+        "description": "100 Hours Crash Course for RRB and Nursing Exams.",
         "brand": { "@type": "Brand", "name": "NPrep" },
         "offers": { "@type": "Offer", "price": "1999", "priceCurrency": "INR", "availability": "https://schema.org/InStock" }
       }
@@ -75,7 +75,7 @@ export default function CoursesPage() {
             <CardContent className="flex-1 pt-0">
               <div className="space-y-4 mt-4">
                 {[
-                  "NORCET 10 & 11/ CHO / BTSC/ KGMU/ GMCH - All Covered",
+                  "RRB/ NORCET 10 & 11/ CHO / BTSC/ KGMU - All Covered",
                   "900 Hours - Basic to Advanced Theory (with Clinicals)",
                   "100 Hrs - Rapid Revision 2.0",
                   "30,000 Questions - QBank (Topic Wise)",
@@ -92,7 +92,8 @@ export default function CoursesPage() {
             </CardContent>
             <CardFooter className="pt-6">
               <a href={NPREP_LINKS.GOLD_COURSE} target="_blank" rel="noopener noreferrer" className="w-full">
-                <Button className="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold h-11">
+                {/* UPDATED BUTTON: White background with dark border */}
+                <Button className="w-full bg-white text-slate-900 border border-slate-900 hover:bg-slate-50 font-semibold h-11">
                   Join Batch <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </a>
@@ -113,7 +114,7 @@ export default function CoursesPage() {
             <CardContent className="flex-1 pt-0">
               <div className="space-y-4 mt-4">
                 {[
-                  "NORCET/ CHO/ BTSC/ KGMU/ GMCH - All Covered",
+                  "RRB/ NORCET/ CHO/ BTSC/ KGMU - All Covered",
                   "Complete Nursing Syllabus in 100 Hours",
                   "Previous Year Papers - with Explainations",
                   "Daily Test Series",
