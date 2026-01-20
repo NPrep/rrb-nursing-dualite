@@ -15,14 +15,14 @@ export default function CoursesPage() {
       {
         "@type": "Product",
         "name": "NPrep GOLD Batch",
-        "description": "Complete Preparation Course for RRB Nursing Superintendent Exam 2026.",
+        "description": "Complete Preparation Course for NORCET 10 & 11, CHO, BTSC, KGMU, GMCH.",
         "brand": { "@type": "Brand", "name": "NPrep" },
         "offers": { "@type": "Offer", "price": "4999", "priceCurrency": "INR", "availability": "https://schema.org/InStock" }
       },
       {
         "@type": "Product",
-        "name": "RRB Rapid Revision",
-        "description": "30-Day Crash Course for Railway Staff Nurse Exam.",
+        "name": "Rapid Revision 2.0",
+        "description": "100 Hours Crash Course for Nursing Exams.",
         "brand": { "@type": "Brand", "name": "NPrep" },
         "offers": { "@type": "Offer", "price": "1999", "priceCurrency": "INR", "availability": "https://schema.org/InStock" }
       }
@@ -33,7 +33,7 @@ export default function CoursesPage() {
     <div className="min-h-screen bg-white pb-24">
       <SEO 
         title="Best RRB Nursing Coaching 2026 - Online Courses & Test Series | NPrep"
-        description="Join India's #1 Online Coaching for RRB Nursing Superintendent. Get GOLD Batch, Rapid Revision, and Test Series with expert faculty."
+        description="Join India's #1 Online Coaching for RRB Nursing Superintendent. Get GOLD Batch, Rapid Revision 2.0, and Test Series with expert faculty."
         keywords={['RRB Nursing Coaching', 'Online Nursing Classes', 'RRB Staff Nurse Test Series', 'NPrep GOLD Batch']}
         schema={courseSchema}
         breadcrumbs={[
@@ -52,7 +52,7 @@ export default function CoursesPage() {
             Premium Nursing Courses
           </h1>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Structured preparation for RRB Nursing Superintendent. Choose the plan that fits your schedule and start learning today.
+            Structured preparation for RRB Nursing Superintendent and other top exams. Choose the plan that fits your schedule and start learning today.
           </p>
         </div>
       </section>
@@ -75,10 +75,13 @@ export default function CoursesPage() {
             <CardContent className="flex-1 pt-0">
               <div className="space-y-4 mt-4">
                 {[
-                  "Full Syllabus (Tech + Non-Tech)",
-                  "500+ Hours Video Lectures",
-                  "Printable PDF Notes & E-Books",
-                  "Dedicated Doubt Clearing Sessions"
+                  "NORCET 10 & 11/ CHO / BTSC/ KGMU/ GMCH - All Covered",
+                  "900 Hours - Basic to Advanced Theory (with Clinicals)",
+                  "100 Hrs - Rapid Revision 2.0",
+                  "30,000 Questions - QBank (Topic Wise)",
+                  "Daily Test Series",
+                  "Previous Year Papers",
+                  "Subject Wise Papers"
                 ].map((feat, i) => (
                   <div key={i} className="flex items-start gap-3 text-sm text-slate-600">
                     <CheckCircle2 className="h-5 w-5 text-slate-900 shrink-0 mt-0.5" />
@@ -96,24 +99,26 @@ export default function CoursesPage() {
             </CardFooter>
           </Card>
 
-          {/* Rapid Revision */}
+          {/* Rapid Revision 2.0 */}
           <Card className="flex flex-col border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300">
             <CardHeader className="pb-4">
               <div className="mb-4">
                 <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200 border-0 rounded-md px-3">Crash Course</Badge>
               </div>
-              <CardTitle className="text-2xl font-bold text-slate-900">Rapid Revision</CardTitle>
+              <CardTitle className="text-2xl font-bold text-slate-900">Rapid Revision 2.0</CardTitle>
               <CardDescription className="text-base mt-2 text-slate-600">
-                30-day fast-track revision for last minute preparation and quick recall.
+                Fast-track revision for last minute preparation and quick recall.
               </CardDescription>
             </CardHeader>
             <CardContent className="flex-1 pt-0">
               <div className="space-y-4 mt-4">
                 {[
-                  "Quick Syllabus Recap (30 Days)",
-                  "High Yield Topics Focus",
-                  "Formula Charts & Mnemonics",
-                  "Last Minute Exam Strategy"
+                  "NORCET/ CHO/ BTSC/ KGMU/ GMCH - All Covered",
+                  "Complete Nursing Syllabus in 100 Hours",
+                  "Previous Year Papers - with Explainations",
+                  "Daily Test Series",
+                  "30,000+ Questions - QBank (Topic Wise)",
+                  "Subject Wise Tests"
                 ].map((feat, i) => (
                   <div key={i} className="flex items-start gap-3 text-sm text-slate-600">
                     <CheckCircle2 className="h-5 w-5 text-slate-900 shrink-0 mt-0.5" />
@@ -145,10 +150,12 @@ export default function CoursesPage() {
             <CardContent className="flex-1 pt-0">
               <div className="space-y-4 mt-4">
                 {[
-                  "50+ Full Length Mock Tests",
-                  "Subject-Wise & Topic-Wise Tests",
-                  "Detailed Performance Analysis",
-                  "All India Rank Prediction"
+                  "30,000+ Questions - QBank (Topic Wise)",
+                  "Each Question with Explaination",
+                  "Subject Wise Tests",
+                  "Daily Test Series",
+                  "Previous Year Question Papers",
+                  "IBQs, Clinical Scenario Questions"
                 ].map((feat, i) => (
                   <div key={i} className="flex items-start gap-3 text-sm text-slate-600">
                     <CheckCircle2 className="h-5 w-5 text-slate-900 shrink-0 mt-0.5" />
