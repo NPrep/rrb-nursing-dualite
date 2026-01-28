@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ExternalLink, ArrowRight } from 'lucide-react';
+import { ExternalLink, ArrowRight, Heart } from 'lucide-react';
 import { NPREP_LINKS } from '../../data/links';
 import { Logo } from '../ui/Logo';
 
@@ -46,7 +46,6 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
               <li><Link to="/resources" className="hover:text-white transition-colors">Free Resources</Link></li>
-              {/* Removed Exam Strategy Blog & Helpdesk as requested */}
             </ul>
           </div>
         </div>
@@ -63,9 +62,14 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 mt-6">
           <p>© 2025 RRB Nursing. All rights reserved.</p>
-          <p className="mt-2 md:mt-0 flex items-center">
-            Last Updated: {new Date().toLocaleDateString()}
-          </p>
+          
+          {/* Powered by NPrep Section */}
+          <div className="mt-4 md:mt-0 flex items-center gap-1">
+             <span className="opacity-70">In association with</span>
+             <a href="https://nprep.in" target="_blank" rel="noopener noreferrer" className="font-bold text-white hover:text-primary transition-colors flex items-center gap-1">
+               NPrep <Heart className="h-3 w-3 text-primary fill-primary" />
+             </a>
+          </div>
         </div>
       </div>
     </footer>

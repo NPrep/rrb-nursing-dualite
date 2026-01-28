@@ -92,8 +92,7 @@ export default function CoursesPage() {
             </CardContent>
             <CardFooter className="pt-6">
               <a href={NPREP_LINKS.GOLD_COURSE} target="_blank" rel="noopener noreferrer" className="w-full">
-                {/* UPDATED BUTTON: White background with dark border */}
-                <Button className="w-full bg-white text-slate-900 border border-slate-900 hover:bg-slate-50 font-semibold h-11">
+                <Button className="w-full bg-white text-slate-900 border border-slate-900 hover:bg-slate-50 hover:text-slate-900 font-semibold h-11">
                   Join Batch <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </a>
@@ -130,7 +129,8 @@ export default function CoursesPage() {
             </CardContent>
             <CardFooter className="pt-6">
               <a href={NPREP_LINKS.RAPID_REVISION} target="_blank" rel="noopener noreferrer" className="w-full">
-                <Button variant="outline" className="w-full border-slate-200 hover:bg-slate-50 text-slate-900 font-semibold h-11">
+                {/* FIXED: Added hover:text-slate-900 to prevent text disappearing */}
+                <Button variant="outline" className="w-full border-slate-200 hover:bg-slate-50 text-slate-900 hover:text-slate-900 font-semibold h-11">
                   Start Revision <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </a>
@@ -167,7 +167,8 @@ export default function CoursesPage() {
             </CardContent>
             <CardFooter className="pt-6">
               <a href={NPREP_LINKS.TEST_SERIES} target="_blank" rel="noopener noreferrer" className="w-full">
-                <Button variant="outline" className="w-full border-slate-200 hover:bg-slate-50 text-slate-900 font-semibold h-11">
+                {/* FIXED: Added hover:text-slate-900 to prevent text disappearing */}
+                <Button variant="outline" className="w-full border-slate-200 hover:bg-slate-50 text-slate-900 hover:text-slate-900 font-semibold h-11">
                   Attempt Tests <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </a>
