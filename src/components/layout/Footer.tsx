@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ExternalLink, ArrowRight, Heart } from 'lucide-react';
+import { ExternalLink, ArrowRight, Zap } from 'lucide-react';
 import { NPREP_LINKS } from '../../data/links';
 import { Logo } from '../ui/Logo';
 
@@ -63,11 +63,11 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 mt-6">
           <p>© 2025 RRB Nursing. All rights reserved.</p>
           
-          {/* Powered by NPrep Section */}
-          <div className="mt-4 md:mt-0 flex items-center gap-1">
-             <span className="opacity-70">In association with</span>
-             <a href="https://nprep.in" target="_blank" rel="noopener noreferrer" className="font-bold text-white hover:text-primary transition-colors flex items-center gap-1">
-               NPrep <Heart className="h-3 w-3 text-primary fill-primary" />
+          {/* Powered by NPrep Section - Enhanced Trust Signal */}
+          <div className="mt-4 md:mt-0 flex items-center gap-1.5 bg-slate-800/50 px-3 py-1.5 rounded-full border border-slate-700/50">
+             <span className="opacity-60 font-medium">Powered by</span>
+             <a href="https://nprep.in" target="_blank" rel="noopener noreferrer" className="font-bold text-white hover:text-primary transition-colors flex items-center gap-1.5">
+               <Zap className="h-3 w-3 text-yellow-400 fill-yellow-400" /> NPrep
              </a>
           </div>
         </div>

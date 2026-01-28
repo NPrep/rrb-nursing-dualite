@@ -7,13 +7,20 @@ export default function AboutPage() {
   // Updated to use the local generated SVG
   const LOGO_URL = "/rrb-train-logo.svg";
 
+  // Enhanced Schema to signal relationship to Google
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "NPrep",
+    "name": "RRB Nursing Prep",
     "url": "https://rrbnursing.com",
-    "logo": "https://rrbnursing.com/rrb-train-logo.svg", // Absolute path for Schema
+    "logo": "https://rrbnursing.com/rrb-train-logo.svg",
     "description": "Leading preparation portal for RRB Nursing Superintendent Exam.",
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "NPrep",
+      "url": "https://nprep.in",
+      "logo": "https://nprep.in/logo.png"
+    },
     "sameAs": [
       "https://facebook.com/nprep",
       "https://twitter.com/nprep",
