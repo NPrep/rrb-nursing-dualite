@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle2, ArrowRight } from 'lucide-react';
+import { CheckCircle2, ArrowRight, GraduationCap } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Badge } from '../components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from '../components/ui/card';
@@ -42,8 +42,16 @@ export default function CoursesPage() {
         ]}
       />
 
+      {/* Header Banner - Independent Platform */}
+      <div className="bg-slate-900 text-white py-3 text-center px-4">
+        <p className="text-sm font-medium flex items-center justify-center gap-2">
+          <GraduationCap className="h-4 w-4 text-yellow-400" />
+          NPrep Online Coaching (Independent Platform)
+        </p>
+      </div>
+
       {/* Minimal Hero Section */}
-      <section className="pt-24 pb-16 px-4 text-center">
+      <section className="pt-16 pb-12 px-4 text-center">
         <div className="container mx-auto max-w-3xl">
           <Badge variant="secondary" className="mb-6 bg-slate-100 text-slate-600 hover:bg-slate-200 border-0 px-4 py-1.5 text-sm font-medium">
             Trusted by 50,000+ Nurses
@@ -129,7 +137,6 @@ export default function CoursesPage() {
             </CardContent>
             <CardFooter className="pt-6">
               <a href={NPREP_LINKS.RAPID_REVISION} target="_blank" rel="noopener noreferrer" className="w-full">
-                {/* FIXED: Added hover:text-slate-900 to prevent text disappearing */}
                 <Button variant="outline" className="w-full border-slate-200 hover:bg-slate-50 text-slate-900 hover:text-slate-900 font-semibold h-11">
                   Start Revision <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -167,7 +174,6 @@ export default function CoursesPage() {
             </CardContent>
             <CardFooter className="pt-6">
               <a href={NPREP_LINKS.TEST_SERIES} target="_blank" rel="noopener noreferrer" className="w-full">
-                {/* FIXED: Added hover:text-slate-900 to prevent text disappearing */}
                 <Button variant="outline" className="w-full border-slate-200 hover:bg-slate-50 text-slate-900 hover:text-slate-900 font-semibold h-11">
                   Attempt Tests <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>

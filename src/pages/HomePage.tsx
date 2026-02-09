@@ -1,19 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FileText, Briefcase, Users, MapPin, FileCheck, ExternalLink, ArrowRight, BookOpen, AlertCircle, IndianRupee, PlayCircle, Download, ChevronDown, HelpCircle } from 'lucide-react';
+import { FileText, Briefcase, Users, MapPin, FileCheck, ExternalLink, ArrowRight, BookOpen, AlertCircle, IndianRupee, PlayCircle, Download, HelpCircle, GraduationCap } from 'lucide-react';
 import { Button } from '../components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
+import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
 import { notifications, importantDates, faqs } from '../data/mockData';
 import { NPREP_LINKS } from '../data/links';
 import { cn } from '../lib/utils';
 import SEO from '../components/SEO';
-import SEOContent from '../components/home/SEOContent'; // Import the new component
+import SEOContent from '../components/home/SEOContent';
 
 export default function HomePage() {
   const RRB_OFFICIAL_URL = "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,7,1281";
 
-  // 1. Construct FAQ Schema for Google "Answer Box" Ranking
+  // 1. FAQ Schema
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -27,7 +27,21 @@ export default function HomePage() {
     }))
   };
 
-  // 2. Construct WebSite Schema
+  // 2. Event Schema for Exam Dates
+  const eventSchema = importantDates.map(item => ({
+    "@context": "https://schema.org",
+    "@type": "EducationEvent",
+    "name": item.title,
+    "startDate": new Date(item.date).toISOString().split('T')[0], // Approximation for schema
+    "eventStatus": "https://schema.org/EventScheduled",
+    "description": `Important date for ${item.title} - RRB Nursing Superintendent 2026`,
+    "location": {
+      "@type": "Place",
+      "name": "Online / All India"
+    }
+  }));
+
+  // 3. WebSite Schema
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -35,40 +49,39 @@ export default function HomePage() {
     "url": "https://rrbnursing.com"
   };
 
-  // Combine Schemas
-  const combinedSchema = [websiteSchema, faqSchema];
+  const combinedSchema = [websiteSchema, faqSchema, ...eventSchema];
 
   const featureCards = [
     { 
-      title: "Apply Online", 
-      desc: "Official RRB Portal", 
+      title: "Notifications", 
+      desc: "Latest Vacancies", 
       icon: FileText, 
-      bg: "bg-primary", 
-      link: RRB_OFFICIAL_URL,
-      isExternal: true 
-    },
-    { 
-      title: "Admit Card", 
-      desc: "Download Hall Ticket", 
-      icon: FileCheck, 
-      bg: "bg-primary", 
-      link: RRB_OFFICIAL_URL,
-      isExternal: true 
-    },
-    { 
-      title: "Check Results", 
-      desc: "View Selection List", 
-      icon: Users, 
-      bg: "bg-primary", 
-      link: RRB_OFFICIAL_URL,
-      isExternal: true 
+      bg: "bg-slate-800", 
+      link: "/notifications",
+      isExternal: false 
     },
     { 
       title: "Syllabus", 
       desc: "Exam Pattern 2026", 
       icon: BookOpen, 
-      bg: "bg-primary", 
+      bg: "bg-slate-800", 
       link: "/syllabus", 
+      isExternal: false 
+    },
+    { 
+      title: "Eligibility", 
+      desc: "Check Criteria", 
+      icon: FileCheck, 
+      bg: "bg-slate-800", 
+      link: "/blogs/rrb-nursing-superintendent-eligibility-criteria-2026", 
+      isExternal: false 
+    },
+    { 
+      title: "Exam Dates", 
+      desc: "View Calendar", 
+      icon: Users, 
+      bg: "bg-slate-800", 
+      link: "/notifications", 
       isExternal: false 
     },
   ];
@@ -87,91 +100,76 @@ export default function HomePage() {
         description="India's #1 Portal for RRB Nursing Superintendent Exam 2026. Get latest notification, syllabus, eligibility, salary details, and online coaching."
         keywords={['RRB Nursing', 'Nursing Superintendent', 'Railway Staff Nurse', 'RRB Notification 2026']}
         canonical="/"
-        schema={combinedSchema} // Injecting both Website and FAQ Schema
+        schema={combinedSchema}
       />
 
       {/* Hero Section */}
-      <section className="pt-20 pb-12 px-4 bg-gradient-to-b from-red-50 to-white">
-        <div className="container mx-auto max-w-6xl text-center space-y-6">
-          <Badge className="bg-primary/10 text-primary hover:bg-primary/20 border-0 mb-2">
-            #1 Nursing Preparation Platform
+      <section className="pt-24 pb-16 px-4 bg-gradient-to-b from-red-50 to-white">
+        <div className="container mx-auto max-w-6xl text-center space-y-8">
+          <Badge className="bg-red-100 text-red-800 hover:bg-red-200 border-0 mb-4 px-4 py-1.5 text-sm">
+            #1 RRB Nursing Information Portal
           </Badge>
-          <h1 className="text-4xl md:text-6xl font-bold text-slate-900 tracking-tight">
-            Crack <span className="text-primary">RRB Nursing</span> Exam
+          <h1 className="text-4xl md:text-6xl font-black text-slate-900 tracking-tight leading-tight">
+            RRB <span className="text-primary">Nursing Superintendent</span> <br className="hidden md:block"/> Recruitment 2026
           </h1>
-          <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
-            The definitive hub for Railway Nursing Superintendent aspirants. Get official updates, expert guidance, and premium study material.
+          <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            Your one-stop destination for official updates, syllabus, eligibility criteria, and exam patterns for Indian Railways Nursing Exams.
           </p>
+          
+          <div className="flex flex-wrap justify-center gap-4 pt-4">
+             <Link to="/notifications">
+               <Button size="lg" className="h-12 px-8 text-base font-bold bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20">
+                 View Notifications
+               </Button>
+             </Link>
+             <Link to="/syllabus">
+               <Button size="lg" variant="outline" className="h-12 px-8 text-base font-bold border-2">
+                 Download Syllabus
+               </Button>
+             </Link>
+          </div>
         </div>
       </section>
 
-      {/* Feature Cards Section */}
-      <section className="py-8 px-4">
+      {/* Quick Navigation Grid (Official Info) */}
+      <section className="py-8 px-4 -mt-8">
         <div className="container mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {featureCards.map((card, idx) => (
-              card.isExternal ? (
-                <a 
-                  key={idx} 
-                  href={card.link} 
-                  target={card.link.startsWith('http') ? "_blank" : "_self"}
-                  rel="noopener noreferrer"
-                  className="block group"
-                >
-                  <div className={cn(
-                    "h-full rounded-xl p-8 text-white transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between min-h-[200px]",
-                    card.bg
-                  )}>
-                    <div className="space-y-4">
-                      <div className="bg-white/20 w-12 h-12 rounded-lg flex items-center justify-center backdrop-blur-sm">
-                        <card.icon className="h-6 w-6 text-white" />
-                      </div>
-                      <div>
-                        <h3 className="text-2xl font-bold mb-1">{card.title}</h3>
-                        <p className="text-white/80 text-sm font-medium">{card.desc}</p>
-                      </div>
+              <Link 
+                key={idx} 
+                to={card.link}
+                className="block group"
+              >
+                <div className={cn(
+                  "h-full rounded-xl p-6 md:p-8 text-white transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between min-h-[160px] md:min-h-[200px]",
+                  card.bg
+                )}>
+                  <div className="space-y-3 md:space-y-4">
+                    <div className="bg-white/10 w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center backdrop-blur-sm">
+                      <card.icon className="h-5 w-5 md:h-6 md:w-6 text-white" />
                     </div>
-                    <div className="mt-8 flex items-center text-sm font-semibold group-hover:gap-2 transition-all">
-                      Access Now <ArrowRight className="ml-2 h-4 w-4" />
+                    <div>
+                      <h3 className="text-lg md:text-2xl font-bold mb-1 leading-tight">{card.title}</h3>
+                      <p className="text-white/70 text-xs md:text-sm font-medium">{card.desc}</p>
                     </div>
                   </div>
-                </a>
-              ) : (
-                <Link 
-                  key={idx} 
-                  to={card.link}
-                  className="block group"
-                >
-                  <div className={cn(
-                    "h-full rounded-xl p-8 text-white transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between min-h-[200px]",
-                    card.bg
-                  )}>
-                    <div className="space-y-4">
-                      <div className="bg-white/20 w-12 h-12 rounded-lg flex items-center justify-center backdrop-blur-sm">
-                        <card.icon className="h-6 w-6 text-white" />
-                      </div>
-                      <div>
-                        <h3 className="text-2xl font-bold mb-1">{card.title}</h3>
-                        <p className="text-white/80 text-sm font-medium">{card.desc}</p>
-                      </div>
-                    </div>
-                    <div className="mt-8 flex items-center text-sm font-semibold group-hover:gap-2 transition-all">
-                      View Details <ArrowRight className="ml-2 h-4 w-4" />
-                    </div>
+                  <div className="mt-4 md:mt-8 flex items-center text-xs md:text-sm font-semibold group-hover:gap-2 transition-all opacity-80 group-hover:opacity-100">
+                    View <ArrowRight className="ml-2 h-3 w-3 md:h-4 md:w-4" />
                   </div>
-                </Link>
-              )
+                </div>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Nursing Officer Essentials Section */}
-      <section className="py-16 px-4 bg-slate-50">
+      {/* Essential Info Section */}
+      <section className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-slate-900">Nursing Officer Essentials</h2>
-            <p className="text-slate-600 mt-2">Everything you need to know about the RRB Nursing Superintendent post.</p>
+            <h2 className="text-3xl font-bold text-slate-900">Exam Essentials</h2>
+            <p className="text-slate-600 mt-2">Everything you need to know about the post.</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -201,10 +199,10 @@ export default function HomePage() {
                  desc: "6-Month Study Plan" 
                },
              ].map((item, i) => (
-               <Link key={i} to={item.link} className="group">
-                 <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-all h-full flex flex-col items-center text-center">
-                    <div className="w-14 h-14 bg-slate-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary/10 transition-colors">
-                      <item.icon className="h-7 w-7 text-slate-600 group-hover:text-primary transition-colors" />
+               <Link key={i} to={item.link} className="group block h-full">
+                 <div className="bg-slate-50 p-6 rounded-xl border border-slate-100 hover:border-primary/30 hover:shadow-lg transition-all h-full flex flex-col items-center text-center">
+                    <div className="w-14 h-14 bg-white rounded-full shadow-sm flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                      <item.icon className="h-7 w-7 text-slate-700 group-hover:text-primary transition-colors" />
                     </div>
                     <h3 className="font-bold text-lg text-slate-900 mb-1">{item.title}</h3>
                     <p className="text-sm text-slate-500">{item.desc}</p>
@@ -215,66 +213,64 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Free Prep Zone Section */}
-      <section className="py-16 px-4 bg-white">
+      {/* NPrep Coaching Section - CLEARLY SEPARATED */}
+      <section className="py-16 px-4 bg-slate-50 border-y border-slate-200">
         <div className="container mx-auto max-w-7xl">
-          <div className="bg-slate-900 rounded-2xl p-8 md:p-12 relative overflow-hidden">
-            {/* Background Pattern */}
-            <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+          
+          {/* Separation Label */}
+          <div className="flex items-center justify-center gap-4 mb-10">
+            <div className="h-px bg-slate-300 flex-1 max-w-[100px]"></div>
+            <span className="text-xs font-bold uppercase tracking-widest text-slate-500 bg-white px-3 py-1 rounded-full border border-slate-200">
+              Sponsored Partner
+            </span>
+            <div className="h-px bg-slate-300 flex-1 max-w-[100px]"></div>
+          </div>
+
+          <div className="bg-white rounded-2xl p-8 md:p-12 border-2 border-slate-100 shadow-xl relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-yellow-400 via-primary to-purple-600"></div>
             
-            <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
-              <div className="space-y-4 max-w-xl text-center md:text-left">
-                <Badge className="bg-green-500 text-black hover:bg-green-400 border-0">Free Resources</Badge>
-                <h2 className="text-3xl md:text-4xl font-bold text-white">Start Preparing for Free!</h2>
-                <p className="text-slate-300 text-lg">
-                  Access high-quality video lectures, previous year question papers, and daily mock tests without paying a penny.
+            <div className="flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
+              <div className="space-y-6 max-w-2xl text-center md:text-left">
+                <div>
+                   <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-2">
+                     NPrep Online Coaching
+                   </h2>
+                   <p className="text-sm font-bold text-primary uppercase tracking-wide">
+                     (Independent Platform)
+                   </p>
+                </div>
+                <p className="text-slate-600 text-lg leading-relaxed">
+                  Looking for structured preparation? NPrep offers premium video courses, test series, and free resources designed specifically for nursing exams.
                 </p>
-                <div className="flex flex-wrap gap-4 justify-center md:justify-start pt-4">
-                  <a href={NPREP_LINKS.FREE_RESOURCES} target="_blank" rel="noopener noreferrer">
-                    <Button className="bg-white text-slate-900 hover:bg-slate-100 font-bold">
-                      <PlayCircle className="mr-2 h-4 w-4" /> Watch Classes
+                
+                <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+                  <a href={NPREP_LINKS.GOLD_COURSE} target="_blank" rel="noopener noreferrer">
+                    <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold h-12 px-6">
+                      <GraduationCap className="mr-2 h-5 w-5" /> Explore GOLD Batch
                     </Button>
                   </a>
-                  <a href={NPREP_LINKS.PYQ} target="_blank" rel="noopener noreferrer">
-                    <Button variant="outline" className="bg-transparent text-white border-white hover:bg-white/10 hover:text-white">
-                      <Download className="mr-2 h-4 w-4" /> Download PYQs
+                  <a href={NPREP_LINKS.FREE_RESOURCES} target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" className="border-slate-300 h-12 px-6">
+                      <PlayCircle className="mr-2 h-5 w-5 text-red-500" /> Free Classes
                     </Button>
                   </a>
                 </div>
               </div>
               
               {/* Visual Graphic */}
-              <div className="relative">
-                 <div className="w-64 h-40 bg-slate-800 rounded-lg border border-slate-700 flex items-center justify-center shadow-2xl transform rotate-3 hover:rotate-0 transition-all duration-500">
-                    <div className="text-center">
-                       <FileCheck className="h-12 w-12 text-green-500 mx-auto mb-2" />
-                       <div className="font-bold text-white">Daily Test</div>
-                       <div className="text-xs text-slate-400">Live Now</div>
+              <div className="relative hidden md:block">
+                 <div className="w-72 h-48 bg-slate-900 rounded-xl border border-slate-800 flex flex-col items-center justify-center shadow-2xl transform rotate-3 hover:rotate-0 transition-all duration-500">
+                    <div className="text-center p-6">
+                       <FileCheck className="h-12 w-12 text-green-500 mx-auto mb-3" />
+                       <div className="font-bold text-white text-xl">Daily Test Series</div>
+                       <div className="text-sm text-slate-400 mt-1">Live on NPrep App</div>
+                       <a href={NPREP_LINKS.DAILY_TEST} target="_blank" rel="noopener noreferrer" className="inline-block mt-4 text-xs font-bold text-green-400 hover:underline">
+                         Attempt Now &rarr;
+                       </a>
                     </div>
-                 </div>
-                 <div className="absolute -top-4 -left-4 w-64 h-40 bg-slate-800 rounded-lg border border-slate-700 flex items-center justify-center shadow-xl transform -rotate-3 z-[-1]">
                  </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-12 px-4 bg-slate-50">
-        <div className="container mx-auto max-w-7xl">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, idx) => (
-              <Card key={idx} className="border-0 shadow-none bg-transparent">
-                <CardContent className="p-0 flex flex-col items-center text-center space-y-2">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-2 shadow-sm">
-                    <stat.icon className="h-6 w-6 text-primary" />
-                  </div>
-                  <div className="text-3xl font-bold text-slate-900">{stat.value}</div>
-                  <div className="text-sm text-slate-500 font-medium uppercase tracking-wide">{stat.label}</div>
-                </CardContent>
-              </Card>
-            ))}
           </div>
         </div>
       </section>
@@ -285,7 +281,7 @@ export default function HomePage() {
           {/* Latest Notifications */}
           <div className="lg:col-span-2 space-y-8">
             <div className="flex items-center justify-between">
-              <h2 className="text-2xl font-bold text-slate-900">Latest Nursing Updates</h2>
+              <h2 className="text-2xl font-bold text-slate-900">Latest Updates</h2>
               <Link to="/notifications" className="text-primary font-medium hover:underline flex items-center">
                 View All <ArrowRight className="ml-1 h-4 w-4" />
               </Link>
@@ -302,17 +298,15 @@ export default function HomePage() {
                             {note.status}
                           </Badge>
                           <span className="text-xs text-slate-500">{note.date}</span>
+                          <span className="text-xs font-medium text-slate-400">• {note.zone}</span>
                         </div>
                         <h3 className="font-semibold text-lg text-slate-900 group-hover:text-primary transition-colors">
                           {note.title}
                         </h3>
-                        <p className="text-sm text-slate-500 line-clamp-1">
-                          {note.description}
-                        </p>
                       </div>
                       <a href={RRB_OFFICIAL_URL} target="_blank" rel="noopener noreferrer">
-                        <Button variant="outline" className="shrink-0 border-slate-200 hover:bg-slate-50 hover:text-primary">
-                          View Details <ExternalLink className="ml-2 h-4 w-4" />
+                        <Button variant="outline" size="sm" className="shrink-0 border-slate-200 hover:bg-slate-50 hover:text-primary">
+                          View Notice <ExternalLink className="ml-2 h-3 w-3" />
                         </Button>
                       </a>
                     </div>
@@ -346,10 +340,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SEO Content Silo (New Section) */}
+      {/* SEO Content Silo */}
       <SEOContent />
 
-      {/* FAQ Section (Added for SEO Phase 5) */}
+      {/* FAQ Section */}
       <section className="py-16 px-4 bg-slate-50">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Filter, Search, ExternalLink, Download } from 'lucide-react';
+import { Filter, Search, ExternalLink, Download, Calendar, BellRing } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
 import { Card, CardContent } from '../components/ui/card';
@@ -18,9 +18,9 @@ export default function NotificationsPage() {
   return (
     <div className="container mx-auto px-4 py-8">
       <SEO 
-        title="Latest RRB Nursing Notifications 2026 - Vacancy, Exam Date & Results"
-        description="Get real-time updates on RRB Nursing Superintendent and Staff Nurse recruitment 2026. Download official notifications, admit cards, and results."
-        keywords={['RRB Nursing Notification', 'Railway Nurse Vacancy', 'RRB Exam Date 2026', 'RRB Results']}
+        title="RRB Nursing Exam Date 2026 & Latest Notifications"
+        description="Check RRB Nursing Superintendent Exam Date 2026 (CEN 03/2025). Download official notification PDF and admit card."
+        keywords={['RRB Nursing Exam Date', 'CEN 03/2025 Exam Date', 'Railway Staff Nurse Notification']}
         canonical="/notifications"
         breadcrumbs={[
           { name: 'Home', item: '/' },
@@ -28,11 +28,66 @@ export default function NotificationsPage() {
         ]}
       />
 
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
-        <div>
-          <h1 className="text-3xl font-bold text-primary">Notifications</h1>
-          <p className="text-muted-foreground mt-1">Stay updated with the latest recruitment announcements.</p>
+      <div className="mb-8">
+        <h1 className="text-3xl font-bold text-primary">Notifications & Exam Dates</h1>
+        <p className="text-muted-foreground mt-1">Official updates regarding CEN 03/2025 and other railway nursing recruitments.</p>
+      </div>
+
+      {/* HIGH VISIBILITY EXAM SCHEDULE CARD */}
+      <Card className="mb-10 border-l-4 border-l-primary bg-slate-50 shadow-md">
+        <CardContent className="p-6 md:p-8">
+          <div className="flex items-start gap-4">
+            <div className="p-3 bg-white rounded-full shadow-sm shrink-0 hidden md:block">
+              <Calendar className="h-8 w-8 text-primary" />
+            </div>
+            <div className="w-full">
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                <div>
+                  <h2 className="text-2xl font-bold text-slate-900">Official Exam Schedule Announced</h2>
+                  <p className="text-slate-600 text-sm mt-1">Computer Based Test (CBT) Schedule for Nursing Superintendent</p>
+                </div>
+                <Badge className="bg-red-100 text-red-700 hover:bg-red-200 border-0 px-3 py-1 text-sm animate-pulse">
+                  Latest Update
+                </Badge>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 bg-white p-6 rounded-xl border border-slate-200">
+                <div className="space-y-1">
+                  <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">Notification Number</span>
+                  <div className="font-bold text-xl text-slate-900">CEN 03/2025</div>
+                </div>
+                <div className="space-y-1">
+                  <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">Post Name</span>
+                  <div className="font-bold text-xl text-slate-900">Nursing Superintendent</div>
+                </div>
+                <div className="space-y-1">
+                  <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">CBT Exam Date</span>
+                  <div className="font-bold text-xl text-primary flex items-center gap-2">
+                    <BellRing className="h-5 w-5" />
+                    March 10 - 12, 2026
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Filters and Search */}
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
+        <div className="flex gap-2 overflow-x-auto pb-2 w-full md:w-auto">
+          {['All', 'Recruitment', 'Result', 'Admit Card'].map((type) => (
+            <Button 
+              key={type}
+              variant={filter === type ? 'default' : 'outline'}
+              onClick={() => setFilter(type)}
+              className="rounded-full whitespace-nowrap"
+            >
+              {type}
+            </Button>
+          ))}
         </div>
+
         <div className="flex items-center gap-2 w-full md:w-auto">
           <div className="relative flex-1 md:w-64">
             <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
@@ -44,48 +99,37 @@ export default function NotificationsPage() {
         </div>
       </div>
 
-      <div className="flex gap-2 mb-6 overflow-x-auto pb-2">
-        {['All', 'Recruitment', 'Result', 'Admit Card'].map((type) => (
-          <Button 
-            key={type}
-            variant={filter === type ? 'default' : 'outline'}
-            onClick={() => setFilter(type)}
-            className="rounded-full"
-          >
-            {type}
-          </Button>
-        ))}
-      </div>
-
+      {/* Notifications Grid */}
       <div className="grid gap-4">
         {filteredNotifications.map((note) => (
-          <Card key={note.id} className="hover:shadow-md transition-shadow">
+          <Card key={note.id} className="hover:shadow-md transition-shadow group">
             <CardContent className="p-6">
               <div className="flex flex-col md:flex-row gap-4 justify-between">
                 <div className="space-y-2">
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2 flex-wrap">
                     <Badge variant={
                       note.status === 'Active' ? 'default' : 
                       note.status === 'Closed' ? 'secondary' : 'warning'
                     }>
                       {note.status}
                     </Badge>
-                    <span className="text-sm text-muted-foreground">{note.date}</span>
+                    <span className="text-sm text-muted-foreground flex items-center gap-1">
+                      <Calendar className="h-3 w-3" /> {note.date}
+                    </span>
                     <span className="text-sm font-medium text-primary/80">• {note.zone}</span>
                   </div>
-                  <h3 className="text-xl font-semibold text-primary">{note.title}</h3>
-                  <p className="text-muted-foreground">{note.description}</p>
+                  <h3 className="text-xl font-semibold text-primary group-hover:underline decoration-2 underline-offset-4">{note.title}</h3>
+                  <p className="text-muted-foreground text-sm md:text-base">{note.description}</p>
                 </div>
-                <div className="flex items-center gap-2 shrink-0">
-                  {/* Updated Download Button to use specific link if available */}
+                <div className="flex items-center gap-2 shrink-0 mt-2 md:mt-0">
                   <a href={note.downloadLink || RRB_OFFICIAL_URL} target="_blank" rel="noopener noreferrer">
-                    <Button variant="outline">
+                    <Button variant="outline" className="w-full md:w-auto">
                       <Download className="mr-2 h-4 w-4" /> Download PDF
                     </Button>
                   </a>
                   {note.status === 'Active' && note.type === 'Recruitment' && (
                     <a href={RRB_OFFICIAL_URL} target="_blank" rel="noopener noreferrer">
-                      <Button className="bg-accent hover:bg-accent/90">
+                      <Button className="bg-accent hover:bg-accent/90 w-full md:w-auto">
                         Apply Now <ExternalLink className="ml-2 h-4 w-4" />
                       </Button>
                     </a>

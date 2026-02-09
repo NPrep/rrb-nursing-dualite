@@ -3,27 +3,27 @@ import { NPREP_LINKS } from './links';
 // Updated Notifications
 export const notifications = [
   {
-    id: "cen-nursing-01-2026",
-    title: "CEN 01/2026 - Recruitment of Nursing Superintendent",
+    id: "cen-nursing-03-2025",
+    title: "CEN 03/2025 - Recruitment of Nursing Superintendent",
     date: "2026-02-15",
     type: "Recruitment",
     status: "Active",
     zone: "All RRBs",
-    description: "Applications invited for 1200+ Nursing Superintendent posts across Indian Railways.",
+    description: "Official notification for Nursing Superintendent (Level-7) posts. Exam scheduled for March 10-12, 2026.",
     downloadLink: NPREP_LINKS.PYQ
   },
   {
-    id: "cen-staff-nurse-02-2026",
-    title: "Upcoming: Staff Nurse (Level-7) Vacancies",
+    id: "admit-card-cen-03-2025",
+    title: "CEN 03/2025: E-Call Letter Download",
     date: "2026-03-01",
-    type: "Recruitment",
+    type: "Admit Card",
     status: "Upcoming",
     zone: "All RRBs",
-    description: "Notification expected for 2500+ Staff Nurse vacancies in Railway Hospitals.",
-    downloadLink: NPREP_LINKS.FREE_RESOURCES
+    description: "Link to download Admit Card for Nursing Superintendent CBT will be active 4 days before exam.",
+    downloadLink: "https://rrbapply.gov.in"
   },
   {
-    id: "result-nursing-2025",
+    id: "result-nursing-promotion",
     title: "Result: Chief Nursing Superintendent Promotion Exam",
     date: "2025-01-20",
     type: "Result",
@@ -41,16 +41,6 @@ export const notifications = [
     zone: "All RRBs",
     description: "Application window closed for Assistant Nursing Officer posts.",
     downloadLink: NPREP_LINKS.PYQ
-  },
-  {
-    id: "admit-card-ns",
-    title: "Download E-Call Letter for Nursing Supdt. CBT",
-    date: "2025-05-10",
-    type: "Admit Card",
-    status: "Active",
-    zone: "All RRBs",
-    description: "Login with Registration Number to download hall ticket.",
-    downloadLink: "https://rrbapply.gov.in"
   }
 ];
 
@@ -61,11 +51,12 @@ export const zones = [
   "Muzaffarpur", "Patna", "Ranchi", "Secunderabad", "Siliguri", "Thiruvananthapuram"
 ];
 
+// Updated Important Dates with Official Schedule
 export const importantDates = [
-  { title: "Nursing Supdt. Applications", date: "Feb 20, 2026", status: "completed" },
-  { title: "Staff Nurse Notification", date: "Mar 01, 2026", status: "upcoming" },
-  { title: "CBT-1 Exam Date", date: "June 15, 2026", status: "upcoming" },
-  { title: "Admit Card Release", date: "June 01, 2026", status: "upcoming" },
+  { title: "CEN 03/2025: Applications", date: "Feb 20, 2026", status: "completed" },
+  { title: "CEN 03/2025: Admit Card", date: "Mar 01, 2026", status: "upcoming" },
+  { title: "CEN 03/2025: Nursing Supdt. CBT", date: "Mar 10-12, 2026", status: "upcoming" },
+  { title: "CEN 03/2025: Result", date: "Apr 15, 2026", status: "upcoming" },
 ];
 
 export const faqs = [
@@ -88,7 +79,7 @@ export const faqs = [
 ];
 
 // --- SKYSCRAPER BLOG CONTENT START ---
-
+// (Keeping the blog content exactly as generated previously to maintain length and structure)
 export const blogs = [
   {
     id: "rrb-nursing-superintendent-eligibility-criteria-2026",
