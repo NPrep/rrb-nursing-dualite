@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FileText, Briefcase, Users, MapPin, FileCheck, ExternalLink, ArrowRight, BookOpen, AlertCircle, IndianRupee, PlayCircle, Download, HelpCircle, GraduationCap } from 'lucide-react';
+import { FileText, Briefcase, Users, MapPin, FileCheck, ExternalLink, ArrowRight, BookOpen, AlertCircle, IndianRupee, PlayCircle, Calendar, GraduationCap, HelpCircle } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
@@ -27,7 +27,7 @@ export default function HomePage() {
     }))
   };
 
-  // 2. Event Schema for Exam Dates
+  // 2. Event Schema for Exam Dates (Added)
   const eventSchema = importantDates.map(item => ({
     "@context": "https://schema.org",
     "@type": "EducationEvent",
@@ -79,18 +79,11 @@ export default function HomePage() {
     { 
       title: "Exam Dates", 
       desc: "View Calendar", 
-      icon: Users, 
+      icon: Calendar, 
       bg: "bg-slate-800", 
       link: "/notifications", 
       isExternal: false 
     },
-  ];
-
-  const stats = [
-    { value: "1200+", label: "Nursing Vacancies", icon: Briefcase },
-    { value: "50k+", label: "Happy Students", icon: Users },
-    { value: "17", label: "Railway Zones", icon: MapPin },
-    { value: "100+", label: "Mock Tests", icon: FileCheck },
   ];
 
   return (
@@ -213,39 +206,39 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* NPrep Coaching Section - CLEARLY SEPARATED */}
-      <section className="py-16 px-4 bg-slate-50 border-y border-slate-200">
+      {/* NPrep Coaching Section - VISUALLY SEPARATED & LABELED */}
+      <section className="py-16 px-4 bg-indigo-50/50 border-y-4 border-indigo-100">
         <div className="container mx-auto max-w-7xl">
           
-          {/* Separation Label */}
-          <div className="flex items-center justify-center gap-4 mb-10">
-            <div className="h-px bg-slate-300 flex-1 max-w-[100px]"></div>
-            <span className="text-xs font-bold uppercase tracking-widest text-slate-500 bg-white px-3 py-1 rounded-full border border-slate-200">
-              Sponsored Partner
-            </span>
-            <div className="h-px bg-slate-300 flex-1 max-w-[100px]"></div>
-          </div>
-
-          <div className="bg-white rounded-2xl p-8 md:p-12 border-2 border-slate-100 shadow-xl relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-yellow-400 via-primary to-purple-600"></div>
+          <div className="bg-white rounded-2xl p-8 md:p-12 border border-indigo-200 shadow-lg relative overflow-hidden">
             
-            <div className="flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
+            {/* Disclaimer Banner */}
+            <div className="absolute top-0 left-0 w-full bg-indigo-100 py-2 text-center border-b border-indigo-200">
+              <p className="text-xs font-bold text-indigo-800 uppercase tracking-widest">
+                Sponsored Content
+              </p>
+            </div>
+            
+            <div className="flex flex-col md:flex-row items-center justify-between gap-8 relative z-10 mt-6">
               <div className="space-y-6 max-w-2xl text-center md:text-left">
                 <div>
                    <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-2">
                      NPrep Online Coaching
                    </h2>
-                   <p className="text-sm font-bold text-primary uppercase tracking-wide">
+                   <p className="text-sm font-bold text-indigo-600 uppercase tracking-wide bg-indigo-50 inline-block px-3 py-1 rounded-full border border-indigo-100">
                      (Independent Platform)
                    </p>
                 </div>
                 <p className="text-slate-600 text-lg leading-relaxed">
                   Looking for structured preparation? NPrep offers premium video courses, test series, and free resources designed specifically for nursing exams.
                 </p>
+                <p className="text-xs text-slate-400 italic">
+                  * This coaching offering is independent of RRB.
+                </p>
                 
                 <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                   <a href={NPREP_LINKS.GOLD_COURSE} target="_blank" rel="noopener noreferrer">
-                    <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold h-12 px-6">
+                    <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold h-12 px-6 shadow-md">
                       <GraduationCap className="mr-2 h-5 w-5" /> Explore GOLD Batch
                     </Button>
                   </a>
@@ -305,7 +298,7 @@ export default function HomePage() {
                         </h3>
                       </div>
                       <a href={RRB_OFFICIAL_URL} target="_blank" rel="noopener noreferrer">
-                        <Button variant="outline" size="sm" className="shrink-0 border-slate-200 hover:bg-slate-50 hover:text-primary">
+                        <Button variant="outline" size="sm" className="shrink-0 border-slate-200 hover:bg-slate-50 hover:text-primary min-h-[44px]">
                           View Notice <ExternalLink className="ml-2 h-3 w-3" />
                         </Button>
                       </a>

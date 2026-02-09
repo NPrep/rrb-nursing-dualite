@@ -29,7 +29,7 @@ export default function SEOContent() {
           <div className="mb-12">
             <h3 className="text-2xl font-bold mb-6">Major Nursing Exams 2026: Key Details</h3>
             <div className="overflow-x-auto border rounded-lg shadow-sm">
-              <table className="w-full text-sm text-left">
+              <table className="w-full text-base text-left">
                 <thead className="bg-slate-50 text-slate-700 uppercase">
                   <tr>
                     <th className="px-6 py-3 border-b">Nursing Exam</th>
@@ -63,7 +63,7 @@ export default function SEOContent() {
             </div>
           </div>
 
-          {/* NPrep Coaching Section - Separated */}
+          {/* NPrep Coaching Section - Separated & Labeled */}
           <div className="my-16">
             <div className="flex items-center justify-center gap-4 mb-8">
                <div className="h-px bg-slate-200 flex-1"></div>
@@ -71,21 +71,24 @@ export default function SEOContent() {
                <div className="h-px bg-slate-200 flex-1"></div>
             </div>
 
-            <div className="bg-slate-50 border-2 border-slate-200 rounded-xl p-8">
+            <div className="bg-indigo-50/50 border-2 border-indigo-100 rounded-xl p-8">
               <div className="flex items-center gap-3 mb-4">
                  <GraduationCap className="h-8 w-8 text-slate-900" />
                  <div>
                     <h2 className="text-2xl font-bold m-0 text-slate-900">NPrep Online Coaching</h2>
-                    <p className="text-xs font-bold text-primary uppercase tracking-wide m-0">(Independent Platform)</p>
+                    <p className="text-xs font-bold text-indigo-600 uppercase tracking-wide m-0">(Independent Platform)</p>
                  </div>
               </div>
               
               <p className="text-slate-600 mb-6">
                 At <strong>NPrep</strong>, we understand the unique challenges of nursing aspirants. Our courses are designed by expert faculty to fit into your busy schedule, whether you are a student or a working nurse.
               </p>
+              <p className="text-xs text-slate-400 italic mb-6">
+                * This coaching offering is independent of RRB.
+              </p>
               
               <div className="grid md:grid-cols-2 gap-6">
-                <Card className="border-l-4 border-l-yellow-500 shadow-sm">
+                <Card className="border-l-4 border-l-yellow-500 shadow-sm bg-white">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-3 mb-3">
                       <GraduationCap className="h-6 w-6 text-yellow-600" />
@@ -100,7 +103,7 @@ export default function SEOContent() {
                   </CardContent>
                 </Card>
 
-                <Card className="border-l-4 border-l-purple-500 shadow-sm">
+                <Card className="border-l-4 border-l-purple-500 shadow-sm bg-white">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-3 mb-3">
                       <BookOpen className="h-6 w-6 text-purple-600" />
