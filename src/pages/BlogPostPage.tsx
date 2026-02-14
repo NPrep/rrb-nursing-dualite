@@ -15,13 +15,15 @@ export default function BlogPostPage() {
     return <Navigate to="/blogs" replace />;
   }
 
+  const publishedDate = new Date(blog.date);
+  const publishedIso = Number.isNaN(publishedDate.getTime()) ? null : publishedDate.toISOString();
+
   // Article Schema for Google
-  const articleSchema = {
+  const articleSchema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": blog.title,
     "image": [blog.image || "https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Indian_Railways_logo.svg/300px-Indian_Railways_logo.svg.png"],
-    "datePublished": new Date(blog.date).toISOString(),
     "dateModified": new Date().toISOString(),
     "author": [{
       "@type": "Organization",
@@ -29,6 +31,9 @@ export default function BlogPostPage() {
       "url": "https://rrbnursing.com"
     }]
   };
+  if (publishedIso) {
+    articleSchema.datePublished = publishedIso;
+  }
 
   return (
     <div className="container mx-auto px-4 py-12">

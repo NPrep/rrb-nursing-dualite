@@ -1,0 +1,20 @@
+export const routes = [
+  "/",
+  "/about",
+  "/admit-card",
+  "/apply",
+  "/blogs",
+  "/blogs/6-months-preparation-strategy-rrb-nursing-superintendent",
+  "/blogs/best-books-rrb-nursing-superintendent-preparation-2026",
+  "/blogs/rrb-nursing-previous-year-cutoff-analysis-2026",
+  "/blogs/rrb-nursing-superintendent-eligibility-criteria-2026",
+  "/blogs/rrb-nursing-superintendent-exam-pattern-syllabus-2026",
+  "/blogs/rrb-nursing-superintendent-salary-job-profile-2026",
+  "/courses",
+  "/helpdesk",
+  "/notifications",
+  "/resources",
+  "/results",
+  "/syllabus",
+  "/zones"
+] as const;

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import Head from 'next/head';
+import { useLocation } from 'react-router-dom';
 
 interface SEOProps {
   title: string;
@@ -23,7 +24,10 @@ export default function SEO({
   breadcrumbs
 }: SEOProps) {
   const siteUrl = 'https://rrbnursing.com';
-  const fullUrl = canonical ? (canonical.startsWith('http') ? canonical : `${siteUrl}${canonical}`) : siteUrl;
+  const location = useLocation();
+  const fullUrl = canonical
+    ? (canonical.startsWith('http') ? canonical : `${siteUrl}${canonical}`)
+    : `${siteUrl}${location?.pathname ?? '/'}`;
 
   // Construct Breadcrumb Schema
   const breadcrumbSchema = breadcrumbs ? {
@@ -38,7 +42,7 @@ export default function SEO({
   } : null;
 
   return (
-    <Helmet>
+    <Head>
       {/* Global Indexing Directive - CRITICAL */}
       <meta name="robots" content="index, follow" />
       <meta name="googlebot" content="index, follow" />
@@ -65,17 +69,19 @@ export default function SEO({
 
       {/* Structured Data (JSON-LD) */}
       {schema && (
-        <script type="application/ld+json">
-          {JSON.stringify(schema)}
-        </script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
       )}
       
       {/* Breadcrumb Schema */}
       {breadcrumbSchema && (
-        <script type="application/ld+json">
-          {JSON.stringify(breadcrumbSchema)}
-        </script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
       )}
-    </Helmet>
+    </Head>
   );
 }

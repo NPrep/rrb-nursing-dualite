@@ -1,5 +1,5 @@
 import React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import HomePage from './pages/HomePage';
 import NotificationsPage from './pages/NotificationsPage';
@@ -13,6 +13,7 @@ import AboutPage from './pages/AboutPage';
 import ResourcesPage from './pages/ResourcesPage';
 import CoursesPage from './pages/CoursesPage'; // Import CoursesPage
 import NotFoundPage from './pages/NotFoundPage';
+import { RouterWrapper } from './next/RouterWrapper';
 
 // Placeholder components for routes not fully implemented in this artifact
 const PlaceholderPage = ({ title }: { title: string }) => (
@@ -22,32 +23,33 @@ const PlaceholderPage = ({ title }: { title: string }) => (
   </div>
 );
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Layout />,
-    errorElement: <Layout><NotFoundPage /></Layout>, // Handle root errors
-    children: [
-      { index: true, element: <HomePage /> },
-      { path: "notifications", element: <NotificationsPage /> },
-      { path: "apply", element: <ApplyPage /> }, 
-      { path: "admit-card", element: <AdmitCardPage /> },
-      { path: "results", element: <PlaceholderPage title="Results" /> },
-      { path: "zones", element: <ZonesPage /> },
-      { path: "syllabus", element: <SyllabusPage /> },
-      { path: "blogs", element: <BlogsPage /> },
-      { path: "blogs/:id", element: <BlogPostPage /> },
-      { path: "about", element: <AboutPage /> },
-      { path: "resources", element: <ResourcesPage /> },
-      { path: "courses", element: <CoursesPage /> }, // Add courses route
-      { path: "helpdesk", element: <PlaceholderPage title="Helpdesk" /> },
-      { path: "*", element: <NotFoundPage /> }, // Catch-all for 404s inside layout
-    ],
-  },
-]);
+type AppProps = {
+  initialPath?: string;
+};
 
-function App() {
-  return <RouterProvider router={router} />;
+function App({ initialPath = '/' }: AppProps) {
+  return (
+    <RouterWrapper initialPath={initialPath}>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path="notifications" element={<NotificationsPage />} />
+          <Route path="apply" element={<ApplyPage />} /> 
+          <Route path="admit-card" element={<AdmitCardPage />} />
+          <Route path="results" element={<PlaceholderPage title="Results" />} />
+          <Route path="zones" element={<ZonesPage />} />
+          <Route path="syllabus" element={<SyllabusPage />} />
+          <Route path="blogs" element={<BlogsPage />} />
+          <Route path="blogs/:id" element={<BlogPostPage />} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="resources" element={<ResourcesPage />} />
+          <Route path="courses" element={<CoursesPage />} />
+          <Route path="helpdesk" element={<PlaceholderPage title="Helpdesk" />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
+      </Routes>
+    </RouterWrapper>
+  );
 }
 
 export default App;
