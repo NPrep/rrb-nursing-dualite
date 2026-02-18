@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, BookOpen, FileText, Bell, Calendar, CheckCircle2 } from 'lucide-react';
+import { Menu, X, Home, BookOpen, FileText, Bell, CheckCircle2 } from 'lucide-react';
 import { Button } from '../ui/button';
 import { cn } from '../../lib/utils';
 import { Logo } from '../ui/Logo';
@@ -9,13 +9,12 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
-  // Updated Navigation Order: Notification, Syllabus, Eligibility, Exam Dates
+  // Updated Navigation Order: Notification, Syllabus, Eligibility
   const navItems = [
     { name: 'Home', path: '/', isExternal: false, icon: Home },
     { name: 'Notifications', path: '/notifications', isExternal: false, icon: Bell },
     { name: 'Syllabus', path: '/syllabus', isExternal: false, icon: BookOpen },
     { name: 'Eligibility', path: '/blogs/rrb-nursing-superintendent-eligibility-criteria-2026', isExternal: false, icon: CheckCircle2 },
-    { name: 'Exam Dates', path: '/notifications', isExternal: false, icon: Calendar },
     { name: 'Courses', path: '/courses', isExternal: false, icon: FileText },
     { name: 'Blogs', path: '/blogs', isExternal: false, icon: FileText },
   ];

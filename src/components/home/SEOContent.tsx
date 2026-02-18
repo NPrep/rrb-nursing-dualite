@@ -63,30 +63,19 @@ export default function SEOContent() {
             </div>
           </div>
 
-          {/* NPrep Coaching Section - Separated & Labeled */}
+          {/* NPrep Coaching Section */}
           <div className="my-16">
-            <div className="flex items-center justify-center gap-4 mb-8">
-               <div className="h-px bg-slate-200 flex-1"></div>
-               <span className="text-xs font-bold uppercase tracking-widest text-slate-400">Sponsored Content</span>
-               <div className="h-px bg-slate-200 flex-1"></div>
-            </div>
-
             <div className="bg-indigo-50/50 border-2 border-indigo-100 rounded-xl p-8">
               <div className="flex items-center gap-3 mb-4">
                  <GraduationCap className="h-8 w-8 text-slate-900" />
                  <div>
                     <h2 className="text-2xl font-bold m-0 text-slate-900">NPrep Online Coaching</h2>
-                    <p className="text-xs font-bold text-indigo-600 uppercase tracking-wide m-0">(Independent Platform)</p>
                  </div>
               </div>
               
               <p className="text-slate-600 mb-6">
                 At <strong>NPrep</strong>, we understand the unique challenges of nursing aspirants. Our courses are designed by expert faculty to fit into your busy schedule, whether you are a student or a working nurse.
               </p>
-              <p className="text-xs text-slate-400 italic mb-6">
-                * This coaching offering is independent of RRB.
-              </p>
-              
               <div className="grid md:grid-cols-2 gap-6">
                 <Card className="border-l-4 border-l-yellow-500 shadow-sm bg-white">
                   <CardContent className="p-6">
