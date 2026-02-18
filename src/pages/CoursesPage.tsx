@@ -42,11 +42,11 @@ export default function CoursesPage() {
         ]}
       />
 
-      {/* Header Banner - Independent Platform */}
+      {/* Header Banner */}
       <div className="bg-slate-900 text-white py-3 text-center px-4">
         <p className="text-sm font-medium flex items-center justify-center gap-2">
           <GraduationCap className="h-4 w-4 text-yellow-400" />
-          NPrep Online Coaching (Independent Platform)
+          NPrep Online Coaching
         </p>
       </div>
 

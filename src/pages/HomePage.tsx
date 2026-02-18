@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FileText, Briefcase, Users, MapPin, FileCheck, ExternalLink, ArrowRight, BookOpen, AlertCircle, IndianRupee, PlayCircle, Calendar, GraduationCap, HelpCircle } from 'lucide-react';
+import { FileText, Briefcase, Users, MapPin, FileCheck, ExternalLink, ArrowRight, BookOpen, AlertCircle, IndianRupee, PlayCircle, GraduationCap, HelpCircle } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
-import { notifications, importantDates, faqs } from '../data/mockData';
+import { notifications, faqs } from '../data/mockData';
 import { NPREP_LINKS } from '../data/links';
 import { cn } from '../lib/utils';
 import SEO from '../components/SEO';
@@ -27,21 +27,7 @@ export default function HomePage() {
     }))
   };
 
-  // 2. Event Schema for Exam Dates (Added)
-  const eventSchema = importantDates.map(item => ({
-    "@context": "https://schema.org",
-    "@type": "EducationEvent",
-    "name": item.title,
-    "startDate": new Date(item.date).toISOString().split('T')[0], // Approximation for schema
-    "eventStatus": "https://schema.org/EventScheduled",
-    "description": `Important date for ${item.title} - RRB Nursing Superintendent 2026`,
-    "location": {
-      "@type": "Place",
-      "name": "Online / All India"
-    }
-  }));
-
-  // 3. WebSite Schema
+  // 2. WebSite Schema
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -49,7 +35,7 @@ export default function HomePage() {
     "url": "https://rrbnursing.com"
   };
 
-  const combinedSchema = [websiteSchema, faqSchema, ...eventSchema];
+  const combinedSchema = [websiteSchema, faqSchema];
 
   const featureCards = [
     { 
@@ -74,14 +60,6 @@ export default function HomePage() {
       icon: FileCheck, 
       bg: "bg-slate-800", 
       link: "/blogs/rrb-nursing-superintendent-eligibility-criteria-2026", 
-      isExternal: false 
-    },
-    { 
-      title: "Exam Dates", 
-      desc: "View Calendar", 
-      icon: Calendar, 
-      bg: "bg-slate-800", 
-      link: "/notifications", 
       isExternal: false 
     },
   ];
@@ -127,7 +105,7 @@ export default function HomePage() {
       {/* Quick Navigation Grid (Official Info) */}
       <section className="py-8 px-4 -mt-8">
         <div className="container mx-auto max-w-7xl">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {featureCards.map((card, idx) => (
               <Link 
                 key={idx} 
@@ -212,28 +190,15 @@ export default function HomePage() {
           
           <div className="bg-white rounded-2xl p-8 md:p-12 border border-indigo-200 shadow-lg relative overflow-hidden">
             
-            {/* Disclaimer Banner */}
-            <div className="absolute top-0 left-0 w-full bg-indigo-100 py-2 text-center border-b border-indigo-200">
-              <p className="text-xs font-bold text-indigo-800 uppercase tracking-widest">
-                Sponsored Content
-              </p>
-            </div>
-            
-            <div className="flex flex-col md:flex-row items-center justify-between gap-8 relative z-10 mt-6">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
               <div className="space-y-6 max-w-2xl text-center md:text-left">
                 <div>
                    <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-2">
                      NPrep Online Coaching
                    </h2>
-                   <p className="text-sm font-bold text-indigo-600 uppercase tracking-wide bg-indigo-50 inline-block px-3 py-1 rounded-full border border-indigo-100">
-                     (Independent Platform)
-                   </p>
                 </div>
                 <p className="text-slate-600 text-lg leading-relaxed">
                   Looking for structured preparation? NPrep offers premium video courses, test series, and free resources designed specifically for nursing exams.
-                </p>
-                <p className="text-xs text-slate-400 italic">
-                  * This coaching offering is independent of RRB.
                 </p>
                 
                 <div className="flex flex-wrap gap-4 justify-center md:justify-start">
@@ -268,11 +233,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Latest Notifications & Dates */}
+      {/* Latest Notifications */}
       <section className="py-16 px-4 bg-white">
-        <div className="container mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-12">
-          {/* Latest Notifications */}
-          <div className="lg:col-span-2 space-y-8">
+        <div className="container mx-auto max-w-7xl">
+          <div className="space-y-8">
             <div className="flex items-center justify-between">
               <h2 className="text-2xl font-bold text-slate-900">Latest Updates</h2>
               <Link to="/notifications" className="text-primary font-medium hover:underline flex items-center">
@@ -309,27 +273,6 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Important Dates Timeline */}
-          <div className="space-y-8">
-            <h2 className="text-2xl font-bold text-slate-900">Exam Calendar</h2>
-            <Card className="border-slate-200 shadow-sm">
-              <CardContent className="p-6">
-                <div className="relative space-y-8 before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-slate-200">
-                  {importantDates.map((item, idx) => (
-                    <div key={idx} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                      <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-slate-100 shadow-sm shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
-                        <div className={`h-2.5 w-2.5 rounded-full ${item.status === 'completed' ? 'bg-green-500' : 'bg-primary'}`} />
-                      </div>
-                      <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-lg bg-slate-50 border border-slate-100">
-                        <div className="font-semibold text-slate-900 text-sm mb-1">{item.title}</div>
-                        <div className="text-xs text-slate-500 font-medium">{item.date}</div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </section>
 
