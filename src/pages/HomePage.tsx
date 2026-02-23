@@ -279,6 +279,17 @@ export default function HomePage() {
       {/* SEO Content Silo */}
       <SEOContent />
 
+      <section className="py-12 px-4 bg-white">
+        <div className="container mx-auto max-w-5xl">
+          <div className="nprep-testimonial-cta">
+            <h2 className="text-3xl font-semibold text-[var(--text-primary)]">Hear from real students</h2>
+            <a className="cta" href="https://nprep.in/blogs?filter=NORCET+Success+Story" target="_blank" rel="noopener noreferrer">
+              Read verified success stories on NPrep
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-16 px-4 bg-slate-50">
         <div className="container mx-auto max-w-4xl">
