@@ -15,7 +15,7 @@ export function BlogCover({ title, category, image, className }: BlogCoverProps)
   if (image) {
     return (
       <div className={cn("relative w-full aspect-video overflow-hidden bg-slate-100", className)}>
-        <img 
+        <img loading="lazy" 
           src={image} 
           alt={title} 
           className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"

@@ -71,7 +71,7 @@ export default function Header() {
 
       {/* Mobile Nav Dropdown */}
       {isMenuOpen && (
-        <div className="lg:hidden border-t bg-background p-4 shadow-lg absolute w-full z-50">
+        <div className="lg:hidden nprep-mobile-drawer">
           <nav className="flex flex-col space-y-2">
             {navItems.map((item) => (
               <Link

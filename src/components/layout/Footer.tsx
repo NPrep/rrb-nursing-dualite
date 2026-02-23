@@ -50,12 +50,22 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 mt-10">
+        {/* Disclaimer Section */}
+        <div className="border-t border-slate-800 mt-12 pt-8 pb-4">
+          <div className="nprep-disclaimer-banner bg-slate-950/50 rounded-lg p-6 border border-slate-800/50">
+            <p className="text-xs text-slate-400 leading-relaxed text-center md:text-left">
+              <span className="font-bold text-slate-300 block mb-2 md:inline md:mb-0 md:mr-1">Disclaimer:</span> 
+              rrbnursing.com is neither associated with Indian Railways nor with Railway Recruitment Board (RRB). The Official website of RRB Application is <a href="https://rrbapply.gov.in" target="_blank" rel="nofollow noreferrer" className="text-blue-400 hover:underline">rrbapply.gov.in</a>. rrbapply.com is a job portal sharing the Latest Vacancy Notification, Eligibility, Application Process, Exam Date of RRB Nursing Superintendent Exam Syllabus, Exam Date & Admit Cards & Results.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 mt-6">
           <p>© 2025 RRB Nursing. All rights reserved.</p>
           
           {/* Powered by NPrep Section - Enhanced Trust Signal */}
           <div className="mt-4 md:mt-0 flex items-center gap-1.5 bg-slate-800/50 px-3 py-1.5 rounded-full border border-slate-700/50">
-             <span className="opacity-60 font-medium">Powered by</span>
+             <span className="opacity-60 font-medium">In association with</span>
              <a href="https://nprep.in" target="_blank" rel="noopener noreferrer" className="font-bold text-white hover:text-primary transition-colors flex items-center gap-1.5">
                <Zap className="h-3 w-3 text-yellow-400 fill-yellow-400" /> NPrep
              </a>
