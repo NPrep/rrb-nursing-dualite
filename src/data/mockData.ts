@@ -9,7 +9,7 @@ export const notifications = [
     type: "Recruitment",
     status: "Active",
     zone: "All RRBs",
-    description: "Official notification for Nursing Superintendent (Level-7) posts. Exam scheduled for March 10-12, 2026.",
+    description: "Notification for Nursing Superintendent (Level-7) posts. Exam scheduled for March 10-12, 2026.",
     downloadLink: NPREP_LINKS.PYQ
   },
   {
@@ -51,7 +51,7 @@ export const zones = [
   "Muzaffarpur", "Patna", "Ranchi", "Secunderabad", "Siliguri", "Thiruvananthapuram"
 ];
 
-// Updated Important Dates with Official Schedule
+// Updated Important Dates with Exam Schedule
 export const importantDates = [
   { title: "CEN 03/2025: Applications", date: "Feb 20, 2026", status: "completed" },
   { title: "CEN 03/2025: Admit Card", date: "Mar 01, 2026", status: "upcoming" },
@@ -62,7 +62,7 @@ export const importantDates = [
 export const faqs = [
   {
     question: "How do I apply for RRB Nursing Superintendent?",
-    answer: "Visit the official RRB website via our 'Apply' section. Ensure you have your GNM/B.Sc Nursing registration handy."
+    answer: "Visit the RRB website via our 'Apply' section. Ensure you have your GNM/B.Sc Nursing registration handy."
   },
   {
     question: "Is experience required for Staff Nurse?",
@@ -325,7 +325,7 @@ export const blogs = [
           </div>
           <div class="p-4 border rounded-lg">
             <span class="font-bold block text-primary">Gazetted Officer</span>
-            <span class="text-sm text-slate-600">A high-ranking government official (Nursing Superintendent is non-gazetted, ANO is gazetted).</span>
+            <span class="text-sm text-slate-600">A high-ranking government role (Nursing Superintendent is non-gazetted, ANO is gazetted).</span>
           </div>
         </div>
 
@@ -747,7 +747,7 @@ export const blogs = [
           The <strong>RRB Nursing Superintendent Exam</strong> is known for its balanced mix of technical nursing questions and general aptitude. Unlike AIIMS NORCET which is 100% nursing-focused (mostly), RRB allocates <strong>30% weightage to Non-Technical subjects</strong>. This is where most nursing candidates lose marks.
         </p>
         <p>
-          To crack this exam, you need a targeted approach. In this guide, we provide the official syllabus breakdown, topic-wise weightage, and a list of high-yield topics that have appeared in previous cycles (2015, 2019).
+          To crack this exam, you need a targeted approach. In this guide, we provide the syllabus breakdown, topic-wise weightage, and a list of high-yield topics that have appeared in previous cycles (2015, 2019).
         </p>
 
         <!-- Table of Contents -->

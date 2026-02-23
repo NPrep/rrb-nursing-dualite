@@ -22,7 +22,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Official Links</h3>
+            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Useful Links</h3>
             <ul className="space-y-2 text-sm">
               <li><Link to="/notifications" className="hover:text-white transition-colors">Latest Notifications</Link></li>
               <li><a href={RRB_OFFICIAL_URL} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-1">Apply Online <ExternalLink className="h-3 w-3" /></a></li>

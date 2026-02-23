@@ -19,7 +19,7 @@ export default function NotificationsPage() {
     <div className="container mx-auto px-4 py-8">
       <SEO 
         title="RRB Nursing Exam Date 2026 & Latest Notifications"
-        description="Check RRB Nursing Superintendent Exam Date 2026 (CEN 03/2025). Download official notification PDF and admit card."
+        description="Check RRB Nursing Superintendent Exam Date 2026 (CEN 03/2025). Download notification PDF and admit card."
         keywords={['RRB Nursing Exam Date', 'CEN 03/2025 Exam Date', 'Railway Staff Nurse Notification']}
         canonical="/notifications"
         breadcrumbs={[
@@ -30,7 +30,7 @@ export default function NotificationsPage() {
 
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-primary">Notifications & Exam Dates</h1>
-        <p className="text-muted-foreground mt-1">Official updates regarding CEN 03/2025 and other railway nursing recruitments.</p>
+        <p className="text-muted-foreground mt-1">Latest updates regarding CEN 03/2025 and other railway nursing recruitments.</p>
       </div>
 
       {/* HIGH VISIBILITY EXAM SCHEDULE CARD */}
@@ -43,7 +43,7 @@ export default function NotificationsPage() {
             <div className="w-full">
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
                 <div>
-                  <h2 className="text-2xl font-bold text-slate-900">Official Exam Schedule Announced</h2>
+                  <h2 className="text-2xl font-bold text-slate-900">Exam Schedule Announced</h2>
                   <p className="text-slate-600 text-sm mt-1">Computer Based Test (CBT) Schedule for Nursing Superintendent</p>
                 </div>
                 <Badge className="bg-red-100 text-red-700 hover:bg-red-200 border-0 px-3 py-1 text-sm animate-pulse">

@@ -52,9 +52,9 @@ export default function AboutPage() {
           <CardContent className="p-6 flex items-start gap-4">
             <ShieldAlert className="h-8 w-8 text-yellow-600 shrink-0" />
             <div className="space-y-2">
-              <h2 className="text-lg font-bold text-yellow-800">Unofficial Information Portal</h2>
+              <h2 className="text-lg font-bold text-yellow-800">Independent Information Portal</h2>
               <p className="text-yellow-700 text-sm leading-relaxed">
-                <strong>rrbnursing.com</strong> is a private educational portal and is <strong>NOT</strong> associated with Indian Railways or the Railway Recruitment Board (RRB). We provide study material, exam analysis, and guidance for nursing aspirants. For official applications, please always visit <a href="https://rrbapply.gov.in" target="_blank" rel="nofollow noreferrer" className="underline font-semibold">rrbapply.gov.in</a>.
+                <strong>rrbnursing.com</strong> is a private educational portal and is <strong>NOT</strong> associated with Indian Railways or the Railway Recruitment Board (RRB). We provide study material, exam analysis, and guidance for nursing aspirants. For applications, please always visit <a href="https://rrbapply.gov.in" target="_blank" rel="nofollow noreferrer" className="underline font-semibold">rrbapply.gov.in</a>.
               </p>
             </div>
           </CardContent>
