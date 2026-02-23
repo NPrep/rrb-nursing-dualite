@@ -22,7 +22,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Official Links</h3>
+            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Useful Links</h3>
             <ul className="space-y-2 text-sm">
               <li><Link to="/notifications" className="hover:text-white transition-colors">Latest Notifications</Link></li>
               <li><a href={RRB_OFFICIAL_URL} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-1">Apply Online <ExternalLink className="h-3 w-3" /></a></li>
@@ -50,17 +50,7 @@ export default function Footer() {
           </div>
         </div>
         
-        {/* Disclaimer Section */}
-        <div className="border-t border-slate-800 mt-12 pt-8 pb-4">
-          <div className="bg-slate-950/50 rounded-lg p-6 border border-slate-800/50">
-            <p className="text-xs text-slate-400 leading-relaxed text-center md:text-left">
-              <span className="font-bold text-slate-300 block mb-2 md:inline md:mb-0 md:mr-1">Disclaimer:</span> 
-              rrbnursing.com is neither associated with Indian Railways nor with Railway Recruitment Board (RRB). The Official website of RRB Application is <a href="https://rrbapply.gov.in" target="_blank" rel="nofollow noreferrer" className="text-blue-400 hover:underline">rrbapply.gov.in</a>. rrbapply.com is a job portal sharing the Latest Vacancy Notification, Eligibility, Application Process, Exam Date of RRB Nursing Superintendent Exam Syllabus, Exam Date & Admit Cards & Results.
-            </p>
-          </div>
-        </div>
-
-        <div className="flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 mt-6">
+        <div className="flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 mt-10">
           <p>© 2025 RRB Nursing. All rights reserved.</p>
           
           {/* Powered by NPrep Section - Enhanced Trust Signal */}

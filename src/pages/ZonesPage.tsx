@@ -9,7 +9,7 @@ export default function ZonesPage() {
     <div className="container mx-auto px-4 py-8">
       <SEO 
         title="List of Railway Recruitment Boards (RRBs) - Zone Wise Details"
-        description="Find contact details and official websites of all 21 Railway Recruitment Boards (RRBs) including RRB Mumbai, Chennai, Kolkata, and more."
+        description="Find contact details and websites of all 21 Railway Recruitment Boards (RRBs) including RRB Mumbai, Chennai, Kolkata, and more."
         keywords={['RRB Zones List', 'Railway Recruitment Boards', 'RRB Mumbai', 'RRB Chennai']}
         canonical="/zones"
         breadcrumbs={[
