@@ -9,7 +9,7 @@ export const notifications = [
     type: "Recruitment",
     status: "Active",
     zone: "All RRBs",
-    description: "Notification for Nursing Superintendent (Level-7) posts. Exam scheduled for March 10-12, 2026.",
+    description: "Notification for Nursing Superintendent (Level-7) posts. Revised exam schedule (as per latest official notice): March 11-13, 2026.",
     downloadLink: NPREP_LINKS.PYQ
   },
   {
@@ -55,7 +55,7 @@ export const zones = [
 export const importantDates = [
   { title: "CEN 03/2025: Applications", date: "Feb 20, 2026", status: "completed" },
   { title: "CEN 03/2025: Admit Card", date: "Mar 01, 2026", status: "upcoming" },
-  { title: "CEN 03/2025: Nursing Supdt. CBT", date: "Mar 10-12, 2026", status: "upcoming" },
+  { title: "CEN 03/2025: Nursing Supdt. CBT", date: "Mar 11-13, 2026", status: "upcoming" },
   { title: "CEN 03/2025: Result", date: "Apr 15, 2026", status: "upcoming" },
 ];
 

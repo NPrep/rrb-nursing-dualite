@@ -44,7 +44,7 @@ export default function NotificationsPage() {
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
                 <div>
                   <h2 className="text-2xl font-bold text-slate-900">Exam Schedule Announced</h2>
-                  <p className="text-slate-600 text-sm mt-1">Computer Based Test (CBT) Schedule for Nursing Superintendent</p>
+                  <p className="text-slate-600 text-sm mt-1">Computer Based Test (CBT) Schedule for Nursing Superintendent (Revised as per latest official notice)</p>
                 </div>
                 <Badge className="bg-red-100 text-red-700 hover:bg-red-200 border-0 px-3 py-1 text-sm animate-pulse">
                   Latest Update
@@ -64,7 +64,7 @@ export default function NotificationsPage() {
                   <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">CBT Exam Date</span>
                   <div className="font-bold text-xl text-primary flex items-center gap-2">
                     <BellRing className="h-5 w-5" />
-                    March 10 - 12, 2026
+                    March 11 - 13, 2026
                   </div>
                 </div>
               </div>
