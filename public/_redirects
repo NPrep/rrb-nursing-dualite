@@ -1,3 +1,10 @@
-# Netlify Rewrite Rule for SPA
-# This ensures that refreshing a route like /blogs doesn't give a 404
+/how-to-prepare-for-rrb-nursing https://nprep.in/rrb-nursing-preparation 301
+/rrb-nursing-study-plan https://nprep.in/rrb-nursing-preparation 301
+/best-books-for-rrb-nursing https://nprep.in/rrb-nursing-preparation 301
+/rrb-nursing-preparation-strategy https://nprep.in/rrb-nursing-preparation 301
+/rrb-nursing-tips https://nprep.in/rrb-nursing-preparation 301
+/rrb-nursing-preparation-guide https://nprep.in/rrb-nursing-preparation 301
+/rrb-nursing-preparation https://nprep.in/rrb-nursing-preparation 301
+/mock-tests https://nprep.in 301
+
 /*  /index.html  200
