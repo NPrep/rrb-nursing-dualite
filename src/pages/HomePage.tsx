@@ -101,6 +101,15 @@ export default function HomePage() {
                   </Button>
                 </Link>
               </div>
+
+              <a
+                href="https://exam.nprep.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex w-fit items-center justify-center rounded-full bg-red-100 px-4 py-2 text-sm font-semibold text-red-800 ring-1 ring-red-200 transition-colors hover:bg-red-200"
+              >
+                Check your RRB Nursing Selection Chances
+              </a>
             </div>
 
             <div className="bg-slate-50 border border-slate-200 rounded-xl p-5 md:p-6">
